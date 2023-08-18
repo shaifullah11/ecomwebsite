@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+
+*{
+    padding: 0px;
+    box-sizing: border-box;
+    margin: 0px;
+}
+.main{
+    padding:0 80px;
+}
+#navi{
+    
+    height:110px;
+}
+#navi .navi2 .ul .li .a{
+color:#222529;
+font-weight: 700;
+font-size:13px;
+margin: 0 6px;
+}
+
+.logo{
+   margin-right:30%;
+}
+.icons{
+    width: 15vh;
+    height:110px;
+    margin-top: 55px;
+    margin-right: 10%;
+
+    }
+.icons ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+     }
+.icons ul li{
+    padding: 10px;
+}
+.icons ul li button{
+    border: 0px;
+    background-color: white;
+    
+}
+.off{
+    background-color:#fcf6ef;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-family: poppins;
+}
+.off p{
+    margin: 10px;
+    color: #ed7e63;
+}
+/* main class imgs */
+/* .fourimg{
+    margin-top: 20px;
+    width: 100%;
+    height: 650px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.fourimg .chair1div{
+    background-color: violet;
+    display: flex;
+    flex-wrap: wrap;
+} 
+
+.chair1{
+    align-self:flex-start;
+    background-image: url(images/sofa.jpg);
+    background-repeat: no-repeat;
+    height: 50%;
+    width: 40%;
+}
+.lotus{
+    background-image: url(images/lotus.jpg);
+    margin-top: -360px;
+ 
+    background-repeat: no-repeat;
+    height: 50%;
+    width: 20%;
+}
+.bed{
+    background: url(images/woddenbed.jpg)center center;
+    background-repeat: no-repeat;
+    height: 50%;
+    width: 20%;
+    margin-top: -360px;
+}
+.blackchair{
+    background: url(images/blackchair.jpg) center center;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 55%;
+    margin-left: 30px;
+    background-size:cover;
+} */
+.fourimgcont{
+    margin-top: 13px;
+   
+
+}
+.fourimgcont .img1,.img2,.img3,.img4{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    }
+     
+.fcontrow1col1row2{
+    box-sizing: border-box;
+    padding: 12px 0;
+         
+    }
+/* link1 */
+
+.cont1,.cont2,.cont3,.cont4{
+    display: none;
+  background-color: #fff;
+    
+}
+.cont1col1,.cont1col2,.cont1col3{ 
+    height: 240px;
+    font-weight: 600;
+    font-size: 13px;
+}
+.cont1col3{
+    background-image: url(images/sh0pimg.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: flex;
+
+}
+.col ul li{
+    list-style: none;
+    
+    margin-top: 10px;
+}
+.col ul li a{
+    color: gray;
+    text-decoration: none;
+}
+
+.col ul li a:hover{
+    text-decoration: underline;
+}
+
+
+.link1:hover .cont1{
+    display:block;
+    position:absolute;
+    width: 700px;
+}
+
+/* link2 */
+
+.link2:hover .cont2{
+    display:block;
+    position:absolute;
+    width: 700px;
+}
+.cont2col3{
+    background-image: url(images/productlinkimg.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: flex;
+ /* background-size: cover; width: 100%;height:100%; */
+} 
+.cont2col1,.cont2col2,.cont2col3{ 
+    font-weight: 600;
+    font-size: 13px;
+}
+
+/* link3 */
+.link3:hover .cont3{
+    display:block;
+    position:absolute;
+    width: 800px;
+}
+
+.cont3col1,.cont3col2,.cont3col3,.cont4col1{ 
+    font-weight: 600;
+    font-size: 13px;
+}
+
+/* link4 */
+.link4:hover .cont4{
+    display:block;
+    position:absolute;
+    width: 30px;
+    
+}
+
+.link4:hover .cont4{
+    height: 70px;
+    width: 200px;
+}
+/* last of maindiv */
