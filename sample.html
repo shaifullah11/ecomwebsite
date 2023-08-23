@@ -3,66 +3,173 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
     <title>Bootstrap demo</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"/>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css" integrity="sha512-X/RSQYxFb/tvuz6aNRTfKXDnQzmnzoawgEQ4X8nZNftzs8KFFH23p/BA6D2k0QCM4R0sY1DEy9MIY9b3fwi+bg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css" integrity="sha512-f28cvdA4Bq3dC9X9wNmSx21rjWI+5piIW/uoc2LuQ67asKxfQjUow2MkcCNcfJiaLrHcGbed1wzYe3dlY4w9gA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <style>
-        
-       
+       .owl-item{
+      margin-top: 46px;
+    }
+   .owl-carousel{
+    margin-top:1000px;
+   }
+    .owl-pagination{
+      display: none;
+    }
+    .owl-wrapper-outer{
+      padding-left:130px;
+      height: 158px;
+      background-color: #222529;
+    }
+      body{
+        padding: 0;
+      }
+      .middle-footer,.last-footer{
+        margin: 0 80px;
+      }
+      .middle-footer ul li{
+        list-style: none;
+      }
+      .middle-footer ul li a{
+        text-decoration: none;
+        color: #777;
+        font-size: 13px;
+      }
+     .middle-footer ul{
+          margin-top: 30px;
+      }
+        .share-btn-container {
+          display: flex;
+          padding: 16px;
+        }
+
+        .share-btn-container a i {
+          font-size: 32px;
+        }
+
+        .share-btn-container a {
+          margin: 12px;
+          transition: 500ms;
+        }
+        .share-btn-container a:hover {
+          transform: scale(1.2);
+        }
+
+        .share-btn-container .fa-facebook {
+        color: #3b5998;
+      }
+
+      .share-btn-container .fa-twitter {
+        color: #1da1f2;
+      } 
+
+      .share-btn-container .fa-linkedin {
+        color: #0077b5;
+      }
+      .share-btn-container .fa-instagram {
+        color: #f09433;
+      }
 
     </style>
   </head>
   <body>
-    <div class="container">
-    <div class="row align-items-center">
-      <div class="column_container col-md-6 col-lg-3">
-        <div class="wpb_wrapper column-inner">
-          
-              <div class="" style="text-align: center;">
-                <div class="" style="color: #222529; font-size: 35px; display: inline-block;"><i class=""></i></div>
-             
-            
-              <h6 class="" style="font-weight: 700; font-size: 14px; line-height: 14px;">FREE SHIPPING &amp; RETURN</h6>
-              <p style="font-size: 13px; line-height: 15px;">Free shipping on all orders over $99.</p>
-            </div>
+    <div class="first-footer">
+    <div class="owl-carousel owl-theme">
+      <div > <img src="images/david.png" alt=""> </div>
+      <div > <img src="images/mighty.png" alt=""> </div>
+      <div> <img src="images/designlovers.png" alt=""> </div>
+      <div> <img src="images/wallpaintshop.png" alt=""> </div>
+      <div> <img src="images/golden.png" alt=""> </div>
+      <div> <img src="images/avent.png" alt=""> </div>
+    </div>
+  </div>
+  <br>
+    <div class="middle-footer">
+      <div class="row row1" >
+        <div class="col">
+          <img src="images/logo.png" style="margin-top: 80px; width: 120px;" alt="logo">
         </div>
-      </div>
-      <div class="column_container col-md-6 col-lg-3">
-        <div class="wpb_wrapper column-inner">
-          
-              <div class="" style="text-align: center;">
-                <div class="" style="color: #222529; font-size: 35px; display: inline-block;"><i class=""></i></div>
-          
-              <h6 class="" style="font-weight: 700; font-size: 14px; line-height: 14px;">MONEY BACK GUARANTEE</h6>
-              <p style="font-size: 13px; line-height: 15px;">100% money back guarantee</p>
+        <div class="col">
+          <div style="margin-top: 70px;">
+          <b style="display: block;">Questions</b>
+          <i style="font-weight: 700; font-size: 23px;color: #606da6 !important; font-style: normal; display: block;  border-right: 1px solid #e7e7e7;">1-888-123-456</i>
+          </div>
+        </div>
+        <div class="col" >
+          <div class="share-btn-container" style="margin-top: 70px;">
+            <a href="#" class="facebook-btn">
+              <i class="fab fa-facebook" style="font-size: 25px;" ></i>
+            </a>
+            <a href="#" class="twitter-btn">
+              <i class="fab fa-twitter" style="font-size: 25px;"></i>
+            </a>
+            <a href="#" class="instagram-btn">
+              <i class="fab fa-instagram" style="font-size: 25px;"></i>
+            </a>
+            <a href="#" class="linkedin-btn">
+              <i class="fab fa-linkedin " style="font-size: 25px;"></i>
+            </a>
+          </div>
+        </div>
         
-          </div>
+        <div class="col">
+          <ul>
+            <li><b>Account</b></li>
+            <li style="height: 10px;"></li>
+            <li><a href="#">My Account</a></li>
+            <li><a href="#">Track Your Order</a></li>
+            <li><a href="#">Payment Methods</a></li>
+            <li><a href="#">Shipping Guide</a></li>
+          </ul>
+        </div>
+        <div class="col">
+          <ul>
+            <li><b>About</b></li>
+            <li style="height: 10px;"></li>
+            <li><a href="#">About Porto</a></li>
+            <li><a href="#">Our Guarantees</a></li>
+            <li><a href="#">Terms and Conditions</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div class="col">
+          <ul>
+            <li><b>Features</b></li>
+            <li style="height: 10px;"></li>
+            <li><a href="#">Powerful Admin Pannel</a></li>
+            <li><a href="#">Mobile & Retina Optimized </a></li>
+            <li><a href="#">Super Fast WordPress Theme</a></li>
+            <li><a href="#">1st Fully working Ajax Theme</a></li>
+          </ul>
         </div>
       </div>
-      <div class="column_container col-md-6 col-lg-3">
-        <div class="wpb_wrapper column-inner">
-        
-              <div class="" style="text-align: center;">
-                <div class="" style="color: #222529; font-size: 35px; display: inline-block;"><i class=""></i></div>
-              <h6 class="" style="font-weight: 700; font-size: 14px; line-height: 14px;">ONLINE SUPPORT 24/7</h6>
-              <p style="font-size: 13px; line-height: 15px;">Lorem ipsum dolor sit amet.</p>
-           
-          </div>
+    </div><br><br>
+    <div class="last-footer" style="padding: 22px 0; color: #777;border-top:1px solid #e7e7e7; ;">
+      <div class="row">
+        <div class="col">
+          <address style="font-size: 14px; font-weight: 500; ">© Porto Magento 2023. All Rights Reserved</address>
+
         </div>
-      </div>
-      <div class="column_container col-md-6 col-lg-3">
-        <div class="wpb_wrapper column-inner">
-          
-              <div class="" style="text-align: center;">
-                <div class="" style="color: #222529; font-size: 35px; display: inline-block;"><i class=""></i></div>
-             
-              <h6 class="" style="font-weight: 700; font-size: 14px; line-height: 14px;">SECURE PAYMENT</h6>
-              <p style="font-size: 13px; line-height: 15px;">Lorem ipsum dolor sit amet.</p>
-          
-          </div>
+        <div class="col" style="text-align: right;">
+          <img src="images/payment_icons.png" alt="">
         </div>
       </div>
     </div>
-  </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js" integrity="sha512-9CWGXFSJ+/X0LWzSRCZFsOPhSfm6jbnL+Mpqo0o8Ke2SYr8rCTqb4/wGm+9n13HtDE1NQpAEOrMecDZw4FXQGg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script>
+      $(document).ready(function(){
+      $(".owl-carousel").owlCarousel({});
+    });
+    </script> 
   </body>
 </html>

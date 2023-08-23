@@ -50,6 +50,7 @@ margin: 0 6px;
     font-family: poppins;
 }
 .off p{
+    font-weight: 400;
     margin: 10px;
     color: #ed7e63;
 }
