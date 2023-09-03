@@ -1,10 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+/* @import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,700&display=swap"); */
+
 
 *{
     padding: 0px;
     box-sizing: border-box;
     margin: 0px;
 }
+
 .main{
     padding:0 80px;
 }
@@ -233,6 +236,59 @@ height: 293px;
 
 
 
+
+
+.wrap_main{
+  display: flex;
+  padding: 29px 80px 0px 80px;
+  margin-bottom: 10px;
+  justify-content: space-between;
+}
+.wrap_title h2{
+  font-size: 15px;
+  font-weight: 800;
+  letter-spacing: 2.3px;
+  word-spacing: 2px;
+}
+.wrap_links{
+  /* background-color: rebeccapurple; */
+}
+.wrap_links ul{ 
+  /* background-color: yellowgreen; */
+  display: flex;
+  justify-content: end;
+}
+.wrap_links ul li{
+ /* background-color: yellow; */
+ margin: 0 10px;
+ list-style: none;
+ letter-spacing: 2px;
+ /* display: flex; */
+ cursor: pointer;
+
+}
+
+.wrapper_right {
+  width: 100%;
+  margin-bottom: 30px;
+  /* background-color: red; */
+}
+.wrap_links ul li a{
+  font-size: 13.7px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  transition: all .1s linear;
+}
+.wrap_links ul li.active a{
+  color: #606da6 !important;
+  text-decoration: underline;
+
+}
+.wrap_links ul li a:hover{
+  color: #606da6 !important;
+  text-decoration: underline !important;
+  /* background-color: red; */
+}
 
 
 
@@ -898,7 +954,7 @@ font-size: 50px;
         font-size: 50px;
         /* opacity: 0; */
        }
-       .owl-carousel-2 .item{
+       .owl-carousel-2 .items{
         margin-top: 47px;
         /* background-color: red; */
         /* border: 1px solid; */
