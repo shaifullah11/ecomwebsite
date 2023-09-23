@@ -845,14 +845,14 @@ right: 0;
 }
 .browse button {
   width: 200px;
-  font-size: 13px;
+  font-size: 15px;
   padding: 12px 25px;
   color: rgb(34, 37, 41);
   background-color: transparent;
   font-weight: 700;
   letter-spacing: 1px;
   word-spacing: 2px;
-  border: 3px solid rgb(231, 231, 231);
+  border: 2px solid rgb(231, 231, 231);
 }
 .browse button i {
   font-size: 14px;
@@ -862,11 +862,11 @@ right: 0;
   text-decoration: none;
 }
 .recent {
-  border-top: 1px solid #e7e7e7;
-  height: 576px;
+  /* border-top: 1px solid #e7e7e7; */
+  /* height: 570px; */
 }
 .recentr1 {
-  padding-top: 55px;
+  padding: 45px 0px 0px 0px;
 }
 .recentr1c1 {
   display: flex;
@@ -1020,4 +1020,8 @@ right: 0;
 }
 .share-btn-container .fa-instagram {
   color: #f09433;
+}
+.middle-footer ul li {
+  /* padding: 0 !important; */
+  margin: 0 !important;
 }
