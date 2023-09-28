@@ -125,7 +125,21 @@
   margin-top: 0px !important;
 
 }
-
+.cont3col1 ul,.cont4col1 ul{
+  /* background-color: rebeccapurple; */
+  padding: 0 2px 0 2px;
+}
+.cont3col1 ul li,.cont4col1 ul li{
+  /* background-color: rebeccapurple; */
+  /* padding: 0 !important; */
+}
+.cont3col1,.cont4col1{
+  /* background-color: rebeccapurple; */
+  padding: 0 0 0 0px !important;
+} 
+.cont3col1 ul li a,.cont4col1 ul li a{
+  padding-left: 8px;
+}
 .cont1,
 .cont2,
 .cont3,
@@ -260,7 +274,7 @@
 }
 
 .link4:hover .cont4 {
-  height: 90px;
+  height: 70px;
   width: 200px;
 
   box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
@@ -269,11 +283,10 @@
 .cont4 {
   width: 250px !important;
   padding: 0px 10px 10px 10px !important;
-
 }
 
 .cont4 li {
-  padding: 3px 0;
+  /* padding: 3px 0; */
 }
 
 .cont4row1 .col li:hover {
@@ -617,7 +630,7 @@
 
 .first-card .card:hover img {
   /* z-index: 1; */
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+  /* box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px; */
   /* filter: drop-shadow(-10px -10px 10px gray); */
 }
 
