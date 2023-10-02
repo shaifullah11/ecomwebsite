@@ -26,11 +26,6 @@
   <link rel="stylesheet"
     href="//fonts.googleapis.com/css?family=Open+Sans%3A300%2C300italic%2C400%2C400italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic&amp;v1&amp;subset=latin%2Clatin-ext"
     type="text/css" media="screen">
-  <style type="text/css">
-    .fancybox-margin {
-      margin-right: 34px;
-    }
-  </style>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
@@ -46,6 +41,14 @@
   <!-- javascript -->
   <script src="assets/jquery.min.js"></script>
   <script src="assets/owl.carousel.js"></script>
+
+
+
+
+
+
+  <!-- product style sheet -->
+  <link rel="stylesheet" href="prod-style.css">
 </head>
 
 <body>
@@ -61,7 +64,7 @@
       <div class="collapse navbar-collapse navi2" id="navbarTogglerDemo03">
         <ul class="navbar-nav mr-auto mt-2 mt-lg-0 ul"> <!-- add height -->
           <li class="nav-item active li link0"><a class="nav-link a na0" href="index.html">HOME</a></li>
-          <li class="nav-item active li link1"><a class="nav-link a na1" href="">SHOP</a>
+          <li class="nav-item active li link1"><a class="nav-link a na1" href="#">SHOP</a>
             <div class="container cont1">
               <div class="row cont1row1">
                 <div class="col cont1col1">
@@ -180,7 +183,7 @@
       <div class="collapse navbar-collapse navi2" id="navbarTogglerDemo03">
         <ul class="navbar-nav mr-auto mt-2 mt-lg-0 ul"> <!-- add height -->
           <li class="nav-item active li link0"><a class="nav-link a na0" href="#">HOME</a></li>
-          <li class="nav-item active li link1"><a class="nav-link a na1" href="#">SHOP</a>
+          <li class="nav-item active li link1"><a class="nav-link a na1" href="second.html">SHOP</a>
             <div class="container cont1">
               <div class="row cont1row1">
                 <div class="col cont1col1">
@@ -303,476 +306,91 @@
     <section class="product-section">
       <div class="breadcrumbs">
         <ul class="breadcrumbs__list">
-          <li><a href="#!">HOME</a></li>
-          <li><a href="#!">PRODUCT TYPE DEFAULT</a></li>
+          <li><a href="#">HOME</a></li>
+          <li><a href="#">PRODUCT TYPE DEFAULT</a></li>
         </ul>
       </div>
-      <style>
-        .product-section {
-          padding: 0 80px;
-        }
 
-        .breadcrumbs {
-          border-bottom: 1px solid #eaeaea;
-        }
-
-        .breadcrumbs__list {
-          padding: 17px 0 4px 0;
-          display: flex;
-          align-items: flex-end;
-          align-self: flex-end;
-          list-style: none;
-        }
-
-        .breadcrumbs li {
-          display: inline;
-        }
-
-        .breadcrumbs li+li::before {
-          padding: 8px;
-          content: "\f105";
-          font-size: 12px;
-          font-family: FontAwesome;
-        }
-
-        .breadcrumbs li a {
-          text-decoration: none;
-          font-weight: 500;
-          font-size: 10px;
-          line-height: 19px;
-          font-weight: bold;
-          font-family: Poppins;
-          color: var(--color-text);
-          text-transform: capitalize;
-          transition: color 0.24s linear;
-        }
-
-        @media (hover: hover) {
-          .breadcrumbs li a:hover {
-            color: var(--primary-color);
-          }
-        }
-
-        .product-type {
-          /* background-color: red; */
-          height: 1000px;
-          /* width: 40%; */
-          display: flex;
-          padding-top: 25px;
-          /* --bs-gutter-x: 0; */
-        }
-
-        .product-type-default {
-          /* background-color: blue; */
-          /* height: 900px; */
-          width: 79%;
-          /* padding: 10px !important; */
-          /* width: 70% !important; */
-        }
-
-        .featured-product-main {
-          /* background-color: rebeccapurple; */
-          /* height: 700px; */
-          width: 21%;
-        }
-
-        .featured-product {
-          /* background-color: firebrick; */
-
-        }
-
-        .featured-product img {
-          height: 100px;
-          width: 100px;
-        }
-
-        .featured-product b,
-        .featured-product-custom B {
-          font-weight: bold;
-          font-size: 12.5px;
-          font-family: Poppins;
-          letter-spacing: .3px;
-          padding-left: 1px;
-        }
-
-        .featured-product-item1,
-        .featured-product-item2 {
-          padding-top: 15px;
-          display: flex;
-        }
-
-        .featured-product-item1 a,
-        .featured-product-item2 a {
-          font-weight: 500;
-          font-size: 12.5px;
-          font-family: Poppins;
-        }
-
-        .featured-product-custom {
-          padding-top: 17px;
-
-          border-bottom: 1px solid #eaeaea;
-        }
-
-        .product-type .cool-lamps {
-          background-color: rebeccapurple;
-          /* height: 700px; */
-          margin-top: 40px;
-          height: 20em;
-          background-image: url(images/lotus.jpg);
-          background-repeat: no-repeat;
-          background-position: center;
-          background-size: cover;
-          padding-top: 28px;
-
-          /* height: 100%; */
-          /* position: relative; */
-        }
-
-        .product-type-default {
-          /* background-color: palevioletred; */
-          display: flex;
-          flex-direction: column;
-          /* align-items: flex-start; */
-        }
-
-        .product-type-default-first {
-          /* background-color: palevioletred; */
-          display: flex;
-          height: 70%;
-          width: 100%;
-        }
-
-        .product-image {
-          background-color: red;
-          width: 46.5%;
-          height: 100%;
-        }
-
-        .product-description {
-          /* background-color: blue; */
-          width: 51.5%;
-          padding-left: 15px;
-
-          height: 100%;
-        }
-
-        .product-type-default-second {
-          /* display: flex; */
-          /* background-color: yellowgreen; */
-          height: 30%;
-          width: 98%;
-          /* align-self: flex-start; */
-        }
-
-        .product-description .a1 {
-          font-weight: bold;
-          text-decoration: none;
-          color: #222529;
-          font-size: 32px;
-          font-family: Poppins;
-        }
-
-        .product-description .a3 {
-          text-decoration: none;
-          color: #777;
-          font-size: 16px;
-          display: block;
-          padding-bottom: 10px;
-          font-family: Poppins;
-        }
-
-        .product-description .a2 {
-          text-decoration: none;
-          display: block;
-          color: #777;
-          font-size: 14px;
-          padding: 10px 0 0 0;
-          font-family: Poppins;
-        }
-
-        .product-description .a2 span {
-          text-decoration: none;
-          font-weight: bold;
-          color: #222529;
-          /* padding: 10px 0; */
-          font-size: 14px;
-
-          font-family: Poppins;
-        }
-
-        .product-description .stars i {
-          font-size: 13px;
-          letter-spacing: 1.5px;
-          color: #9d9e9f;
-          /* font-family: Poppins;         */
-        }
-
-        .product-type-color {
-          /* background-color: darkgreen; */
-          display: flex;
-          position: relative;
-          padding-bottom: 18px;
-          border-bottom: 1px solid #eaeaea;
-          align-items: center;
-          margin-top: 30px;
-        }
-
-        .product-type-color button {
-          height: 35px;
-          width: 35px;
-          border: 0;
-          margin-right: 8px;
-          /* padding-left: 10px !important; */
-
-        }
-
-        .product-type-color button:hover {
-          border: 1px solid #606da6;
-        }
-
-
-        /*  */
-        .button-color-hover-b1 {
-          border: 1px solid #eaeaea;
-          background-color: white;
-          height: 170px;
-          width: 145px;
-          position: absolute;
-          left: 33px;
-          top: -194px;
-          /* top: 0px; */
-          transition: all .2s linear;
-
-          display: none;
-        }
-
-        .product-type-color .b1:hover .button-color-hover-b1 {
-          display: block !important;
-        }
-
-        .button-color-b1 {
-          height: 132px;
-          /* transition: all .2s linear; */
-
-          margin: 4px 3px 3px 3px;
-          background: #0088cc no-repeat center;
-        }
-
-        /*  */
-        .button-color-hover-b2 {
-          border: 1px solid #eaeaea;
-          background-color: white;
-          height: 170px;
-          width: 145px;
-          position: absolute;
-          left: 73px;
-          top: -194px;
-          /* top: 0px; */
-
-          display: none;
-        }
-
-        .product-type-color .b2:hover .button-color-hover-b2 {
-          display: block !important;
-        }
-
-        .button-color-b2 {
-          height: 132px;
-          margin: 4px 3px 3px 3px;
-          background: #ef5dfc no-repeat center;
-        }
-
-        /*  */
-        .button-color-hover-b3 {
-          border: 1px solid #eaeaea;
-          background-color: white;
-          height: 170px;
-          width: 145px;
-          position: absolute;
-          left: 113px;
-          top: -194px;
-          /* top: 0px; */
-
-          display: none;
-        }
-
-        .product-type-color .b3:hover .button-color-hover-b3 {
-          display: block !important;
-        }
-
-        .button-color-b3 {
-          height: 132px;
-          margin: 4px 3px 3px 3px;
-          background: #e04a4a no-repeat center;
-        }
-
-        /*  */
-        .button-color-hover-b4 {
-          border: 1px solid #eaeaea;
-          background-color: white;
-          height: 170px;
-          width: 145px;
-          position: absolute;
-          left: 153px;
-          top: -194px;
-          /* top: 0px; */
-
-          display: none;
-        }
-
-        .product-type-color .b4:hover .button-color-hover-b4 {
-          display: block !important;
-        }
-
-        .button-color-b4 {
-          height: 132px;
-          margin: 4px 3px 3px 3px;
-          background: #f5df70 no-repeat center;
-        }
-
-        /* //\/\/\/\/\/\/\/\/\/\/\/\/\/\///\/\/\/\/\/\/\/\/\//\/\/\/\/\/\/ */
-        .product-type-add-to-card {
-          padding: 22px 0;
-          border-bottom: 1px solid #eaeaea;
-          /* background-color: rebeccapurple; */
-          display: flex;
-          align-items: center;
-        }
-
-        .product-type-add-to-card-counter {
-          display: flex;
-          /* align-items: center; */
-          /* justify-content: center; */
-        }
-
-        .product-type-add-to-card-counter .atc-btn {
-          padding: 0px 9px;
-          background-color: transparent;
-          font-size: 20px;
-          cursor: pointer;
-          display: block;
-          color: #222529;
-          border: 1px solid #eaeaea;
-          /* margin: 0 10px; */
-        }
-
-        .product-type-add-to-card-counter .atcn-btn {
-          background-color: transparent;
-          padding: 4px 18px;
-          font-size: 17px;
-          cursor: pointer;
-          display: block;
-          color: #222529;
-          border-top: 1px solid #eaeaea;
-          border-bottom: 1px solid #eaeaea;
-          border-left: 0;
-          border-right: 0;
-          font-weight: bold;
-          /* margin: 0 10px; */
-        }
-
-        .product-type-add-to-card-counter span {
-          border: 1px solid;
-        }
-
-        #count {
-          font-size: 24px;
-        }
-
-        .product-type-add-to-card-cardbtn .btn-1 {
-          margin-left: 10px;
-          padding: 17.5px 23px 16px 24px;
-          /* font-family: Poppins; */
-          font-weight: 700;
-          border: 0;
-          background-color: #222529;
-          font-size: 14px;
-          color: rgb(255, 255, 255);
-          margin-right: 4px;
-        }
-
-        .product-type-add-to-card-cardbtn .btn-2,
-        .product-type-add-to-card-cardbtn .btn-3 {
-          margin-left: 1.5px;
-          padding: 9.7px 13.5px;
-          background-color: transparent;
-          border: 1px solid #eaeaea;
-        }
-
-        .product-type-add-to-card-cardbtn .btn-2 a,
-        .product-type-add-to-card-cardbtn .btn-3 a {
-          /* padding: 9.7px 0; */
-          /* list-style:none ; */
-          text-decoration: none;
-          color: #222529;
-        }
-
-        .product-type-icons {
-          display: flex;
-          padding-top: 25px;
-        }
-
-        .product-type-icons-f,
-        .product-type-icons-t,
-        .product-type-icons-l,
-        .product-type-icons-g,
-        .product-type-icons-m {
-          border: 1px solid #eaeaea;
-          border-radius: 50%;
-          height: 35px;
-          width: 35px;
-          margin-right: 5px;
-          cursor: pointer;
-          transition: all .2s linear;
-        }
-
-        .product-type-icons-f:hover {
-          background-color: #3b5a9a;
-          border-color: #3b5a9a;
-        }
-
-        .product-type-icons-t:hover {
-          background-color: #1aa9e1;
-          border-color: #1aa9e1;
-        }
-
-        .product-type-icons-l:hover {
-          background-color: #0073b2;
-          border-color: #0073b2;
-        }
-
-        .product-type-icons-g:hover {
-          background-color: #dd4b39;
-          border-color: #dd4b39;
-        }
-
-        .product-type-icons-m:hover {
-          background-color: #dd4b39;
-          border-color: #dd4b39;
-        }
-
-        .product-type-icons-f:hover .fa-facebook-f,
-        .product-type-icons-t:hover .fa-twitter,
-        .product-type-icons-l:hover .fa-linkedin-in,
-        .product-type-icons-g:hover .fa-google-plus-g,
-        .product-type-icons-m:hover .fa-envelope {
-          color: white !important;
-        }
-
-        .product-type-icons i {
-          display: flex;
-          color: #000000;
-          justify-content: center;
-          padding-top: 10px;
-          font-size: 14px;
-        }
-      </style>
       <!-- end of bread crumb -->
       <div class=" product-type">
         <div class="product-type-default">
           <div class="product-type-default-first">
-            <div class="product-image"></div>
+
+
+
+            <div class="product-image">
+
+              <div class="product-image-main">
+
+                <div id="carouselExampleIndicators" class="carousel slide " data-bs-ride="true">
+
+                  <div class="carousel-inner">
+                    <div class="carousel-item active img_producto_container">
+                      <div class="img_producto_container-child-1">
+
+                      </div>
+                    </div>
+                    <div class="carousel-item img_producto_container">
+                      <div class="img_producto_container-child-2">
+
+                      </div>
+                    </div>
+                    <div class="carousel-item img_producto_container">
+                      <div class="img_producto_container-child-3">
+
+                      </div>
+                    </div>
+                    <div class="carousel-item img_producto_container">
+                      <div class="img_producto_container-child-4">
+
+                      </div>
+                    </div>
+
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+              </div>
+              <div class="product-image-image-buttons" style=" position: relative;">
+                <div class="product-image-image-buttons-hover " style="">
+
+                </div>
+                <button class="product-image-image-buttons-1 active" type="button"
+                  data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true"
+                  aria-label="Slide 1">
+                </button>
+                <button class="product-image-image-buttons-2" type="button" data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="1" aria-label="Slide 2">
+                </button>
+                <button class="product-image-image-buttons-3" type="button" data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="2" aria-label="Slide 3">
+                </button>
+                <button class="product-image-image-buttons-4" type="button" data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="3" aria-label="Slide 4">
+                </button>
+
+
+
+              </div>
+
+            </div>
+
+
+
+
+
+
+
+
+
             <div class="product-description">
               <a class="a1">Product Type Default</a>
               <div class="stars" style="display: flex; padding-top: 7px;align-items: center;">
@@ -839,31 +457,7 @@
                     <a class="fa-solid fa-chart-simple "></a></button>
                 </div>
 
-                <script>
-                  const incrementButton = document.getElementById("increment");
-                  const decrementButton = document.getElementById("decrement");
-                  const countElement = document.getElementById("count");
 
-                  let count = 0;
-                  countElement.textContent = count;
-
-
-                  function increment() {
-                    count++;
-                    countElement.textContent = count;
-                  }
-
-                  function decrement() {
-                    if (count > 0) {
-                      count--;
-                      countElement.textContent = count;
-                    }
-                  }
-
-                  incrementButton.addEventListener("click", increment);
-                  decrementButton.addEventListener("click", decrement);
-
-                </script>
               </div>
               <div class="product-type-icons">
                 <div class="product-type-icons-f"><i class="fa-brands fa-facebook-f"></i></div>
@@ -876,38 +470,114 @@
               </div>
             </div>
           </div>
-          <style>
-            .product-type-default-second-wrap{
-              padding: 15px 0;
-              display: flex;
-              border-bottom: 1px solid #eaeaea;
-            }
-            .product-type-default-second-wrap-btn{
-              padding: 10px 0px;
-              font-family: Poppins;
-              font-weight: bold;
-              border: 0;
-              background-color: transparent;
 
-              /* background-color: red; */
-              margin-right: 30px;
-            }
-            .product-type-default-second-wrap-btn:hover{
-              border-bottom: #000000 !important;
-            }
-          </style>
           <div class="product-type-default-second">
             <div class="product-type-default-second-wrap">
-<button class="product-type-default-second-wrap-btn">DETAILS</button>
-<button class="product-type-default-second-wrap-btn">REVIEWS</button>
-<button class="product-type-default-second-wrap-btn">CUSTOM TAB</button>
+              <button data-li="details" class="product-type-default-second-wrap-btn-1 active"> DETAILS</button>
+              <button data-li="reviews" class="product-type-default-second-wrap-btn-2">REVIEWS</button>
+              <button data-li="customtab" class="product-type-default-second-wrap-btn-3">CUSTOM TAB</button>
             </div>
             <div class="product-type-default-second-wrap-content">
-              <div class="product-type-default-second-wrap-content-details details">
-                <a style="padding-top: 5550px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+              <div class="product-type-default-second-wrap-content-details details product-review-item">
+
+                <a style="display: block;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                  tempor incididunt ut
+                  labore
                   et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
                   aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
                   dolore eu fugiat nulla pariatur. Excepteur sint occaecat.</a>
+                <div style="margin-top: 23px;">
+                  <a style="display: block;height: 30px;"><span><i class="fa-solid fa-circle-check"
+                        style="color: #000000;margin-left: 30px;padding-right: 20px;"></i></span>Any Product types that
+                    You want - Simple, Configurable
+                  </a>
+                  <a style="display: block;height: 30px;"><span><i class="fa-solid fa-circle-check"
+                        style="color: #000000;margin-left: 30px;padding-right: 20px;"></i></span>Downloadable/Digital
+                    Products, Virtual Products
+                  </a>
+                  <a style="display: block;height: 30px;"><span><i class="fa-solid fa-circle-check"
+                        style="color: #000000;margin-left: 30px;padding-right: 20px;"></i></span>Inventory Management
+                    with Backordered items
+                  </a>
+
+
+                </div>
+                <div style="margin-top: 20px;">
+                  <a>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</a>
+                  <a>quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</a>
+                </div>
+              </div>
+              <div class="product-type-default-second-wrap-content-reviews review product-review-item"
+                style="display: none;">
+                <a>YOU'RE REVIEWING:</a>
+                <a style="font-weight:600;display: block;">PRODUCT TYPE DEFAULT</a>
+
+                <form id="form1" name="myForm" class="product-type-default-second-wrap-content-reviews-form"
+                  onsubmit="return validateForm()" method="post" required>
+                  <div class="product-type-default-second-wrap-content-reviews-form-div">
+                    <label for="nickname">Nickname </label>
+                    <input type="text" name="nickname" id="nickname" required>
+                  </div>
+                  <div class="product-type-default-second-wrap-content-reviews-form-div">
+                    <label for="summary">summary</label>
+                    <input type="text" required>
+                  </div>
+                  <div class="product-type-default-second-wrap-content-reviews-form-div">
+                    <label for="review">Review</label>
+                    <textarea name="review" id="review" cols="52" rows="3" required></textarea>
+                  </div>
+                  <div class="product-type-default-second-wrap-content-reviews-form-div">
+                    <button type="submit" form="form1" value="Submit"
+                      style="width: 150px;padding: 10px 0; background-color: #606da6; color: white;border: 0; font-family: Poppins;font-size: 15px;font-weight: 500;">SUBMIT
+                      REVIEW</button>
+                  </div>
+                </form>
+
+              </div>
+              <div class="product-type-default-second-wrap-content-customtab custom-tab product-review-item"
+                style="display: none;">
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th scope="col" colspan="6" style="">Clothing - Single Size Conversion (Continued)</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>UK</td>
+                      <td>18</td>
+                      <td>20</td>
+                      <td>22</td>
+                      <td>24</td>
+                      <td>26</td>
+                    </tr>
+                    <tr>
+                      <td>European</td>
+                      <td>46</td>
+                      <td>48</td>
+                      <td>50</td>
+                      <td>52</td>
+                      <td>54</td>
+                    </tr>
+                    <tr>
+                      <td>US</td>
+                      <td>14</td>
+                      <td>16</td>
+                      <td>18</td>
+                      <td>20</td>
+                      <td>22</td>
+                    </tr>
+                    <tr class="wrap-content-last-row" style="border-bottom:none ;">
+                      <td>Australia</td>
+                      <td>8</td>
+                      <td>10</td>
+                      <td>12</td>
+                      <td>14</td>
+                      <td>16</td>
+
+                    </tr>
+                  </tbody>
+                </table>
               </div>
 
             </div>
@@ -918,7 +588,7 @@
             <div style="height: 45px; display: flex; align-items: center; border-bottom:  1px solid #eaeaea;">
               <b>FEATURED PRODUCTS</b>
             </div>
-            <div>
+            <div class="featured-product-items">
               <div class="featured-product-item1">
                 <img src="images/17.jpg" alt="" srcset="">
                 <div class="featured-product-item1-details" style="padding-left: 20px;">
@@ -930,7 +600,8 @@
                     <i class="fa-regular fa-star" style="color: #9d9e9f;"></i>
                     <i class="fa-regular fa-star" style="color: #9d9e9f;"></i>
                   </div>
-                  <a style="color: #454545; font-size: 12px; font-weight: 600;"> $35.00<a>
+                  <p style="color: #454545; font-size: 12px; font-weight: 600;"> $35.00
+                  <p>
                 </div>
 
               </div>
@@ -945,7 +616,8 @@
                     <i class="fa-regular fa-star" style="color: #9d9e9f;"></i>
                     <i class="fa-regular fa-star" style="color: #9d9e9f;"></i>
                   </div>
-                  <a style="color: #454545; font-size: 12px; font-weight: 600;"> $49.00<a>
+                  <p style="color: #454545; font-size: 12px; font-weight: 600;"> $49.00
+                  <p>
                 </div>
 
               </div>
@@ -975,32 +647,6 @@
       </div>
 
     </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     <!-- footer -->
     <div class="coro-2"
       style="position: relative;background-color: #222529;color: #777; height: 162px;margin-top: 75px; padding: -980px !important;">
@@ -1043,7 +689,7 @@
         </div>
       </div>
     </div>
-    <div class="middle-footer" style="padding: 30px 80px 10px 80px;">
+    <div class="middle-footer" style="  padding: 30px 80px 10px 80px;">
       <div class="row row1">
         <div class="col">
           <img src="images/logo.png" style="margin-top: 80px; width: 120px;" alt="logo">
@@ -1103,7 +749,7 @@
         </div>
       </div>
     </div>
-    <div class="last-footer" style="padding: 0px 80px ; color: #777;">
+    <div class="last-footer" style=" padding: 0px 80px ; color: #777;">
       <div class="row" style="border-top:1px solid #eaeaea; padding: 25px 0px 8px 0px;">
         <div class="col">
           <address style="font-size: 14px; font-weight: 500; ">© Porto Magento 2023. All Rights Reserved
@@ -1115,10 +761,67 @@
       </div>
     </div>
   </div>
+
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> -->
+
   <!-- <div style="height: 2000px;"></div> -->
   <script src="assets/highlight.js"></script>
   <script src="assets/app.js"></script>
   <script src="script.js"></script>
+
+  <script>
+    $(document).ready(function () {
+      $(".product-image-image-buttons button").click(function () {
+        $(".product-image-image-buttons-hover").css("transform", "translateX(" + $(this).position().left + "px)");
+        $(".product-image-image-buttons button").removeClass("active");
+        $(this).addClass("active");
+      });
+    });
+    $(document).ready(function () {
+      $(".img_producto_container-child-1, .img_producto_container-child-2, .img_producto_container-child-3, .img_producto_container-child-4")
+        .on("mouseover", function () {
+          $(this)
+            .css({ transform: "scale(1.2)" }); // Adjust the scale factor as needed
+        })
+        .on("mouseout", function () {
+          $(this)
+            .css({ transform: "scale(1)" });
+        })
+        .on("mousemove", function (e) {
+          var transformOriginX = (e.pageX - $(this).offset().left) / $(this).width() * 100;
+          var transformOriginY = (e.pageY - $(this).offset().top) / $(this).height() * 100;
+
+          $(this)
+            .css({
+              "transform-origin": transformOriginX + "% " + transformOriginY + "%"
+            });
+        });
+    });
+
+
+    const incrementButton = document.getElementById("increment");
+    const decrementButton = document.getElementById("decrement");
+    const countElement = document.getElementById("count");
+
+    let count = 0;
+    countElement.textContent = count;
+
+
+    function increment() {
+      count++;
+      countElement.textContent = count;
+    }
+
+    function decrement() {
+      if (count > 0) {
+        count--;
+        countElement.textContent = count;
+      }
+    }
+
+    incrementButton.addEventListener("click", increment);
+    decrementButton.addEventListener("click", decrement);
+  </script>
   <script>
     window.addEventListener('scroll', function () {
       let header = document.querySelector('.second-navi');

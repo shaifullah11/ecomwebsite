@@ -582,7 +582,7 @@
 }
 
 .wrap_links ul li.active a {
-  color: #606da6 !important;
+  /* color: #606da6 !important; */
   /* text-decoration: underline; */
 }
 
@@ -1194,17 +1194,17 @@
 
 
 .middle-footer ul li {
-  list-style: none;
+  list-style: none !important;
 }
 
 .middle-footer ul li a {
-  text-decoration: none;
+  text-decoration: none ;
   color: #777;
   font-size: 13px;
 }
 
 .middle-footer ul {
-  margin-top: 30px;
+  margin-top: 30px !important;
 }
 
 .share-btn-container {

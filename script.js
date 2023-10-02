@@ -27,3 +27,64 @@ for (var i = 0; i < li_elements.length; i++) {
     }
   });
 }
+
+// var prod_but = document.querySelectorAll(".product-type-default-second-wrap");
+// var prod_elements = document.querySelectorAll(".product-review-item");
+// for (var i = 0; i < prod_but.length; i++) {
+//   prod_but[i].addEventListener("click", function() {
+//     prod_but.forEach(function(button) {
+//       button.classList.remove("active");
+//     });
+//     this.classList.add("active");
+//     var prod_li_value = this.getAttribute("data-li");
+//     prod_elements.forEach(function(item) {
+//       item.style.display = "none";
+//     });
+//     if (prod_li_value == "details") {
+//       document.querySelector("." + prod_li_value).style.display = "block";
+//     } else if (prod_li_value == "review") {
+//       document.querySelector("." + prod_li_value).style.display = "block";
+//     } else if (prod_li_value == "custom-tab") {
+//       document.querySelector("." + prod_li_value).style.display = "block";
+//     }else {
+//       console.log("");
+//     }
+//   });
+// }
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  var buttons = document.querySelectorAll(".product-type-default-second-wrap button");
+  var contentSections = document.querySelectorAll(".product-review-item");
+
+  buttons.forEach(function (button) {
+    button.addEventListener("click", function () {
+      // Remove "active" class from all buttons
+      buttons.forEach(function (btn) {
+        btn.classList.remove("active");
+      });
+
+      // Add "active" class to the clicked button
+      this.classList.add("active");
+
+      // Hide all content sections
+      contentSections.forEach(function (section) {
+        section.style.display = "none";
+      });
+
+      // Show the corresponding content section
+      var li_value = this.getAttribute("data-li");
+      var contentSection = document.querySelector(
+        ".product-type-default-second-wrap-content-" + li_value
+      );
+
+      if (contentSection) {
+        contentSection.style.display = "block";
+      }
+    });
+  });
+});
+
+
+
+
