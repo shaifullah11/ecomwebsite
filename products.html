@@ -3,7 +3,6 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
@@ -14,27 +13,18 @@
   <link rel="stylesheet" type="text/css" media="print"
     href="https://m2.portotheme.com/static/version1689050187/frontend/Smartwave/porto/en_US/css/print.min.css">
   <link rel="icon" type="image/x-icon"
-    href="https://m2.portotheme.com/static/version1689050187/frontend/Smartwave/porto/en_US/Magento_Theme/favicon.ico">
-  <link rel="shortcut icon" type="image/x-icon"
-    href="https://m2.portotheme.com/static/version1689050187/frontend/Smartwave/porto/en_US/Magento_Theme/favicon.ico">
+    href="https://m2.portotheme.com/static/version1689050187/frontend/Smartwave/porto/en_US/Magento_Theme/favicon.ico"> 
   <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Shadows+Into+Light">
   <link rel="stylesheet"
     href="//fonts.googleapis.com/css?family=Poppins%3A300%2C300italic%2C400%2C400italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic"
     type="text/css">
-  <link href="//fonts.googleapis.com/css?family=Oswald:300,400,500,600,700" rel="stylesheet">
   <link href="//fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800" rel="stylesheet">
   <link rel="stylesheet"
     href="//fonts.googleapis.com/css?family=Open+Sans%3A300%2C300italic%2C400%2C400italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic&amp;v1&amp;subset=latin%2Clatin-ext"
     type="text/css" media="screen">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
   <!-- Owl Stylesheets -->
   <link rel="stylesheet" href="assets/owl.carousel.min.css">
   <link rel="stylesheet" href="assets/owl.theme.default.css">
@@ -56,7 +46,7 @@
   <!-- main -->
   <div class="main">
 
-    <nav class="navbar navbar-expand-lg navbar-light first-navi" id="navi" style="padding: 0 80px;">
+    <nav class="navbar navbar-expand-lg navbar-light first-navi" id="navi" style="padding: 0 80px;flex-wrap: nowrap !important;">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03"
         aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -64,7 +54,7 @@
       <div class="collapse navbar-collapse navi2" id="navbarTogglerDemo03">
         <ul class="navbar-nav mr-auto mt-2 mt-lg-0 ul"> <!-- add height -->
           <li class="nav-item active li link0"><a class="nav-link a na0" href="index.html">HOME</a></li>
-          <li class="nav-item active li link1"><a class="nav-link a na1" href="#">SHOP</a>
+          <li class="nav-item active li link1"><a class="nav-link a na1" href="shop.html">SHOP</a>
             <div class="container cont1">
               <div class="row cont1row1">
                 <div class="col cont1col1">
@@ -183,7 +173,7 @@
       <div class="collapse navbar-collapse navi2" id="navbarTogglerDemo03">
         <ul class="navbar-nav mr-auto mt-2 mt-lg-0 ul"> <!-- add height -->
           <li class="nav-item active li link0"><a class="nav-link a na0" href="#">HOME</a></li>
-          <li class="nav-item active li link1"><a class="nav-link a na1" href="second.html">SHOP</a>
+          <li class="nav-item active li link1"><a class="nav-link a na1" href="shop.html">SHOP</a>
             <div class="container cont1">
               <div class="row cont1row1">
                 <div class="col cont1col1">
@@ -322,7 +312,7 @@
 
               <div class="product-image-main">
 
-                <div id="carouselExampleIndicators" class="carousel slide " data-bs-ride="true">
+                <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="false">
 
                   <div class="carousel-inner">
                     <div class="carousel-item active img_producto_container">
@@ -346,37 +336,54 @@
                       </div>
                     </div>
 
+
                   </div>
-                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                  <style>
+                    .carousel-control-prev .fa-chevron-left,
+                    .carousel-control-next .fa-chevron-right {
+                      color: #000 !important;
+                      display: none;
+                      transition: all .5s ease-in;
+                    }
+
+                    .product-image:hover .fa-chevron-left {
+                      display: block;
+                    }
+
+                    .product-image:hover .fa-chevron-right {
+                      display: block;
+                    }
+                  </style>
+
+
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
                     data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <i class="fa-solid fa-chevron-left"></i>
                     <span class="visually-hidden">Previous</span>
                   </button>
-                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
                     data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <i class="fa-solid fa-chevron-right"></i>
                     <span class="visually-hidden">Next</span>
                   </button>
                 </div>
               </div>
               <div class="product-image-image-buttons" style=" position: relative;">
-                <div class="product-image-image-buttons-hover " style="">
+                <div class="product-image-image-buttons-hover ">
 
                 </div>
-                <button class="product-image-image-buttons-1 active" type="button"
-                  data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true"
-                  aria-label="Slide 1">
+                <button class="product-image-image-buttons-1 active" type="button" data-bs-target="#carouselExampleFade"
+                  data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1">
                 </button>
-                <button class="product-image-image-buttons-2" type="button" data-bs-target="#carouselExampleIndicators"
+                <button class="product-image-image-buttons-2" type="button" data-bs-target="#carouselExampleFade"
                   data-bs-slide-to="1" aria-label="Slide 2">
                 </button>
-                <button class="product-image-image-buttons-3" type="button" data-bs-target="#carouselExampleIndicators"
+                <button class="product-image-image-buttons-3" type="button" data-bs-target="#carouselExampleFade"
                   data-bs-slide-to="2" aria-label="Slide 3">
                 </button>
-                <button class="product-image-image-buttons-4" type="button" data-bs-target="#carouselExampleIndicators"
+                <button class="product-image-image-buttons-4" type="button" data-bs-target="#carouselExampleFade"
                   data-bs-slide-to="3" aria-label="Slide 4">
                 </button>
-
 
 
               </div>
@@ -768,16 +775,68 @@
   <script src="assets/highlight.js"></script>
   <script src="assets/app.js"></script>
   <script src="script.js"></script>
-
   <script>
     $(document).ready(function () {
-      $(".product-image-image-buttons button").click(function () {
-        $(".product-image-image-buttons-hover").css("transform", "translateX(" + $(this).position().left + "px)");
-        $(".product-image-image-buttons button").removeClass("active");
+      var $hover = $(".product-image-image-buttons-hover");
+      var $buttons = $(".product-image-image-buttons button");
+
+      // Function to update hover position
+      function updateHoverPosition() {
+        var activeButton = $(".product-image-image-buttons button.active");
+        var index = $buttons.index(activeButton);
+        var buttonWidth = activeButton.outerWidth();
+        var newPosition = index * (buttonWidth + 8); // Consider margin-right
+        // $hover.css("left", newPosition + "px");
+        // console.log("left", newPosition + "px");
+        $hover.css("transform", "translateX(" + newPosition + "px)")
+      }
+
+      // Click event handler for buttons inside product-image-image-buttons
+      $buttons.click(function () {
+        $buttons.removeClass("active");
         $(this).addClass("active");
+        updateHoverPosition();
       });
+
+      // Click event handler for carousel-control-next
+      $(".carousel-control-next").click(function () {
+        var activeButton = $(".product-image-image-buttons button.active");
+        // console.log(activeButton.length)
+        var nextButton = activeButton.next();
+        // console.log(nextButton.length)
+        if (nextButton.length === 0) {
+          nextButton = $buttons.first();
+        }
+        activeButton.removeClass("active");
+        nextButton.addClass("active");
+        updateHoverPosition();
+      });
+
+      // Click event handler for carousel-control-prev
+      $(".carousel-control-prev").click(function () {
+        var activeButton = $(".product-image-image-buttons button.active");
+        var prevButton = activeButton.prev();
+        var firstButton = $("product-image-image-buttons-1");
+        // var prevButton.length = activeButton.prev();
+        // console.log(activeButton.length)
+        if (activeButton === firstButton) {"jello"}
+        console.log(prevButton.length)
+        if (prevButton.length === 0) {
+          prevButton = $buttons.last();
+        }
+        activeButton.removeClass("active");
+        prevButton.addClass("active");
+        updateHoverPosition();
+      });
+      // $hover.css("transition", "transform 5s ease-in-out");
+
+      // Initialize hover position
+      // updateHoverPosition();
     });
-    $(document).ready(function () {
+  </script>
+
+  <script>
+     $(document).ready(function () {
       $(".img_producto_container-child-1, .img_producto_container-child-2, .img_producto_container-child-3, .img_producto_container-child-4")
         .on("mouseover", function () {
           $(this)
@@ -822,18 +881,13 @@
     incrementButton.addEventListener("click", increment);
     decrementButton.addEventListener("click", decrement);
   </script>
-  <script>
-    window.addEventListener('scroll', function () {
-      let header = document.querySelector('.second-navi');
 
-      // header.classList.remove('sticky', window.scrollY < 155);
-
-      header.classList.toggle('sticky', window.scrollY > 155);
-    });
-  </script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
     crossorigin="anonymous"></script>
 </body>
 
 </html>
+
+
+<!-- js,jquery,react,node,c#,selenium,flask,java,devops, json, -->

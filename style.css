@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
-
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
 /* @import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,700&display=swap"); */
 * {
   padding: 0px;
@@ -10,13 +10,16 @@
 .second-navi.sticky {
   background-color: white;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between !important;
   align-items: center;
   position: block;
   top: 0;
   z-index: 2;
-}
 
+}
+.navbar-collapse{
+  flex-grow: 0 !important;
+}
 .first-navi {
   height: 110px;
 }
@@ -51,7 +54,7 @@
 
 .first-navi .logo,
 .second-navi.sticky .logo {
-  margin-right: 30%;
+  /* margin-right: 30%; */
 }
 
 .second-navi.sticky .icons ul {

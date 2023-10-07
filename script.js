@@ -85,6 +85,36 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+window.addEventListener('scroll', function () {
+  let header = document.querySelector('.second-navi');
 
+  // header.classList.remove('sticky', window.scrollY < 155);
+
+  header.classList.toggle('sticky', window.scrollY > 155);
+});
+$(document).ready(function () {
+  var owl = $('.owl-carousel-2');
+  owl.owlCarousel({
+    items: 6,
+    nav: true,
+    // margin:0,
+    responsive: {
+      0: {
+        items: 1,
+        nav: true
+      },
+      600: {
+        items: 2,
+        nav: true,
+        margin: 100
+      },
+      1000: {
+        items: 5,
+        nav: true,
+        margin: 18
+      }
+    }
+  });
+})
 
 

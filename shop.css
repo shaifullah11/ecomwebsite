@@ -1,0 +1,44 @@
+.shop-section{
+  padding: 0 80px;
+}
+
+.breadcrumbs {
+  border-bottom: 1px solid #eaeaea;
+}
+
+.breadcrumbs__list {
+  padding: 17px 0 4px 0;
+  display: flex;
+  align-items: flex-end;
+  align-self: flex-end;
+  list-style: none;
+}
+
+.breadcrumbs li {
+  display: inline;
+}
+
+.breadcrumbs li+li::before {
+  padding: 8px;
+  content: "\f105";
+  font-size: 12px;
+  font-family: FontAwesome;
+}
+
+.breadcrumbs li a {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 19px;
+  font-weight: bold;
+  font-family: Poppins;
+  color: var(--color-text);
+  text-transform: capitalize;
+  transition: color 0.24s linear;
+}
+
+@media (hover: hover) {
+  .breadcrumbs li a:hover {
+    color: var(--primary-color);
+  }
+}
