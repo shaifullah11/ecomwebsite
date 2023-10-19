@@ -118,3 +118,8 @@ $(document).ready(function () {
 })
 
 
+
+// product page
+
+
+

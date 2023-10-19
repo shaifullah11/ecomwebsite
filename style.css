@@ -5,6 +5,8 @@
   padding: 0px;
   box-sizing: border-box;
   margin: 0px;
+  font-family: Poppins;
+
 }
 .first-navi,
 .second-navi.sticky {
@@ -363,6 +365,7 @@
 .blackchair h2,
 .blackchair a {
   display: block;
+  
 }
 
 .blackchairb1 {
@@ -425,6 +428,7 @@
 }
 
 .coollampsb1 {
+  font-family: Poppins;
   display: block;
   text-align: center;
   font-size: 12px;
@@ -432,6 +436,7 @@
 }
 
 .coollampsb2 {
+  font-family: Poppins;
   display: block;
   text-align: center;
   color: #ffffff;
@@ -622,7 +627,7 @@
   height: 400px;
   width: 255px;
   border: none;
-  overflow: hidden;
+  /* overflow: hidden; */
   position: relative;
   border: none !important;
 }
@@ -907,7 +912,7 @@
   height: 300px;
   width: 214px;
   border: none;
-  overflow: hidden;
+  /* overflow: hidden; */
   position: relative;
   /* margin: 10px; */
   border: none !important;
