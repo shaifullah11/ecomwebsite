@@ -175,13 +175,37 @@
       </div>
       <div class="icons">
         <ul>
-          <li><button><i class="fa fa-user  " style="font-size:28px"></i></button></li>
-          <li><button> <i class="fa fa-search" style="font-size:28px"></i> </button></li>
-          <li><button><i class="fa fa-heart" style="font-size:28px"></i></button></li>
-          <li><button><i class="fa fa-shopping-cart" style="font-size:28px"></i></button></li>
+          <li><button class="fa fa-user  " style="font-size:28px"></button></li>
+          <li><button class="fa fa-search" style="font-size:28px"></button></li>
+          <li><button class="fa fa-heart" style="font-size:28px"></button></li>
+          <li><button class="fa fa-shopping-cart" style="font-size:28px">
+              <span id="count_items" class="nav-cart-count-items">0</span>
+            </button></li>
         </ul>
       </div>
     </nav>
+    <style>
+      .navbar .icons .fa-shopping-cart {
+        position: relative;
+      }
+
+      .navbar .icons .fa-shopping-cart .nav-cart-count-items {
+        position: absolute;
+        font-size: 11px;
+        top: -8px;
+        left: 19px;
+        color: white;
+        background-color: rgb(255, 91, 91);
+        border-radius: 50%;
+        z-index: 2;
+        height: 16px;
+        width: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: rgba(0, 0, 0, 0.3) !important;
+      }
+    </style>
     <nav class="navbar navbar-expand-lg navbar-light second-navi" id="navi" style="padding: 0 80px;">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03"
         aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
@@ -427,34 +451,34 @@
     </div>
     <!-- <hr> -->
     <div class="" style="padding: 0 80px 0px 80px; ">
-      
-    <div class="wrap_main" style=" margin: 18px 10px 15px 10px ;">
-      <div class="wrap_title">
-        <h2>FEATURED PRODUCT</h2>
+
+      <div class="wrap_main" style=" margin: 18px 10px 15px 10px ;">
+        <div class="wrap_title">
+          <h2>FEATURED PRODUCT</h2>
+        </div>
+        <div class="wrap_links">
+          <ul>
+            <li data-li="kitchen" class="active">
+              <a>KITCHEN</a>
+            </li>
+            <li data-li="dining">
+              <a>DINING</a>
+            </li>
+            <li data-li="bedroom">
+              <a>BEDROOM</a>
+            </li>
+            <li data-li="living">
+              <a>LIVING</a>
+            </li>
+            <li data-li="office">
+              <a style="color: #bcbcbc;">OFFICE</a>
+            </li>
+            <li data-li="outdoor">
+              <a>OUTDOOR</a>
+            </li>
+          </ul>
+        </div>
       </div>
-      <div class="wrap_links">
-        <ul>
-          <li data-li="kitchen" class="active">
-            <a>KITCHEN</a>
-          </li>
-          <li data-li="dining">
-            <a>DINING</a>
-          </li>
-          <li data-li="bedroom">
-            <a>BEDROOM</a>
-          </li>
-          <li data-li="living">
-            <a>LIVING</a>
-          </li>
-          <li data-li="office">
-            <a style="color: #bcbcbc;">OFFICE</a>
-          </li>
-          <li data-li="outdoor">
-            <a>OUTDOOR</a>
-          </li>
-        </ul>
-      </div>
-    </div>
     </div>
     <div class="wrap" style="padding: 0 80px;">
       <div class="wrapper_right">
@@ -1611,7 +1635,7 @@
       <a href=""><button>BROWSE ALL <i class="fa-solid fa-arrow-right"></i></button></a>
     </div>
     <div class="recent" style="padding: 0 80px; ">
-      <div class="row recentr1" style="border-top: 1px solid #eaeaea;"  >
+      <div class="row recentr1" style="border-top: 1px solid #eaeaea;">
         <div class="col recentr1c1">
           <a class="a1">RECENT ARTICLE</a>
           <a href="#" class="a2" style="text-decoration: none;padding-left: 20px; padding-top: 4px;">VIEW BLOG

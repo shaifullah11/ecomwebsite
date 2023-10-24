@@ -6,7 +6,6 @@
   box-sizing: border-box;
   margin: 0px;
   font-family: Poppins;
-
 }
 .first-navi,
 .second-navi.sticky {
@@ -162,6 +161,7 @@
 
 .link1 .cont1 {
   padding: 10px;
+  height: 300px;
 }
 
 .cont1col1,
@@ -179,7 +179,7 @@
 
 .col ul li {
   list-style: none;
-  margin-top: 10px;
+  padding: 7px 0px;
 }
 
 .col ul li a {
@@ -245,7 +245,7 @@
 
 .cont3 {
   width: 300px !important;
-  padding: 0px 10px 10px 10px;
+  padding: 10px 10px 10px 10px;
 
 }
 
@@ -254,7 +254,7 @@
 }
 
 .cont3row1 .col li:hover {
-  background-color: rgb(229, 229, 229);
+  background-color:  rgb(244, 244, 244);
 }
 
 .cont3row1 .col li a:hover {
@@ -295,7 +295,7 @@
 }
 
 .cont4row1 .col li:hover {
-  background-color: rgb(229, 229, 229);
+  background-color:  rgb(244, 244, 244);
 }
 
 .cont4row1 .col li a:hover {

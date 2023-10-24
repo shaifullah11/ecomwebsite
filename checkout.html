@@ -291,9 +291,293 @@
         </p>
       </div>
     </div>
-    
-    
+    <!-- <script>
+      let quickviewContainer = document.querySelector('.quickview-container');
+      let quickviewItems = document.querySelectorAll('.quickview-container-items');
+      document.querySelector('.quickview-container-btn').onclick(product => {
+        console.log("onclick")
+        product.onclick = () => {
+          console.log("onclick")
+          quickviewContainer.style.display = 'flex';
+          let name = product.getAttribute('data-name');
+          quickviewItems.forEach(preview => {
+            let target = preview.getAttribute('data-target');
+            if (name == target) {
+              preview.classList.add('active')
+            }
 
+          })
+        }
+      });
+    </script> -->
+    <section>
+      <script>
+        $(document).ready(function () {
+          let quickviewContainer = document.querySelector('.quickview-container');
+          $('.quickview-container-btn').on('click', function () {
+            quickviewContainer.style.display = 'flex';
+            const dataName = $(this).data('name');
+            $('.quickview-container-items').each(function () {
+              const closeButton = $(this).find(".fa-xmark");
+              // closeButton.on('click',function(){
+              // close.css("color","red")
+              // })
+              const dataTarget = $(this).data('target');
+              if (dataName === dataTarget) {
+                $(this).addClass('active');
+              } else {
+                $(this).removeClass('active');
+              }
+
+            });
+          });
+          $('.fa-xmark').on('click', function () {
+            $(this).closest('.quickview-container-items').removeClass('active');
+            quickviewContainer.style.display = 'none';
+
+
+          });
+        });  
+      </script>
+      <button class="quickview-container-btn" data-name="shop-cart-1">quickview-container</button>
+      <div class="quickview-container">
+        <div class="quickview-container-items" data-target="shop-cart-1">
+          <div class="quickview-container-items-image">
+            <img src="images/17.jpg" alt="" srcset="">
+          </div>
+          <div class="quickview-container-items-details">
+            <button class="fa-solid fa-xmark"></button>
+            <p class="quickview-container-items-details-title">Tellis Pillow</p>
+            <div class="shop-stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <hr style="width: 40px;  color: #c4c4c4;">
+            <p class="quickview-container-items-details-price">$149.00
+            <p>
+            <p class="quickview-container-items-details-desp">Pellentesque habitant morbi tristique senectus et netus et
+              malesuada fames ac turpis egestas. Vestibulum
+              tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas
+              semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+            <div class="quickview-container-items-details-availability">
+              <a class="a2">AVAILABILITY: <span> IN STOCK</span></a>
+              <a class="a2">SKU: <span>D28_PR_02</span></a>
+            </div>
+            <div class="product-type-add-to-card">
+              <div class="product-type-add-to-card-counter">
+                <button id="decrement" class="atc-btn">-</button>
+                <button id="count" class="atcn-btn"></button>
+                <button id="increment" class="atc-btn">+</button>
+              </div>
+              <div class="product-type-add-to-card-cardbtn">
+                <button class="fa fa-shopping-cart btn-1" aria-hidden="true"><span
+                    style="font-family: Poppins;">&nbsp;&nbsp;ADD TO CARD</span></button>
+              </div>
+
+
+            </div>
+            <a href="#" class="quickview-container-items-details-goto">GO TO PRODUCT</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script>
+      const incrementButton = document.getElementById("increment");
+      const decrementButton = document.getElementById("decrement");
+      const countElement = document.getElementById("count");
+
+      let count = 0;
+      countElement.textContent = count;
+
+
+      function increment() {
+        count++;
+        countElement.textContent = count;
+      }
+
+      function decrement() {
+        if (count > 0) {
+          count--;
+          countElement.textContent = count;
+        }
+      }
+
+      incrementButton.addEventListener("click", increment);
+      decrementButton.addEventListener("click", decrement);
+    </script>
+    <style>
+      .quickview-container {
+        z-index: 2;
+        position: fixed;
+        top: 0;
+        display: none;
+        bottom: 0;
+        min-height: 100vh;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.45);
+      }
+
+      .quickview-container a {
+        /* list-style: none; */
+        text-decoration: none;
+      }
+
+      .shop-stars {
+        color: #9d9e9f;
+        /* font-family: Poppins;  */
+        padding: 2px 0;
+        font-size: 11px;
+      }
+
+      .quickview-container-items {
+        display: none;
+      }
+
+      .quickview-container-items.active {
+        padding: 25px;
+        display: flex;
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 885px;
+        background-color: #ffffff;
+        height: 556px;
+        box-shadow: rgba(0, 0, 0, 0.65) 0px 5px 15px;
+      }
+
+      .quickview-container-items-details {
+        width: 50%;
+        padding-left: 25px;
+        position: relative;
+      }
+
+      .quickview-container-items-image {
+        height: 408px;
+        width: 50%;
+      }
+
+      .quickview-container-items-image img {
+        height: 100%;
+        border: 1px solid #eaeaea;
+        width: 100%;
+      }
+
+      .product-type-add-to-card {
+        padding: 22px 0;
+        border-bottom: 1px solid #eaeaea;
+        border-top: 1px solid #eaeaea;
+        display: flex;
+        align-items: center;
+      }
+
+      .product-type-add-to-card-counter {
+        display: flex;
+      }
+
+      .product-type-add-to-card-counter .atc-btn {
+        padding: 0px 9px;
+        background-color: transparent;
+        font-size: 20px;
+        cursor: pointer;
+        display: block;
+        color: #222529;
+        border: 1px solid #eaeaea;
+      }
+
+      .product-type-add-to-card-counter .atcn-btn {
+        background-color: transparent;
+        padding: 4px 18px;
+        max-width: 55px;
+        min-width: 55px;
+        font-size: 17px;
+        cursor: pointer;
+        display: block;
+        color: #222529;
+        border-top: 1px solid #eaeaea;
+        border-bottom: 1px solid #eaeaea;
+        border-left: 0;
+        border-right: 0;
+        font-weight: bold;
+      }
+
+      .product-type-add-to-card-counter span {
+        border: 1px solid;
+      }
+
+      #count {
+        font-size: 24px;
+      }
+
+      .product-type-add-to-card-cardbtn .btn-1 {
+        margin-left: 10px;
+        padding: 17.5px 23px 16px 24px;
+        font-weight: 700;
+        border: 0;
+        background-color: #222529;
+        font-size: 14px;
+        color: rgb(255, 255, 255);
+        margin-right: 4px;
+        transition: all .001 s linear;
+      }
+
+      .product-type-add-to-card-cardbtn .btn-1:hover {
+        background-color: #606da6;
+      }
+
+      .quickview-container-items-details-title {
+        font-size: 30px;
+        font-weight: 700;
+      }
+
+      .quickview-container-items-details-price {
+        font-size: 24px;
+        font-weight: 600;
+      }
+
+      .quickview-container-items-details-price span{
+        color: #777;
+        text-decoration: line-through;
+        font-size: 19px;
+      }
+
+      .quickview-container-items-details-desp {
+        color: #777;
+      }
+
+      .quickview-container-items-details-availability {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 17px;
+      }
+
+      .quickview-container-items-details-availability a {
+        color: #777;
+      }
+
+      .quickview-container-items-details-availability a span {
+        color: #000;
+        font-weight: 700;
+      }
+
+      .quickview-container-items-details-goto {
+        color: #000;
+        font-weight: 600;
+        font-size: 14px;
+      }
+
+      .fa-xmark {
+        background-color: transparent;
+        border: none;
+        position: absolute;
+        top: -0.5rem;
+        right: 0;
+        font-size: 20px;
+      }
+    </style>
 
 
     <!-- footer -->
