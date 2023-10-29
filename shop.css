@@ -1031,8 +1031,15 @@
 
   }
   .shop-cart{
-    width:40%;
+    width:49%;
     height: auto;
   }
   
+
+  .shop-cart .quickview-container-btn{
+    bottom: 26% !important;
+  }
+  .shop-cart .info .hrt{
+    top: 79% !important;
+  }
 }
