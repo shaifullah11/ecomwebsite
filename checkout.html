@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
@@ -37,8 +38,8 @@
 
 
 
-  <!-- shop style sheet -->
-  <link rel="stylesheet" href="shop.css">
+  <!-- checkout style sheet -->
+
 </head>
 
 <body>
@@ -291,293 +292,594 @@
         </p>
       </div>
     </div>
-    <!-- <script>
-      let quickviewContainer = document.querySelector('.quickview-container');
-      let quickviewItems = document.querySelectorAll('.quickview-container-items');
-      document.querySelector('.quickview-container-btn').onclick(product => {
-        console.log("onclick")
-        product.onclick = () => {
-          console.log("onclick")
-          quickviewContainer.style.display = 'flex';
-          let name = product.getAttribute('data-name');
-          quickviewItems.forEach(preview => {
-            let target = preview.getAttribute('data-target');
-            if (name == target) {
-              preview.classList.add('active')
-            }
 
-          })
-        }
-      });
-    </script> -->
-    <section>
+
+
+
+
+
+
+    <style>
+      .checkout-section {
+        padding: 0 80px;
+      }
+
+      .checkout-title-icon {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        /* background-color: red; */
+        height: 100px;
+
+      }
+
+      .checkout-main {
+        display: flex;
+      }
+
+      .checkout-main-left {
+        /* background-color: red; */
+        width: 70%;
+      }
+
+      .checkout-main-left-title p {
+        font-weight: 600;
+        font-size: 16px;
+        padding-bottom: 8px;
+        border-bottom: 1px solid rgb(231, 231, 231);
+      }
+
+      .checkout-main-left-form form {
+        display: flex;
+        max-width: 500px;
+        flex-direction: column;
+      }
+
+      .checkout-main-left-form form .required::after {
+        content: ' *';
+        color: red;
+      }
+
+      .checkout-main-left-form form input,
+      .checkout-main-left-form form select {
+        border: 1px solid rgba(0, 0, 0, 0.09);
+        outline: 0;
+        padding: 12px 12px;
+        color: rgb(119, 119, 119);
+        margin-top: 8px;
+        min-width: 450px;
+      }
+
+      .checkout-main-left-form form label,
+      .checkout-main-left-form form p {
+        padding: 8px;
+        color: rgb(119, 119, 119);
+      }
+
+
+
+      .checkout-title-icon-shipping-review {
+        display: flex;
+      }
+
+      .checkout-title-icon-shipping-span {
+        background-color: rgb(255, 85, 1);
+        width: 185px;
+        position: relative;
+        height: 7px;
+        border-top-left-radius: 6px;
+        border-bottom-left-radius: 6px;
+        display: flex;
+        justify-content: center;
+      }
+
+      .checkout-title-icon-review-span {
+        background-color: rgb(228, 228, 228);
+        width: 185px;
+        position: relative;
+        height: 7px;
+        border-top-right-radius: 6px;
+        border-bottom-right-radius: 6px;
+        display: flex;
+        justify-content: center;
+      }
+
+      .checkout-title-icon-shipping,
+      .checkout-title-icon-review {
+        position: relative;
+      }
+
+      .checkout-title-icon-shipping-span-2 {
+        position: absolute;
+        top: 300%;
+        left: 30%;
+        color: rgb(119, 119, 119);
+        font-size: 16px;
+      }
+
+      .checkout-title-icon-review-span-2 {
+        position: absolute;
+        top: 300%;
+        left: 10%;
+        font-size: 16px;
+        color: rgb(119, 119, 119);
+      }
+
+      .checkout-title-icon-shipping-span::before {
+        content: '';
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        position: absolute;
+        width: 35px;
+        height: 35px;
+        background-color: rgb(255, 85, 1);
+        color: white;
+        border-radius: 50%;
+      }
+
+      .checkout-title-icon-review-span::before {
+        content: '';
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        position: absolute;
+        width: 35px;
+        height: 35px;
+        background-color: rgb(228, 228, 228);
+        color: white;
+        border-radius: 50%;
+      }
+
+      .checkout-title-icon-shipping-span::after {
+        content: '\2713';
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        position: absolute;
+        width: 27px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 27px;
+        background-color: white;
+        color: #777;
+        border-radius: 50%;
+      }
+
+      .checkout-title-icon-review-span::after {
+        content: '2';
+        font-weight: 600;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        position: absolute;
+        width: 27px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 27px;
+        background-color: white;
+        color: #777;
+        border-radius: 50%;
+      }
+
+      .checkout-title-icon-signin-button {
+        border: none;
+        background-color: transparent;
+        color: #606da6;
+      }
+    </style>
+
+    <section class="checkout-section">
+      <div class="checkout-title-icon">
+        <div class="checkout-title-icon-shipping-review">
+          <div class="checkout-title-icon-shipping">
+            <span class="checkout-title-icon-shipping-span"></span>
+            <span class="checkout-title-icon-shipping-span-2">Shipping</span>
+          </div>
+          <div class="checkout-title-icon-review">
+            <span class="checkout-title-icon-review-span"></span>
+            <span class="checkout-title-icon-review-span-2">Review & Payments</span>
+          </div>
+        </div>
+
+        <style>
+          .checkout-title-icon-signin {
+            position: relative;
+          }
+
+          .checkout-title-icon-signin-container {
+            position: absolute;
+            top: 40px;
+            right: 0px;
+            width: 650px;
+            border-top: 5px solid #606da6;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 0px 5px 0px;
+            display: flex;
+            flex-direction: column;
+            background-color: white !important;
+            /* height: px; */
+            padding: 20px 10px;
+            background-color: white !important;
+          }
+
+          .checkout-title-icon-signin-container form {
+            display: flex;
+            flex-direction: column;
+            background-color: white;
+          }
+
+          .checkout-title-icon-signin-container-content-form-submit {
+            padding: 50px 0 20px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+          }
+
+          .checkout-title-icon-signin-container-content-form-submit button:first-child {
+            color: rgb(0, 136, 204) !important;
+            border: none;
+            background-color: transparent;
+            transition: all .1s linear;
+          }
+
+          .checkout-title-icon-signin-container-content-form-submit button:first-child:hover {
+            color: rgb(45, 44, 44) !important;
+          }
+
+          .checkout-title-icon-signin-container-content-form-submit button:last-child {
+            padding: 10px 15px;
+            border: 1px solid rgb(204, 204, 204);
+            color: #777;
+            font-size: 14px;
+            background-color: transparent;
+            transition: all .1s linear;
+          }
+
+          .checkout-title-icon-signin-container-content-form-submit button:last-child:hover {
+            background-color: #606da6;
+            color: white;
+            border: 1px solid #606da6;
+          }
+
+          .checkout-title-icon-signin-container-content label {
+            padding: 20px 0;
+            color: rgb(119, 119, 119);
+            font-size: 12px;
+            font-weight: 500;
+          }
+
+          .checkout-title-icon-signin-container-content label::after {
+            content: ' *';
+            color: red;
+          }
+
+          .checkout-title-icon-signin-container-content input {
+            padding: 10px;
+            outline: 0;
+            border: 1px solid rgba(0, 0, 0, 0.09);
+
+          }
+
+          .fa-circle-question {
+            color: rgb(119, 119, 119);
+            padding-left: 10px;
+            position: relative;
+            /* font-weight: 500; */
+          }
+
+          .fa-circle-question-cont {
+            position: absolute;
+            display: none;
+            color: rgb(119, 119, 119);
+            padding: 10px 0;
+            /* text-wrap: wrap; */
+
+            font-size: 14px;
+            border: 1px solid #ddd;
+            /* spac: 1px; */
+            width: 272px;
+            /* height: 80px; */
+            left: 50px;
+            top: -23px;
+            background: #f4f4f4;
+          }
+
+          .fa-circle-question-cont p {
+            margin-bottom: 0px;
+            /* height: 100%; */
+            padding-left: 15px !important;
+            /* line-height: 20px; */
+            /* line-gap-override: 1px ; */
+          }
+
+          .fa-circle-question:hover {
+            color: black;
+          }
+
+          .fa-circle-question.active {
+            color: black;
+          }
+        </style>
+        <div class="checkout-title-icon-signin">
+          <button class="checkout-title-icon-signin-button"> Sign In</button>
+
+          <div class="checkout-title-icon-signin-container">
+            <div class="checkout-title-icon-signin-container-title">Sign In</div>
+            <div class="checkout-title-icon-signin-container-content">
+              <form action="">
+                <label for="emailsignin" class="required">Email Address</label>
+                <input type="text" id="emailsignin" />
+                <label for="password" class="required">Password</label>
+                <input type="password" id="password" />
+
+                <div class="checkout-title-icon-signin-container-content-form-submit">
+                  <button>Forget your password?</button>
+                  <button type="submit">Sign In</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
       <script>
         $(document).ready(function () {
-          let quickviewContainer = document.querySelector('.quickview-container');
-          $('.quickview-container-btn').on('click', function () {
-            quickviewContainer.style.display = 'flex';
-            const dataName = $(this).data('name');
-            $('.quickview-container-items').each(function () {
-              const closeButton = $(this).find(".fa-xmark");
-              // closeButton.on('click',function(){
-              // close.css("color","red")
-              // })
-              const dataTarget = $(this).data('target');
-              if (dataName === dataTarget) {
-                $(this).addClass('active');
-              } else {
-                $(this).removeClass('active');
-              }
+          const signInButton = $('.checkout-title-icon-signin-button')
+          const signInCont = $('.checkout-title-icon-signin-container')
+          signInCont.css('display', 'none')
+          signInButton.on('click', function () {
+            // signInButton.toggleClass('active')
+            signInCont.toggle()
+          })
+          const sup = $('.fa-circle-question')
+          const supCont = $('.fa-circle-question-cont')
+          
+          sup.on('click', function () {
+            $(this).find("div").toggle()
+            $(document).mouseup(function (e) {
+            if (!supCont.is(e.target) &&
+              supCont.has(e.target).length === 0) {
+              supCont.hide();
+            }
+          })
+          })
+          
+        })
 
-            });
-          });
-          $('.fa-xmark').on('click', function () {
-            $(this).closest('.quickview-container-items').removeClass('active');
-            quickviewContainer.style.display = 'none';
-
-
-          });
-        });  
       </script>
-      <button class="quickview-container-btn" data-name="shop-cart-1">quickview-container</button>
-      <div class="quickview-container">
-        <div class="quickview-container-items" data-target="shop-cart-1">
-          <div class="quickview-container-items-image">
-            <img src="images/17.jpg" alt="" srcset="">
+      <div class="checkout-main">
+        <div class="checkout-main-left">
+          <div class="checkout-main-left-title">
+            <p>SHIPPING ADDRESS</p>
           </div>
-          <div class="quickview-container-items-details">
-            <button class="fa-solid fa-xmark"></button>
-            <p class="quickview-container-items-details-title">Tellis Pillow</p>
-            <div class="shop-stars">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </div>
-            <hr style="width: 40px;  color: #c4c4c4;">
-            <p class="quickview-container-items-details-price">$149.00
-            <p>
-            <p class="quickview-container-items-details-desp">Pellentesque habitant morbi tristique senectus et netus et
-              malesuada fames ac turpis egestas. Vestibulum
-              tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas
-              semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
-            <div class="quickview-container-items-details-availability">
-              <a class="a2">AVAILABILITY: <span> IN STOCK</span></a>
-              <a class="a2">SKU: <span>D28_PR_02</span></a>
-            </div>
-            <div class="product-type-add-to-card">
-              <div class="product-type-add-to-card-counter">
-                <button id="decrement" class="atc-btn">-</button>
-                <button id="count" class="atcn-btn"></button>
-                <button id="increment" class="atc-btn">+</button>
+          <div class="checkout-main-left-form">
+            <form action="#">
+              <label for="email" class="required">Email Address</label>
+              <div>
+                <input type="text" name="email" class="sup" id="email" placeholder=""><span
+                  class="fa-regular fa-circle-question">
+                  <div class="fa-circle-question-cont">
+                    <p>We'll send your order confirmation here.</p>
+                  </div>
+                </span>
               </div>
-              <div class="product-type-add-to-card-cardbtn">
-                <button class="fa fa-shopping-cart btn-1" aria-hidden="true"><span
-                    style="font-family: Poppins;">&nbsp;&nbsp;ADD TO CARD</span></button>
-              </div>
+              <p>You can create an account after checkout.</p>
+              <hr style="color: rgb(119, 119, 119);">
+
+              <label for="firstname" class="required">First Name</label>
+              <input type="text" name="firstname" id="firstname">
+              <label for="lastname" class="required">Last Name</label>
+              <input type="text" name="lastname" id="lastname">
+
+              <label for="company">Company</label>
+              <input type="text" name="company" id="company">
+
+              <p>Street Address</p>
+              <label for="address" class="required">Street Address: Line 1</label>
+              <input type="text" name="address" id="address1">
+              <input type="text" name="address" id="address2">
+              <input type="text" name="address" id="address3">
+
+              <label for="country" class="required">Country</label>
+              <select id="country" name="countries" onchange="fetchStates()">
+                <option value="us">United States</option>
+              </select>
 
 
+              <label for="state" class="required">State/Province</label>
+              <input type="text " name="state" id="state">
+              <script>
+                async function fetchCountries() {
+                  const countrySelect = document.getElementById("country");
+                  const response = await fetch("https://restcountries.com/v3.1/all");
+                  const countriesData = await response.json();
+
+                  countriesData.sort((a, b) => a.name.common.localeCompare(b.name.common));
+
+                  countriesData.forEach(country => {
+                    const option = document.createElement("option");
+                    option.value = country.cca2;
+                    option.text = country.name.common;
+                    countrySelect.appendChild(option);
+                  });
+                }
+
+                // Initialize the country dropdown with all countries
+                fetchCountries();
+              </script>
+
+              <label for="city" class="required">City</label>
+              <input type="text" name="city" id="city">
+
+              <label for="postal " class="required">Zip/Province</label>
+              <input type="text" name="postal" id="postal">
+
+              <label for="postal" class="required">Phone Number</label>
+              <div>
+                <input type="text" name="phone" class="sup" id="phone"><span class="fa-regular fa-circle-question">
+                  <div class="fa-circle-question-cont">
+                    <p>For Delivery Questions.</p>
+                  </div>
+                </span>
+              </div>
+             
+            </form>
+          </div>
+          <style>
+            .checkout-main-left-shipping {
+              margin-top: 30px;
+            }
+
+            .checkout-main-left-shipping-title {
+              font-weight: 600;
+              text-transform: uppercase;
+              font-size: 16px;
+              border-bottom: 1px solid #e7e7e7;
+              padding-bottom: 10px;
+              margin-bottom: 0cm;
+            }
+
+            .checkout-main-left-shipping-content {
+              /* background-color: red; */
+              /* min-width: 500px; */
+              position: relative;
+            }
+
+            .checkout-main-left-shipping-content table {
+              /* background-color: red; */
+              min-width: 500px;
+            }
+
+            .checkout-main-left-shipping-content table tr {
+              border-bottom: 1px solid #e7e7e7;
+              /* padding: 0px; */
+              /* display: flex; */
+              /* flex-direction: row; */
+              /* justify-content: space-between; */
+            }
+
+            .checkout-main-left-shipping-content table td:nth-child(2) {
+              font-weight: 600;
+            }
+
+            .checkout-main-left-shipping-content table td:nth-child(1) {
+              /* font-weight: 600; */
+              padding-left: 0 !important;
+            }
+
+            .checkout-main-left-shipping-content table td {
+              /* border-bottom: 1px solid #e7e7e7; */
+              padding: 13px 0px 13px 70px;
+              color: #777;
+              /* text-align: end; */
+            }
+
+            .checkout-main-left-shipping-content table tr:last-child {
+              border-bottom: 0;
+              /* padding: 13px 0px 13px 13px; */
+            }
+
+            .checkout-main-left-shipping-content-button {
+              background-color: #606da6;
+              color: white;
+              border: none;
+              padding: 10px 12px;
+              font-weight: 600;
+              font-size: 13px;
+              width: 70px;
+              height: 48px;
+              position: absolute;
+              right: 0%;
+            }
+          </style>
+          <div class="checkout-main-left-shipping">
+            <p class="checkout-main-left-shipping-title">shipping methods</p>
+          </div>
+          <div class="checkout-main-left-shipping-content">
+            <table>
+              <tr>
+                <td><input type="radio" name="shipping-fee"></td>
+                <td>$0.00</td>
+                <td>Free</td>
+                <td>Free Shipping</td>
+              </tr>
+              <tr>
+                <td><input type="radio" name="shipping-fee"></td>
+                <td>$5.00</td>
+                <td>Fixed</td>
+                <td>Flat Rate</td>
+              </tr>
+              <tr>
+                <td><input type="radio" name="shipping-fee"></td>
+                <td>$20.00</td>
+                <td>Table rate</td>
+                <td>Best Way</td>
+              </tr>
+
+            </table>
+            <button class="checkout-main-left-shipping-content-button">NEXT</button>
+          </div>
+
+        </div>
+        <style>
+          .checkout-main-right {
+            /* background-color: red; */
+            width: 28%;
+            margin-left: 2%;
+            margin-top: 40px;
+
+          }
+
+          .checkout-main-right-cont {
+            border: 1px solid rgba(0, 0, 0, 0.09);
+            padding: 20px;
+          }
+
+          .checkout-main-right-cont-content {
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.09);
+          }
+
+          .checkout-main-right-cont-content p {
+            padding-bottom: 10px;
+          }
+
+          .checkout-main-right-cont-content i {
+            /* padding-bottom: 10px; */
+            font-size: 13px;
+          }
+
+          .checkout-main-right-cont-title {
+            font-size: 16px;
+            font-weight: 600;
+
+          }
+        </style>
+        <div class="checkout-main-right">
+          <div class="checkout-main-right-cont">
+            <p class="checkout-main-right-cont-title">ORDER SUMMARY</p>
+
+            <div class="checkout-main-right-cont-content">
+              <p style="margin: 0;">1 item in cart</p>
+              <i class="fa-solid fa-chevron-down"></i>
             </div>
-            <a href="#" class="quickview-container-items-details-goto">GO TO PRODUCT</a>
+            <div class="checkout-main-right-cont-content-items"></div>
           </div>
         </div>
       </div>
     </section>
-    <script>
-      const incrementButton = document.getElementById("increment");
-      const decrementButton = document.getElementById("decrement");
-      const countElement = document.getElementById("count");
-
-      let count = 0;
-      countElement.textContent = count;
 
 
-      function increment() {
-        count++;
-        countElement.textContent = count;
-      }
 
-      function decrement() {
-        if (count > 0) {
-          count--;
-          countElement.textContent = count;
-        }
-      }
 
-      incrementButton.addEventListener("click", increment);
-      decrementButton.addEventListener("click", decrement);
-    </script>
-    <style>
-      .quickview-container {
-        z-index: 2;
-        position: fixed;
-        top: 0;
-        display: none;
-        bottom: 0;
-        min-height: 100vh;
-        width: 100%;
-        background: rgba(0, 0, 0, 0.45);
-      }
 
-      .quickview-container a {
-        /* list-style: none; */
-        text-decoration: none;
-      }
 
-      .shop-stars {
-        color: #9d9e9f;
-        /* font-family: Poppins;  */
-        padding: 2px 0;
-        font-size: 11px;
-      }
 
-      .quickview-container-items {
-        display: none;
-      }
 
-      .quickview-container-items.active {
-        padding: 25px;
-        display: flex;
-        position: relative;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 885px;
-        background-color: #ffffff;
-        height: 556px;
-        box-shadow: rgba(0, 0, 0, 0.65) 0px 5px 15px;
-      }
-
-      .quickview-container-items-details {
-        width: 50%;
-        padding-left: 25px;
-        position: relative;
-      }
-
-      .quickview-container-items-image {
-        height: 408px;
-        width: 50%;
-      }
-
-      .quickview-container-items-image img {
-        height: 100%;
-        border: 1px solid #eaeaea;
-        width: 100%;
-      }
-
-      .product-type-add-to-card {
-        padding: 22px 0;
-        border-bottom: 1px solid #eaeaea;
-        border-top: 1px solid #eaeaea;
-        display: flex;
-        align-items: center;
-      }
-
-      .product-type-add-to-card-counter {
-        display: flex;
-      }
-
-      .product-type-add-to-card-counter .atc-btn {
-        padding: 0px 9px;
-        background-color: transparent;
-        font-size: 20px;
-        cursor: pointer;
-        display: block;
-        color: #222529;
-        border: 1px solid #eaeaea;
-      }
-
-      .product-type-add-to-card-counter .atcn-btn {
-        background-color: transparent;
-        padding: 4px 18px;
-        max-width: 55px;
-        min-width: 55px;
-        font-size: 17px;
-        cursor: pointer;
-        display: block;
-        color: #222529;
-        border-top: 1px solid #eaeaea;
-        border-bottom: 1px solid #eaeaea;
-        border-left: 0;
-        border-right: 0;
-        font-weight: bold;
-      }
-
-      .product-type-add-to-card-counter span {
-        border: 1px solid;
-      }
-
-      #count {
-        font-size: 24px;
-      }
-
-      .product-type-add-to-card-cardbtn .btn-1 {
-        margin-left: 10px;
-        padding: 17.5px 23px 16px 24px;
-        font-weight: 700;
-        border: 0;
-        background-color: #222529;
-        font-size: 14px;
-        color: rgb(255, 255, 255);
-        margin-right: 4px;
-        transition: all .001 s linear;
-      }
-
-      .product-type-add-to-card-cardbtn .btn-1:hover {
-        background-color: #606da6;
-      }
-
-      .quickview-container-items-details-title {
-        font-size: 30px;
-        font-weight: 700;
-      }
-
-      .quickview-container-items-details-price {
-        font-size: 24px;
-        font-weight: 600;
-      }
-
-      .quickview-container-items-details-price span{
-        color: #777;
-        text-decoration: line-through;
-        font-size: 19px;
-      }
-
-      .quickview-container-items-details-desp {
-        color: #777;
-      }
-
-      .quickview-container-items-details-availability {
-        display: flex;
-        flex-direction: column;
-        padding-bottom: 17px;
-      }
-
-      .quickview-container-items-details-availability a {
-        color: #777;
-      }
-
-      .quickview-container-items-details-availability a span {
-        color: #000;
-        font-weight: 700;
-      }
-
-      .quickview-container-items-details-goto {
-        color: #000;
-        font-weight: 600;
-        font-size: 14px;
-      }
-
-      .fa-xmark {
-        background-color: transparent;
-        border: none;
-        position: absolute;
-        top: -0.5rem;
-        right: 0;
-        font-size: 20px;
-      }
-    </style>
 
 
     <!-- footer -->
@@ -670,11 +972,6 @@
       </div>
     </div>
   </div>
-
-
-
-
-
 
 
 

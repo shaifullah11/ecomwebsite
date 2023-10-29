@@ -92,6 +92,10 @@ window.addEventListener('scroll', function () {
 
   header.classList.toggle('sticky', window.scrollY > 155);
 });
+
+
+
+
 $(document).ready(function () {
   var owl = $('.owl-carousel-2');
   owl.owlCarousel({
@@ -103,7 +107,7 @@ $(document).ready(function () {
         items: 1,
         nav: true
       },
-      600: {
+      575: {
         items: 2,
         nav: true,
         margin: 100
