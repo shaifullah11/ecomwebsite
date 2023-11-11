@@ -15,6 +15,7 @@ const shippingOptions = document.querySelectorAll('input[name="shipping-fee"]');
 const shippingFeeError = document.querySelector('.shipping-fee-error');
 const conformForm = document.querySelector('.checkout-main-left-second');
 const iconColorHandle = document.querySelector('.checkout-title-icon-shipping-review');
+// const shippingMethod = document.querySelector
 form.addEventListener('submit', (e) => {
   if (!validateInputs() || !validateShippingFee()) {
     e.preventDefault();
@@ -27,18 +28,20 @@ form.addEventListener('submit', (e) => {
 
 });
 
-document.querySelector('.name').innerText ="oombu";
+// document.querySelector('.name').innerText ="oombu";
+// $('.displayDetails-name').html("okoko")
 function showSecond() {
   iconColorHandle.classList.add('review')
   form.style.display = 'none';
   conformForm.classList.remove('hidden')
 
-  document.querySelectorAll('.displayDetails-name').innerText = firstname.value + " " + lastname.value;
-  document.querySelectorAll('.displayDetails-company').innerText = company.value
-  document.querySelectorAll('.displayDetails-address').innerText = address.value + ', '+address2.value + ', ' + address3.value
-  document.querySelectorAll('.displayDetails-cityState').innerText = city.value +", "+ state.value;
-  document.querySelectorAll('.displayDetails-country').innerText = country.value;
-  document.querySelectorAll('.displayDetails-phone').innerText = phone.value;
+ $('.displayDetails-name').text(firstname.value + " " + lastname.value)
+$('.displayDetails-company').text(company.value)
+$('.displayDetails-address').text(address.value + ', '+address2.value + ', ' + address3.value)
+ $('.displayDetails-cityState').text(city.value +", "+ state.value)
+  $('.displayDetails-country').text(country.value)
+  $('.displayDetails-phone').text(phone.value)
+  $('.displayDetails-email').text(email.value)
 
 }
 
@@ -186,4 +189,18 @@ $(document).ready(function () {
 
 //checkbox-clicked
 const addressDisplay = document.querySelector('#addressDisplay')
-addressDisplay.checked = true
+// addressDisplay.checked = true
+$(addressDisplay).on('click',function(){
+  if(!addressDisplay.checked){
+    this.checked = false
+  }
+  else{
+    this.checked =true
+  }
+  if(addressDisplay.checked){
+    $('.place-order').on('click',function(){
+      $('.checkout-section').css('display','none')
+      $('.checkout-section-conform').css('display','block')
+    })
+  }
+})

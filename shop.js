@@ -4,7 +4,8 @@ const list = document.querySelector('.list');
 const total = document.querySelector('.total');
 const listCard = document.querySelector('.listCard');
 const body = document.querySelector('body');
-const noOfItems = document.querySelector('.NoOfItems')
+const noOfItems = document.querySelector('.NoOfItems');
+const navBarIconCount = document.querySelector('.nav-cart-count-items');
 const products = [
   {
     id: 1,
@@ -91,11 +92,9 @@ const changeQuantity = (key) => {
   }
 }
 function addToCard(key) {
-  console.log(listCards[key])
   if (listCards[key] == null) {
     listCards[key] = JSON.parse(JSON.stringify(products[key]));
     listCards[key].quantity = 1;
-    console.log(listCards[key].quantity)
   }
   else{
     listCards[key].quantity += 1;
@@ -128,9 +127,13 @@ const reloadCard = () => {
       listCard.appendChild(newDiv)
     }
     noOfItems.innerHTML = value.quantity
+    
+    navBarIconCount.innerHTML = value.quantity
     total.innerHTML = `$${totalPrice}.00`;
     quantity.innerHTML = count;
+    navBarIconCount.innerHTML = count;
     if (count > 1) {
+    
       noOfItems.innerHTML = `${count} ITEMS`
     }
     else {
@@ -142,22 +145,6 @@ const deleteItems = (key) => {
   delete listCards[key]
   reloadCard()
 }
-
-// const changeQuantity = (key, value) => {
-//   console.log(key,value)
-  // if (quantity == 0) {
-  //   delete listCards[key]
-  // }
-  // else {
-  //   listCards[key].quantity = quantity;
-  //   listCards[price] = quantity * products[key].price
-  // }
-// }
-
-
-// shopping.addEventListener('click', () => {
-//   body.classList.add('active');
-// });
 
 const initApp = () => {
   products.forEach((value, key) => {
@@ -209,3 +196,10 @@ const initApp = () => {
 };
 
 initApp();
+
+
+
+
+
+
+

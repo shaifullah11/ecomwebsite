@@ -40,6 +40,7 @@
 
   <!-- checkout style sheet -->
   <link rel="stylesheet" href="checkout.css">
+  <link rel="stylesheet" href="shop.css">
 </head>
 
 <body>
@@ -269,7 +270,7 @@
       </script>
       <div class="checkout-main">
         <div class="checkout-main-left">
-          <div class="checkout-main-left-first" style="display: none;">
+          <div class="checkout-main-left-first">
             <div class="checkout-main-left-title">
               <p>SHIPPING ADDRESS</p>
             </div>
@@ -380,7 +381,7 @@
             </div>
 
           </div>
-          <div class="checkout-main-left-second">
+          <div class="checkout-main-left-second hidden">
             <div class="checkout-main-left-second-payment">
               <div class="second-payment-title">Payment Method</div>
               <div class="second-payment-content">
@@ -390,15 +391,11 @@
                 </div>
                 <div class="second-payment-content-displayAddress">
                   <div class="second-payment-content-displayAddress-checkbox">
-                    <input id="addressDisplay" name="addressDisplay" type="checkbox" checked /><label
+                    <input id="addressDisplay" name="addressDisplay" type="checkbox" /><label
                       style="padding-left: 10px; color: rgb(119, 119, 119); font-size:14px;" for="addressDisplay">My
                       billing and shipping address are the same</label>
                   </div>
-                  <div class="name"></div>
-                  <div class="name"></div>
                   <div class="second-payment-content-displayAddress-details">
-                    <p class="displayDetails-name"></p>
-                    <p class="displayDetails-name"></p>
                     <p class="displayDetails-company"></p>
                     <p class="displayDetails-address"></p>
                     <p class="displayDetails-cityState"></p>
@@ -427,10 +424,26 @@
             <p class="checkout-main-right-cont-title">ORDER SUMMARY</p>
 
             <div class="checkout-main-right-cont-content">
-              <p style="margin: 0;">1 item in cart</p>
+              <p style="margin: 0;">0 item in cart</p>
               <i class="fa-solid fa-chevron-down"></i>
             </div>
-            <div class="checkout-main-right-cont-content-items"></div>
+            <div class="checkout-main-right-cont-content-items">
+
+              <li class="checkout-main-right-cont-content-items-list">
+                <div class="right-cont-content-items-list-main">
+                  <div class="right-cont-content-items-list-main-image">
+                    <img src="images/1.jpg" alt="">
+                    <div>
+                      <p style="font-weight: 600;">Wodden box</p>
+                      <p style="color: #777;">Qty</p>
+                    </div>
+                  </div>
+                  <div class="right-cont-content-items-list-main-price">
+                    <p>$45.00</p>
+                  </div>
+                </div>
+              </li>
+            </div>
           </div>
           <div class="checkout-main-right-shipTo">
             <div class="checkout-main-right-shipTo-title">
@@ -457,6 +470,23 @@
           </div>
         </div>
       </div>
+    </section>
+    <section class="checkout-section-conform">
+      <div class="checkout-section-conform-conform">
+        <p>Your order # is:8600000000036</p>
+        <p class="checkout-section-conform-conform-second">We'll email you an order conformation with details and tracking info.</p>
+        <button>
+          continue shopping
+        </button>
+      </div>
+      <div class="checkout-section-conform-conform">
+        <p>You can track your order status by creating an account.</p>
+        <p class="checkout-section-conform-conform-second">Email Address: <span class="displayDetails-email"></span></p>
+        <button>
+          create an account
+        </button>
+      </div>
+
     </section>
 
 
@@ -583,7 +613,7 @@
 
 
   <script src="order.js"></script>
-
+  <!-- <script src="shop.js"></script> -->
 
   <script src="assets/highlight.js"></script>
   <script src="assets/app.js"></script>
