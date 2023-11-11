@@ -45,8 +45,8 @@
   width: 117px;
 }
 
-.navbar-toggler {
-  outline: 0;
+.navbar-toggler:focus{
+  box-shadow: none;
 }
 
 
@@ -54,7 +54,7 @@
 
 
 .first-navi,
-.second-navi.sticky {
+.first-navi.sticky {
   background-color: white;
   display: flex;
   justify-content: space-between;
@@ -74,20 +74,20 @@
 }
 
 .first-navi .navi2 .ul .li .a,
-.second-navi.sticky .navi2 .ul .li .a {
+.first-navi.sticky .navi2 .ul .li .a {
   color: #222529;
   font-weight: 700;
   font-size: 13px;
   margin: 0 6px;
 }
 
-.second-navi {
+/* .first-navi {
   display: none !important;
-}
+} */
 
-.second-navi.sticky {
+.first-navi.sticky {
   border-bottom: 1.3px solid #e7e7e7;
-  height: 79px !important;
+  /* height: 79px !important; */
   display: flex !important;
   background-color: white !important;
   position: sticky !important;
@@ -96,22 +96,18 @@
   z-index: 10 !important;
 }
 
-.second-navi.sticky .logo img {
+.first-navi.sticky .logo img {
   height: 34px !important;
   width: 85px !important;
 }
 
-.first-navi .logo,
-.second-navi.sticky .logo {
-  /* margin-right: 30%; */
-}
 
-.second-navi.sticky .icons ul {
+.first-navi.sticky .icons ul {
   padding-top: 18px !important;
 }
 
 .first-navi .icons ul,
-.second-navi.sticky .icons ul {
+.first-navi.sticky .icons ul {
   padding-top: 5px;
   display: flex;
   flex-direction: row;
@@ -119,23 +115,23 @@
 }
 
 .first-navi .icons ul li,
-.second-navi.sticky .icons ul li {
+.first-navi.sticky .icons ul li {
   padding: 10px;
 }
 
 .first-navi .icons ul li button,
-.second-navi.sticky .icons ul li button {
+.first-navi.sticky .icons ul li button {
   border: 0px;
   background-color: white;
 }
 
 
-.second-navi.sticky .link0 .na0,
-.second-navi.sticky .link1 .na1,
-.second-navi.sticky .link2 .na2,
-.second-navi.sticky .link3 .na3,
-.second-navi.sticky .link4 .na4,
-.second-navi.sticky .link5 .na5 {
+.first-navi.sticky .link0 .na0,
+.first-navi.sticky .link1 .na1,
+.first-navi.sticky .link2 .na2,
+.first-navi.sticky .link3 .na3,
+.first-navi.sticky .link4 .na4,
+.first-navi.sticky .link5 .na5 {
 
   margin-top: 4px !important;
   padding: 26px 10px;
@@ -143,12 +139,12 @@
   transition: all linear;
 }
 
-.second-navi.sticky .link0:hover .na0,
-.second-navi.sticky .link1:hover .na1,
-.second-navi.sticky .link2:hover .na2,
-.second-navi.sticky .link3:hover .na3,
-.second-navi.sticky .link4:hover .na4,
-.second-navi.sticky .link5:hover .na5 {
+.first-navi.sticky .link0:hover .na0,
+.first-navi.sticky .link1:hover .na1,
+.first-navi.sticky .link2:hover .na2,
+.first-navi.sticky .link3:hover .na3,
+.first-navi.sticky .link4:hover .na4,
+.first-navi.sticky .link5:hover .na5 {
   border-top: 4px solid #606da6;
   margin-top: 0px !important;
 
@@ -184,11 +180,7 @@
   padding: 0 2px 0 2px;
 }
 
-.cont3col1 ul li,
-.cont4col1 ul li {
-  /* background-color: rebeccapurple; */
-  /* padding: 0 !important; */
-}
+
 
 .cont3col1,
 .cont4col1 {
@@ -1131,6 +1123,10 @@
 .browse a {
   text-decoration: none;
 }
+.owl-stage{
+  display: flex;
+  justify-content: space-between;
+}
 
 /* /////////////////////////////////////////////////////////////////////end of browse-button//////////////////////////////////////////////////////////////////////// */
 
@@ -1367,8 +1363,10 @@
 
 /* /////////////////////////////////////////////////////////////////////middle-footer//////////////////////////////////////////////////////////////////////////// */
 
-@media only screen and (max-width: 575.98px) {
-
+@media only screen and (max-width: 576px) {
+html{
+  /* overflow-x: hidden; */
+}
 
   .off-cont {
     padding: 0 25px;
@@ -1408,23 +1406,52 @@
 
   .navbar .navbar-toggler {
     border: none;
+    padding: 0;
   }
 
   .navbar {
-    padding: 0 25px;
+    padding: 0 25px !important;
     justify-content: first baseline !important;
   }
 
   .first-navi .logo img,
-  .second-navi.sticky .logo img {
+  .first-navi.sticky .logo img {
     height: 30px;
     width: 80px;
   }
   .middle-footer{
     padding: 30px 30px 10px 30px;
   }
+  .last-footer{
+    padding-left: 30px;
+  }
 
 
 
-  
+
+
+
+
+
+
+
+
+  /*  */
+  .wrap_main{
+    display: flex;
+    flex-direction: column;
+  }
+  .wrap_links ul {
+    display: flex;
+    flex-direction: column;
+  }
+  .fourimgcont{
+    padding: 0  25px !important;
+  }
+  .fourimgcont{
+
+  }
+  .cardcont{
+    padding: 0 25px;
+  }
 }

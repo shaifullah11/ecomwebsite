@@ -28,6 +28,37 @@ for (var i = 0; i < li_elements.length; i++) {
   });
 }
 
+
+
+$(document).ready(function () {
+  var owl = $('.owl-carousel-1');
+  owl.owlCarousel({
+    items: 5,
+    loop: true,
+    margin: 10,
+    nav: true,
+    autoplay: true,
+    autoplayTimeout: 4000,
+    autoplayHoverPause: true,
+    responsive: {
+      0: {
+        items: 1,
+        nav: true
+      },
+      575: {
+        items: 2,
+        nav: true,
+        margin: 100
+      },
+      1000: {
+        items: 5,
+        nav: true,
+        margin: 18
+      }
+    }
+  });
+})
+
 // var prod_but = document.querySelectorAll(".product-type-default-second-wrap");
 // var prod_elements = document.querySelectorAll(".product-review-item");
 // for (var i = 0; i < prod_but.length; i++) {
@@ -85,12 +116,28 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-window.addEventListener('scroll', function () {
-  let header = document.querySelector('.second-navi');
-
-  // header.classList.remove('sticky', window.scrollY < 155);
-
-  header.classList.toggle('sticky', window.scrollY > 155);
+$(document).ready(function () {
+  var header = $('.first-navi');
+  var isStickyAdded = false;
+  var threshold = 165;
+  var navHeightThreshold = 130;
+  // $(window).scroll(function() {
+  //   if ($(this).scrollTop() >= navHeightThreshold){
+  //     header.css('height','79px');
+  //   }
+  //   else if ($(this).scrollTop() < navHeightThreshold) {
+  //     header.css('height','110px');
+  //   }
+  // })
+  $(window).scroll(function () {
+    if ($(this).scrollTop() >= threshold && !isStickyAdded) {
+      header.addClass('sticky');
+      isStickyAdded = true;
+    } else if ($(this).scrollTop() < threshold && isStickyAdded) {
+      header.removeClass('sticky');
+      isStickyAdded = false;
+    }
+  });
 });
 
 

@@ -209,6 +209,7 @@
 .three-image {
   height: fit-content;
   display: flex;
+  justify-content: space-between;
   flex-direction: row;
   flex-wrap: wrap;
   margin-top: 20px;
@@ -234,7 +235,7 @@
 .three-image-clamps {
   height: 320px;
   width: 19%;
-  margin: 0 20px;
+  margin: 0 10px;
   background-image: url(images/lotus.jpg);
   background-repeat: no-repeat;
   background-position: center;
