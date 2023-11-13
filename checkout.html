@@ -48,18 +48,144 @@
   <!-- main -->
   <div class="main">
 
-    <nav class="navbar navbar-expand-lg navbar-light first-navi" id="navi">
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03"
-        aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+    <nav class="navi-bar" id="navi">
+      <button class="navi-bar-togglerButton" type="button">
+        <span class="fa-solid fa-bars"></span>
       </button>
-      <div class="collapse navbar-collapse navi2" id="navbarTogglerDemo03">
-        <ul class="navbar-nav mr-auto mt-2 mt-lg-0 ul"> <!-- add height -->
-          <li class="nav-item active li link0"><a class="nav-link a na0" href="index.html">HOME</a></li>
-          <li class="nav-item active li link1"><a class="nav-link a na1" href="shop.html">SHOP</a>
-            <div class="container cont1">
-              <div class="row cont1row1">
-                <div class="col cont1col1">
+      <div class="navibar-sidebar">
+        <div class="navibar-sidebar-titles">
+          <li class="navibar-sidebar-titles-menu active" data-sidebar-li="menu" style="width: 34%;">
+            <span class="fa-solid fa-bars" style="padding-right: 5px;"></span> Menu
+          </li>
+          <li class="navibar-sidebar-titles-account" data-sidebar-li="account">Account</li>
+          <li class="navibar-sidebar-titles-settings" data-sidebar-li="settings">Settings</li>
+        </div>
+        <div class="navibar-sidebar-contents">
+          <ul class="sidebar-navbar-menu-content menu sidebar-item">
+            <div>
+              <li class="sidebar-navbar-link"><a class="sidebar-home-link" href="index.html">HOME</a></li>
+              <div class="sidebar-shop-link-main">
+                <li class="sidebar-navbar-link sidebar-navbar-link-shop"><a class="sidebar-shop-link"
+                    href="shop.html">SHOP</a><i class="fa-solid fa-chevron-down"></i></li>
+                <div class="sidebar-shop-link-contents">
+                  <ul class="sidebar-shop-link-contents-v1">
+                    <li>
+                      <p><span class="fa-solid fa-chevron-right"></span>VARITIONS 1</p>
+                    </li>
+                    <li><a href="#"><span class="fa-solid fa-chevron-right"></span>FULLWIDTH BANNER</a></li>
+                    <li><a href="#"><span class="fa-solid fa-chevron-right"></span>BOXED IMAGE BANNER</a></li>
+                    <li><a href="#"><span class="fa-solid fa-chevron-right"></span>BOXED SLIDER BANNER</a></li>
+                    <li><a href="#"><span class="fa-solid fa-chevron-right"></span>LEFT SIDEBAR</a></li>
+                    <li><a href="#"><span class="fa-solid fa-chevron-right"></span>RIGHT SIDEBAR</a></li>
+                    <li><a href="#"><span class="fa-solid fa-chevron-right"></span>PRODUCT FLEX GRID</a></li>
+                    <li><a href="#"><span class="fa-solid fa-chevron-right"></span>PRODUCT FLEX ITEM TYPES</a></li>
+                  </ul>
+                  <ul class="sidebar-shop-link-contents-v2">
+                    <li>
+                      <p><span class="fa-solid fa-chevron-right"></span>VARITIONS 2</p>
+                    </li>
+                    <li><a href="#"><span class="fa-solid fa-chevron-right"></span>AJAX INFINITE SCROLL</a></li>
+                    <li><a href="#"><span class="fa-solid fa-chevron-right"></span>3 COLUMNS PRODUCTS</a></li>
+                    <li><a href="#"><span class="fa-solid fa-chevron-right"></span>4 COLUMNS PRODUCTS</a></li>
+                    <li><a href="#"><span class="fa-solid fa-chevron-right"></span>5 COLUMNS PRODUCTS</a></li>
+                    <li><a href="#"><span class="fa-solid fa-chevron-right"></span>6 COLUMNS PRODUCTS</a></li>
+                    <li><a href="#"><span class="fa-solid fa-chevron-right"></span>7 COLUMNS PRODUCTS</a></li>
+                    <li><a href="#"><span class="fa-solid fa-chevron-right"></span>8 COLUMNS PRODUCTS</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="sidebar-products-link-main">
+                <li class="sidebar-navbar-link sidebar-navbar-link-products"><a class="sidebar-product-link"
+                    href="products.html">PRODUCTS</a><i class="fa-solid fa-chevron-down"></i>
+                </li>
+                <div class="sidebar-products-link-contents">
+                  <ul class="sidebar-products-link-contents-v1">
+                    <li>
+                      <p><span class="fa-solid fa-chevron-right"></span>PRODUCT PAGES</p>
+                    </li>
+                    <li><a href="#"><span class="fa-solid fa-chevron-right"></span>SIMPLE PRODUCT</a></li>
+                    <li><a href="#"><span class="fa-solid fa-chevron-right"></span>CONFIGURABLE PRODUCT</a></li>
+                    <li><a href="#"><span class="fa-solid fa-chevron-right"></span>BUNDLE PRODUCT</a></li>
+                    <li><a href="#"><span class="fa-solid fa-chevron-right"></span>GROUPED PRODUCT</a></li>
+                    <li><a href="#"><span class="fa-solid fa-chevron-right"></span>DOWNLOADABLE PRODUCT</a></li>
+                    <li><a href="#"><span class="fa-solid fa-chevron-right"></span>ADDTOCART STICKY</a></li>
+                    <li><a href="#"><span class="fa-solid fa-chevron-right"></span>VERTICAL TABS</a></li>
+                    <li><a href="#"><span class="fa-solid fa-chevron-right"></span>ACCORDION TABS</a></li>
+                    <li><a href="#"><span class="fa-solid fa-chevron-right"></span>STICKY TABS</a></li>
+                  </ul>
+                  <ul class="sidebar-product-link-contents-v2">
+                    <li>
+                      <p><span class="fa-solid fa-chevron-right"></span>PRODUCT LAYOUT</p>
+                    </li>
+                    <li><a href="#"><span class="fa-solid fa-chevron-right"></span>DEFAULT LAYOUT</a></li>
+                    <li><a href="#"><span class="fa-solid fa-chevron-right"></span>EXTENDED LAYOUT</a></li>
+                    <li><a href="#"><span class="fa-solid fa-chevron-right"></span>FULL WIDTH LAYOUT</a></li>
+                    <li><a href="#"><span class="fa-solid fa-chevron-right"></span>GRID IMAGES LAYOUT</a></li>
+                    <li><a href="#"><span class="fa-solid fa-chevron-right"></span>STICKY RIGHT SIDE INFO</a></li>
+                    <li><a href="#"><span class="fa-solid fa-chevron-right"></span>VERTICAL LAYOUT</a></li>
+                    <li><a href="#"><span class="fa-solid fa-chevron-right"></span>WITH SIDEBAR</a></li>
+                    <li><a href="#"><span class="fa-solid fa-chevron-right"></span>WITHOUT SIDEBAR</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="sidebar-pages-link-main">
+                <li class="sidebar-navbar-link sidebar-navbar-link-pages"><a class="sidebar-pages-link"
+                    href="#">PAGES</a><i class="fa-solid fa-chevron-down"></i></li>
+                <div class="sidebar-pages-link-contents">
+                  <ul class="sidebar-pages-link-contents-v1">
+                    <li><a href="#"><span class="fa-solid fa-chevron-right"></span>ABOUT US</a></li>
+                    <li><a href="#"><span class="fa-solid fa-chevron-right"></span>CONTACT US</a></li>
+                    <li><a href="#"><span class="fa-solid fa-chevron-right"></span>BLOG</a></li>
+                    <li><a href="#"><span class="fa-solid fa-chevron-right"></span>POST</a></li>
+                    <li><a href="#"><span class="fa-solid fa-chevron-right"></span>SHOPPING CART</a></li>
+                    <li><a href="#"><span class="fa-solid fa-chevron-right"></span>CHECKOUT</a></li>
+                    <li><a href="#"><span class="fa-solid fa-chevron-right"></span>MY ACCOUNT</a></li>
+                  </ul>
+
+                </div>
+
+              </div>
+              <div class="sidebar-features-link-main">
+                <li class="sidebar-navbar-link sidebar-navbar-link-features"><a class="sidebar-features-link"
+                    href="#">FEATURES</a><i class="fa-solid fa-chevron-down"></i></li>
+                <div class="sidebar-features-link-contents">
+                  <ul class="sidebar-features-link-contents-v1">
+                    <li><a href="#"><span class="fa-solid fa-chevron-right"></span>HEADER TYPES</a></li>
+                    <li><a href="#"><span class="fa-solid fa-chevron-right"></span>FOOTER TYPES</a></li>
+                  </ul>
+
+                </div>
+
+              </div>
+              <li class="sidebar-navbar-link"><a class="sidebar-buyporto-link " href="#">BUYPORTO!</a></li>
+            </div>
+          </ul>
+          <ul class="sidebar-navbar-account-content account sidebar-item">
+            <div>
+              <li class="sidebar-navbar-account-content-blog">Blog</li>
+              <li class="sidebar-navbar-account-content-signIn">Sign In</li>
+              <li class="sidebar-navbar-account-content-contactUs">Contact Us</li>
+              <li class="sidebar-navbar-account-content-createAccount">Create an Account</li>
+            </div>
+          </ul>
+          <ul class="sidebar-navbar-settings-content settings sidebar-item">
+            <div>
+              <li><a>USD</a><i class="fa-solid fa-chevron-down"></i></li>
+            </div>
+          </ul>
+
+        </div>
+      </div>
+
+
+
+      <div class="navigation-links" id="">
+        <ul class="navbar-main"> <!-- add height -->
+          <li class="navbar-link"><a class="home-link" href="index.html">HOME</a></li>
+          <li class="navbar-link navbar-link-shop"><a class="shop-link" href="shop.html">SHOP</a>
+            <div class="shop-link-content">
+              <div class="shop-link-content-main">
+                <div class="shop-link-content-main-first">
                   <ul>
                     <li><b>VARITIONS 1</b></li>
                     <li><a href="#">FULLWIDTH BANNER</a></li>
@@ -71,7 +197,7 @@
                     <li><a href="#">PRODUCT FLEX ITEM TYPES</a></li>
                   </ul>
                 </div>
-                <div class="col cont1col2">
+                <div class="shop-link-content-main-second">
                   <ul>
                     <li><b>VARITIONS 1</b></li>
                     <li><a href="#">AJAX INFINITE SCROLL</a></li>
@@ -83,16 +209,16 @@
                     <li><a href="#">8 COLUMNS PRODUCTS</a></li>
                   </ul>
                 </div>
-                <div class="col cont1col3">
+                <div class="shop-link-content-main-third">
                   <img src="images/sh0pimg.jpg" alt="">
                 </div>
               </div>
             </div>
           </li>
-          <li class="nav-item active li link2"><a class="nav-link a na2" href="products.html">PRODUCTS</a>
-            <div class="container cont2">
-              <div class="row cont2row1">
-                <div class="col cont2col1">
+          <li class="navbar-link navbar-link-product"><a class="product-link" href="products.html">PRODUCTS</a>
+            <div class="product-link-content">
+              <div class="product-link-content-main">
+                <div class="product-link-content-main-first">
                   <ul>
                     <li><b>PRODUCT PAGES</b></li>
                     <li><a href="#">SIMPLE PRODUCT</a></li>
@@ -106,7 +232,7 @@
                     <li><a href="#">STICKY TABS</a></li>
                   </ul>
                 </div>
-                <div class="col cont2col2">
+                <div class="product-link-content-main-second">
                   <ul>
                     <li><b>PRODUCT LAYOUT</b></li>
                     <li><a href="#">DEFAULT LAYOUT</a></li>
@@ -119,16 +245,16 @@
                     <li><a href="#">WITHOUT SIDEBAR</a></li>
                   </ul>
                 </div>
-                <div class="col cont2col3">
+                <div class="product-link-content-main-third">
                   <img src="images/productlinkimg.jpg" alt="">
                 </div>
               </div>
             </div>
           </li>
-          <li class="nav-item active li link3"><a class="nav-link a na3" href="#">PAGES</a>
-            <div class="container cont3">
-              <div class="row cont3row1">
-                <div class="col cont3col1">
+          <li class="navbar-link navbar-link-pages"><a class="pages-link" href="#">PAGES</a>
+            <div class="pages-link-content">
+              <div class="pages-link-content-main">
+                <div class="pages-link-content-main-first">
                   <ul>
                     <li><a href="#">ABOUT US</a></li>
                     <li><a href="#">CONTACT US</a></li>
@@ -140,11 +266,12 @@
                 </div>
               </div>
             </div>
+
           </li>
-          <li class="nav-item active li link4"><a class="nav-link a na4" href="#">FEATURES</a>
-            <div class="container cont4">
-              <div class="row cont4row1">
-                <div class="col cont4col1">
+          <li class="navbar-link navbar-link-features"><a class="features-link" href="#">FEATURES</a>
+            <div class="features-link-content">
+              <div class="features-link-content-main">
+                <div class="features-link-content-main-first">
                   <ul>
                     <li><a href="#">HEADER TYPES</a></li>
                     <li><a href="#">FOOTER TYPES</a></li>
@@ -152,19 +279,19 @@
               </div>
             </div>
           </li>
-          <li class="nav-item active li link5"><a class="nav-link a na5 " href="#">BUYPORTO!</a></li>
+          <li class="navbar-link"><a class="buyporto-link " href="#">BUYPORTO!</a></li>
         </ul>
       </div>
-      <div class="logo">
+      <div class="navigation-logo">
         <img src="images/logo.png">
       </div>
-      <div class="icons">
+      <div class="navigation-icons">
         <ul style="position: relative;">
-          <li><button class="fa fa-user  " style="font-size:28px"></button></li>
+          <li><button class="fa-regular fa-user  " style="font-size:28px"></button></li>
           <li><button class="fa fa-search" style="font-size:28px"></button></li>
-          <li><button class="fa fa-heart" style="font-size:28px"></button></li>
+          <li><button class="fa-regular fa-heart" style="font-size:28px"></button></li>
           <li class="shopping">
-            <button class="fa fa-shopping-cart" style="font-size:28px">
+            <button class="fa fa-bag-shopping" style="font-size:28px">
               <span id="count_items" class="nav-cart-count-items">0</span>
             </button>
           </li>
@@ -270,7 +397,7 @@
       </script>
       <div class="checkout-main">
         <div class="checkout-main-left">
-          <div class="checkout-main-left-first">
+          <div class="checkout-main-left-first" style="display: none;">
             <div class="checkout-main-left-title">
               <p>SHIPPING ADDRESS</p>
             </div>
@@ -317,7 +444,7 @@
                 <div class="input-group">
 
                   <label for="country" class="required">Country</label>
-                  <select id="country" name="countries" onchange="fetchStates()">
+                  <select id="country" name="countries">
                     <option value="us">United States</option>
                   </select>
                   <div class="error"></div>
@@ -378,10 +505,26 @@
                   </div>
                 </div>
               </form>
+              <script>
+                $(document).ready(function () {
+
+                  $('input[name="shipping-fee"]').on('click', function () {
+                    var selectedValue = $('input[name="shipping-fee"]:checked').val();
+                    var selectedRow = $(this).closest('tr');
+                    var thirdValue = selectedRow.find('td:eq(2)').text();
+                    var fourthValue = selectedRow.find('td:eq(3)').text();
+                    $('.checkout-main-right-shipMethod-content').text(fourthValue + '-' + thirdValue)
+
+
+                  });
+                });
+
+
+              </script>
             </div>
 
           </div>
-          <div class="checkout-main-left-second hidden">
+          <div class="checkout-main-left-second">
             <div class="checkout-main-left-second-payment">
               <div class="second-payment-title">Payment Method</div>
               <div class="second-payment-content">
@@ -474,7 +617,8 @@
     <section class="checkout-section-conform">
       <div class="checkout-section-conform-conform">
         <p>Your order # is:8600000000036</p>
-        <p class="checkout-section-conform-conform-second">We'll email you an order conformation with details and tracking info.</p>
+        <p class="checkout-section-conform-conform-second">We'll email you an order conformation with details and
+          tracking info.</p>
         <button>
           continue shopping
         </button>

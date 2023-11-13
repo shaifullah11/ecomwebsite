@@ -1,3 +1,160 @@
+/* navigation bar */
+.addToCard.active{
+  display: block;
+}
+.addToCard {
+  background-color: red;
+  position: absolute;
+  top: 60px;
+  display: none;
+  box-shadow: 0 5px 8px rgba(0, 0, 0, .15);
+  background-color: white;
+  z-index: 10;
+  width: 300px;
+  right: 12px;
+  padding: 12px;
+}
+
+.addToCard p {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.addToCard-title {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #e7e7e7;
+}
+
+.subTotal-section-main {
+  padding: 12px 10px 0 10px;
+}
+
+.subTotal-section {
+  display: flex;
+  font-weight: 700;
+  justify-content: space-between;
+}
+
+.gotoCart {
+  background-color: black !important;
+  font-size: .75rem;
+  letter-spacing: .025em;
+  text-transform: uppercase;
+  /* margin: 0 20px; */
+  padding: 0.875rem 1.5rem;
+  border-radius: 2px;
+  float: none;
+  width: 100%;
+  font-weight: 600;
+  margin-bottom: 10px;
+  height: auto;
+  line-height: inherit;
+  color: #fff;
+  background-color: #222529;
+  border: none;
+}
+
+.addToCard .listCard {
+  display: flex;
+  flex-direction: column !important;
+  /* border-bottom: 1px solid #e7e7e7; */
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  max-height: 260px;
+  overflow-y: auto;
+  /* min-height: auto; */
+}
+
+.addToCard .listCard.scrollable {
+
+  /* overflow-y: scroll; */
+
+}
+
+.addToCard .listCard-left {
+  width: 65%;
+  height: 80px;
+}
+
+.addToCard .listCard-left p {
+  margin-bottom: 0;
+}
+
+.addToCard .listCard-right {
+  width: 80px;
+  height: 80px;
+  position: relative;
+}
+
+.addToCard .listCard-right img {
+  width: 100%;
+  height: 100%;
+}
+
+.listCard-left-quantity {
+  display: flex;
+  align-items: center;
+  color: rgb(105, 105, 107);
+  font-size: 13px;
+}
+
+.listCard-left-price {
+  padding: 8px 0;
+  font-size: 13px;
+  color: rgb(105, 105, 107);
+}
+
+.listCard-left-quantity input {
+  width: 26px;
+  height: 20px;
+  margin: 0 10px;
+  outline: 0;
+  padding: 5px 2px;
+  font-size: 12px;
+  border: 1px solid #e7e7e7;
+  cursor: text;
+  text-align: center;
+  color: rgb(119, 119, 119);
+}
+
+.listCard li {
+  display: flex !important;
+  padding: 18px 10px !important;
+  justify-content: space-between;
+}
+
+.closeShopping {
+  position: absolute;
+  background-color: white;
+  font-weight: bold;
+  top: -4px;
+  right: -2px;
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, .4);
+  line-height: 1px;
+}
+
+.listCard li {
+  border-bottom: 1px solid #e7e7e7;
+  padding-bottom: 10px;
+  width: 100%;
+}
+
+
+
+
+
+
+
+
+
 .shop-section {
   padding: 0 80px;
 }
@@ -384,6 +541,11 @@
 
 }
 
+
+.shop-main-content-items .list {
+  display: none;
+}
+
 .shop-main-filter-shop-content ul li {
   list-style: none;
   padding: 4px 0;
@@ -619,7 +781,9 @@
   padding-left: 25px;
 }
 
-
+.shop-main-content-show-icon .active {
+  color: #606da6;
+}
 
 .shop-main-filter-custom-title {
   border-bottom: 1px solid #eaeaea;
@@ -871,7 +1035,7 @@
   /* align-items: center; */
   flex-direction: column;
   background: #1ab2ff;
-  
+
 }
 
 .price-bar {
@@ -1004,43 +1168,147 @@
 
 
 
+.shop-main-content-items-detail-desp-title {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.shop-main-content-items-detail-item:hover .shop-main-content-items-detail-cardbtn .btn-1 {
+  background-color: #606da6;
+  color: white;
+  border: 1px solid #606da6;
+}
+
+.shop-main-content-items-detail-desp-details {
+  font-size: 14px;
+}
+
+.shop-main-content-items-detail-item-img img {
+  height: 100% !important;
+}
+
+.shop-main-content-items-detail-desp-details span button {
+  font-size: 14px;
+  background-color: transparent;
+  border: none;
+  color: rgb(0, 136, 204);
+}
+
+.shop-main-content-items-detail-desp-details span button:hover {
+  color: rgb(0, 55, 83);
+}
+
+.shop-main-content-items-detail-desp .price {
+  font-size: 20px;
+  padding-bottom: 15px;
+}
+
+.shop-main-content-items-detail-item {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+  height: 250px;
+}
+
+.shop-main-content-items-detail-desp {
+  /* padding: 20px 0 60px 20px; */
+  display: flex;
+  padding-left: 20px;
+  flex-direction: column;
+  justify-content: center;
+  /* justify-self:left; */
+  /* background-color: red; */
+  /* margin-bottom: 2055px; */
+
+}
+
+.shop-main-content-items-detail-cardbtn .btn-1 {
+  /* margin-left: 5px; */
+  padding: 13.5px 23px 12px 20px;
+  font-weight: 700;
+  border: 1px solid #eaeaea;
+  color: #222529;
+  font-size: 14px;
+  background-color: transparent;
+  margin-right: 4px;
+}
+
+.shop-main-content-items-detail-cardbtn .btn-2,
+.shop-main-content-items-detail-cardbtn .btn-3 {
+  margin-left: 1.5px;
+  padding: 8px 13.5px;
+  background-color: transparent;
+  border: 1px solid #eaeaea;
+}
+
+.shop-main-content-items-detail-cardbtn .btn-2 a,
+.shop-main-content-items-detail-cardbtn .btn-3 a {
+
+  text-decoration: none;
+  color: #222529;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media only screen and (max-width: 575.98px) {
   .shop-section {
     padding: 0 25px;
-  }  
-  .three-image .three-image-blchair{
-    width: 100%;
-    margin:0 0px;
   }
-  .three-image .three-image-clamps{
+
+  .three-image .three-image-blchair {
+    width: 100%;
+    margin: 0 0px;
+  }
+
+  .three-image .three-image-clamps {
     width: 100%;
     margin: 18px 0 0 0;
   }
-  .three-image .three-image-lux{
+
+  .three-image .three-image-lux {
     width: 100%;
     margin-top: 18px;
   }
-  .shop-section-main .shop-main-filter{
-  display: none;
+
+  .shop-section-main .shop-main-filter {
+    display: none;
   }
+
   .shop-main-content {
     width: 100%;
     padding-left: 0;
 
   }
-  .shop-main-content-items{
 
-  }
-  .shop-cart{
-    width:49%;
+  .shop-main-content-items {}
+
+  .shop-cart {
+    width: 49%;
     height: auto;
   }
-  
 
-  .shop-cart .quickview-container-btn{
+
+  .shop-cart .quickview-container-btn {
     bottom: 26% !important;
   }
-  .shop-cart .info .hrt{
+
+  .shop-cart .info .hrt {
     top: 79% !important;
   }
 }

@@ -518,7 +518,10 @@ color:white;
 .checkout-main-right-shipTo-content p{
   color: rgb(119, 119, 119);
 }
-
+.checkout-main-right-shipMethod-content{
+  color: #777;
+  padding: 20px 0;
+}
 
 
 

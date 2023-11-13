@@ -47,18 +47,144 @@
   <!-- main -->
   <div class="main">
 
-    <nav class="navbar navbar-expand-lg navbar-light first-navi" id="navi">
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03"
-        aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+    <nav class="navi-bar" id="navi">
+      <button class="navi-bar-togglerButton" type="button">
+        <span class="fa-solid fa-bars"></span>
       </button>
-      <div class="collapse navbar-collapse navi2" id="navbarTogglerDemo03">
-        <ul class="navbar-nav mr-auto mt-2 mt-lg-0 ul"> <!-- add height -->
-          <li class="nav-item active li link0"><a class="nav-link a na0" href="index.html">HOME</a></li>
-          <li class="nav-item active li link1"><a class="nav-link a na1" href="shop.html">SHOP</a>
-            <div class="container cont1">
-              <div class="row cont1row1">
-                <div class="col cont1col1">
+      <div class="navibar-sidebar">
+        <div class="navibar-sidebar-titles">
+          <li class="navibar-sidebar-titles-menu active" data-sidebar-li="menu" style="width: 34%;">
+            <span class="fa-solid fa-bars" style="padding-right: 5px;"></span> Menu
+          </li>
+          <li class="navibar-sidebar-titles-account" data-sidebar-li="account">Account</li>
+          <li class="navibar-sidebar-titles-settings" data-sidebar-li="settings">Settings</li>
+        </div>
+        <div class="navibar-sidebar-contents">
+          <ul class="sidebar-navbar-menu-content menu sidebar-item">
+            <div>
+              <li class="sidebar-navbar-link"><a class="sidebar-home-link" href="index.html">HOME</a></li>
+              <div class="sidebar-shop-link-main">
+                <li class="sidebar-navbar-link sidebar-navbar-link-shop"><a class="sidebar-shop-link"
+                    href="shop.html">SHOP</a><i class="fa-solid fa-chevron-down"></i></li>
+                <div class="sidebar-shop-link-contents">
+                  <ul class="sidebar-shop-link-contents-v1">
+                    <li>
+                      <p><span class="fa-solid fa-chevron-right"></span>VARITIONS 1</p>
+                    </li>
+                    <li><a href="#"><span class="fa-solid fa-chevron-right"></span>FULLWIDTH BANNER</a></li>
+                    <li><a href="#"><span class="fa-solid fa-chevron-right"></span>BOXED IMAGE BANNER</a></li>
+                    <li><a href="#"><span class="fa-solid fa-chevron-right"></span>BOXED SLIDER BANNER</a></li>
+                    <li><a href="#"><span class="fa-solid fa-chevron-right"></span>LEFT SIDEBAR</a></li>
+                    <li><a href="#"><span class="fa-solid fa-chevron-right"></span>RIGHT SIDEBAR</a></li>
+                    <li><a href="#"><span class="fa-solid fa-chevron-right"></span>PRODUCT FLEX GRID</a></li>
+                    <li><a href="#"><span class="fa-solid fa-chevron-right"></span>PRODUCT FLEX ITEM TYPES</a></li>
+                  </ul>
+                  <ul class="sidebar-shop-link-contents-v2">
+                    <li>
+                      <p><span class="fa-solid fa-chevron-right"></span>VARITIONS 2</p>
+                    </li>
+                    <li><a href="#"><span class="fa-solid fa-chevron-right"></span>AJAX INFINITE SCROLL</a></li>
+                    <li><a href="#"><span class="fa-solid fa-chevron-right"></span>3 COLUMNS PRODUCTS</a></li>
+                    <li><a href="#"><span class="fa-solid fa-chevron-right"></span>4 COLUMNS PRODUCTS</a></li>
+                    <li><a href="#"><span class="fa-solid fa-chevron-right"></span>5 COLUMNS PRODUCTS</a></li>
+                    <li><a href="#"><span class="fa-solid fa-chevron-right"></span>6 COLUMNS PRODUCTS</a></li>
+                    <li><a href="#"><span class="fa-solid fa-chevron-right"></span>7 COLUMNS PRODUCTS</a></li>
+                    <li><a href="#"><span class="fa-solid fa-chevron-right"></span>8 COLUMNS PRODUCTS</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="sidebar-products-link-main">
+                <li class="sidebar-navbar-link sidebar-navbar-link-products"><a class="sidebar-product-link"
+                    href="products.html">PRODUCTS</a><i class="fa-solid fa-chevron-down"></i>
+                </li>
+                <div class="sidebar-products-link-contents">
+                  <ul class="sidebar-products-link-contents-v1">
+                    <li>
+                      <p><span class="fa-solid fa-chevron-right"></span>PRODUCT PAGES</p>
+                    </li>
+                    <li><a href="#"><span class="fa-solid fa-chevron-right"></span>SIMPLE PRODUCT</a></li>
+                    <li><a href="#"><span class="fa-solid fa-chevron-right"></span>CONFIGURABLE PRODUCT</a></li>
+                    <li><a href="#"><span class="fa-solid fa-chevron-right"></span>BUNDLE PRODUCT</a></li>
+                    <li><a href="#"><span class="fa-solid fa-chevron-right"></span>GROUPED PRODUCT</a></li>
+                    <li><a href="#"><span class="fa-solid fa-chevron-right"></span>DOWNLOADABLE PRODUCT</a></li>
+                    <li><a href="#"><span class="fa-solid fa-chevron-right"></span>ADDTOCART STICKY</a></li>
+                    <li><a href="#"><span class="fa-solid fa-chevron-right"></span>VERTICAL TABS</a></li>
+                    <li><a href="#"><span class="fa-solid fa-chevron-right"></span>ACCORDION TABS</a></li>
+                    <li><a href="#"><span class="fa-solid fa-chevron-right"></span>STICKY TABS</a></li>
+                  </ul>
+                  <ul class="sidebar-product-link-contents-v2">
+                    <li>
+                      <p><span class="fa-solid fa-chevron-right"></span>PRODUCT LAYOUT</p>
+                    </li>
+                    <li><a href="#"><span class="fa-solid fa-chevron-right"></span>DEFAULT LAYOUT</a></li>
+                    <li><a href="#"><span class="fa-solid fa-chevron-right"></span>EXTENDED LAYOUT</a></li>
+                    <li><a href="#"><span class="fa-solid fa-chevron-right"></span>FULL WIDTH LAYOUT</a></li>
+                    <li><a href="#"><span class="fa-solid fa-chevron-right"></span>GRID IMAGES LAYOUT</a></li>
+                    <li><a href="#"><span class="fa-solid fa-chevron-right"></span>STICKY RIGHT SIDE INFO</a></li>
+                    <li><a href="#"><span class="fa-solid fa-chevron-right"></span>VERTICAL LAYOUT</a></li>
+                    <li><a href="#"><span class="fa-solid fa-chevron-right"></span>WITH SIDEBAR</a></li>
+                    <li><a href="#"><span class="fa-solid fa-chevron-right"></span>WITHOUT SIDEBAR</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="sidebar-pages-link-main">
+                <li class="sidebar-navbar-link sidebar-navbar-link-pages"><a class="sidebar-pages-link"
+                    href="#">PAGES</a><i class="fa-solid fa-chevron-down"></i></li>
+                <div class="sidebar-pages-link-contents">
+                  <ul class="sidebar-pages-link-contents-v1">
+                    <li><a href="#"><span class="fa-solid fa-chevron-right"></span>ABOUT US</a></li>
+                    <li><a href="#"><span class="fa-solid fa-chevron-right"></span>CONTACT US</a></li>
+                    <li><a href="#"><span class="fa-solid fa-chevron-right"></span>BLOG</a></li>
+                    <li><a href="#"><span class="fa-solid fa-chevron-right"></span>POST</a></li>
+                    <li><a href="#"><span class="fa-solid fa-chevron-right"></span>SHOPPING CART</a></li>
+                    <li><a href="#"><span class="fa-solid fa-chevron-right"></span>CHECKOUT</a></li>
+                    <li><a href="#"><span class="fa-solid fa-chevron-right"></span>MY ACCOUNT</a></li>
+                  </ul>
+
+                </div>
+
+              </div>
+              <div class="sidebar-features-link-main">
+                <li class="sidebar-navbar-link sidebar-navbar-link-features"><a class="sidebar-features-link"
+                    href="#">FEATURES</a><i class="fa-solid fa-chevron-down"></i></li>
+                <div class="sidebar-features-link-contents">
+                  <ul class="sidebar-features-link-contents-v1">
+                    <li><a href="#"><span class="fa-solid fa-chevron-right"></span>HEADER TYPES</a></li>
+                    <li><a href="#"><span class="fa-solid fa-chevron-right"></span>FOOTER TYPES</a></li>
+                  </ul>
+
+                </div>
+
+              </div>
+              <li class="sidebar-navbar-link"><a class="sidebar-buyporto-link " href="#">BUYPORTO!</a></li>
+            </div>
+          </ul>
+          <ul class="sidebar-navbar-account-content account sidebar-item">
+            <div>
+              <li class="sidebar-navbar-account-content-blog">Blog</li>
+              <li class="sidebar-navbar-account-content-signIn">Sign In</li>
+              <li class="sidebar-navbar-account-content-contactUs">Contact Us</li>
+              <li class="sidebar-navbar-account-content-createAccount">Create an Account</li>
+            </div>
+          </ul>
+          <ul class="sidebar-navbar-settings-content settings sidebar-item">
+            <div>
+              <li><a>USD</a><i class="fa-solid fa-chevron-down"></i></li>
+            </div>
+          </ul>
+
+        </div>
+      </div>
+
+
+
+      <div class="navigation-links" id="">
+        <ul class="navbar-main"> <!-- add height -->
+          <li class="navbar-link"><a class="home-link" href="index.html">HOME</a></li>
+          <li class="navbar-link navbar-link-shop"><a class="shop-link" href="shop.html">SHOP</a>
+            <div class="shop-link-content">
+              <div class="shop-link-content-main">
+                <div class="shop-link-content-main-first">
                   <ul>
                     <li><b>VARITIONS 1</b></li>
                     <li><a href="#">FULLWIDTH BANNER</a></li>
@@ -70,7 +196,7 @@
                     <li><a href="#">PRODUCT FLEX ITEM TYPES</a></li>
                   </ul>
                 </div>
-                <div class="col cont1col2">
+                <div class="shop-link-content-main-second">
                   <ul>
                     <li><b>VARITIONS 1</b></li>
                     <li><a href="#">AJAX INFINITE SCROLL</a></li>
@@ -82,16 +208,16 @@
                     <li><a href="#">8 COLUMNS PRODUCTS</a></li>
                   </ul>
                 </div>
-                <div class="col cont1col3">
+                <div class="shop-link-content-main-third">
                   <img src="images/sh0pimg.jpg" alt="">
                 </div>
               </div>
             </div>
           </li>
-          <li class="nav-item active li link2"><a class="nav-link a na2" href="products.html">PRODUCTS</a>
-            <div class="container cont2">
-              <div class="row cont2row1">
-                <div class="col cont2col1">
+          <li class="navbar-link navbar-link-product"><a class="product-link" href="products.html">PRODUCTS</a>
+            <div class="product-link-content">
+              <div class="product-link-content-main">
+                <div class="product-link-content-main-first">
                   <ul>
                     <li><b>PRODUCT PAGES</b></li>
                     <li><a href="#">SIMPLE PRODUCT</a></li>
@@ -105,7 +231,7 @@
                     <li><a href="#">STICKY TABS</a></li>
                   </ul>
                 </div>
-                <div class="col cont2col2">
+                <div class="product-link-content-main-second">
                   <ul>
                     <li><b>PRODUCT LAYOUT</b></li>
                     <li><a href="#">DEFAULT LAYOUT</a></li>
@@ -118,16 +244,16 @@
                     <li><a href="#">WITHOUT SIDEBAR</a></li>
                   </ul>
                 </div>
-                <div class="col cont2col3">
+                <div class="product-link-content-main-third">
                   <img src="images/productlinkimg.jpg" alt="">
                 </div>
               </div>
             </div>
           </li>
-          <li class="nav-item active li link3"><a class="nav-link a na3" href="#">PAGES</a>
-            <div class="container cont3">
-              <div class="row cont3row1">
-                <div class="col cont3col1">
+          <li class="navbar-link navbar-link-pages"><a class="pages-link" href="#">PAGES</a>
+            <div class="pages-link-content">
+              <div class="pages-link-content-main">
+                <div class="pages-link-content-main-first">
                   <ul>
                     <li><a href="#">ABOUT US</a></li>
                     <li><a href="#">CONTACT US</a></li>
@@ -139,11 +265,12 @@
                 </div>
               </div>
             </div>
+
           </li>
-          <li class="nav-item active li link4"><a class="nav-link a na4" href="#">FEATURES</a>
-            <div class="container cont4">
-              <div class="row cont4row1">
-                <div class="col cont4col1">
+          <li class="navbar-link navbar-link-features"><a class="features-link" href="#">FEATURES</a>
+            <div class="features-link-content">
+              <div class="features-link-content-main">
+                <div class="features-link-content-main-first">
                   <ul>
                     <li><a href="#">HEADER TYPES</a></li>
                     <li><a href="#">FOOTER TYPES</a></li>
@@ -151,23 +278,23 @@
               </div>
             </div>
           </li>
-          <li class="nav-item active li link5"><a class="nav-link a na5 " href="#">BUYPORTO!</a></li>
+          <li class="navbar-link"><a class="buyporto-link " href="#">BUYPORTO!</a></li>
         </ul>
       </div>
-      <div class="logo">
+      <div class="navigation-logo">
         <img src="images/logo.png">
       </div>
-      <div class="icons">
+      <div class="navigation-icons">
         <ul style="position: relative;">
-          <li><button class="fa fa-user  " style="font-size:28px"></button></li>
+          <li><button class="fa-regular fa-user  " style="font-size:28px"></button></li>
           <li><button class="fa fa-search" style="font-size:28px"></button></li>
-          <li><button class="fa fa-heart" style="font-size:28px"></button></li>
+          <li><button class="fa-regular fa-heart" style="font-size:28px"></button></li>
           <li class="shopping">
-            <button class="fa fa-shopping-cart" style="font-size:28px">
+            <button class="fa fa-bag-shopping" style="font-size:28px">
               <span id="count_items" class="nav-cart-count-items">0</span>
             </button>
           </li>
-          <div class="addToCard " >
+          <div class="addToCard ">
             <div class="addToCard-title">
               <p class="NoOfItems"></p>
               <p>VIEW CART</p>
@@ -189,150 +316,8 @@
         </ul>
       </div>
     </nav>
-    <style>
-      .addToCard {
-        background-color: red;
-        position: absolute;
-        top: 60px;
-        box-shadow: 0 5px 8px rgba(0, 0, 0, .15);
-        background-color: white;
-        z-index: 10;
-        width: 300px;
-        right: 12px;
-        padding: 12px;
-      }
 
-      .addToCard p {
-        font-weight: 600;
-        font-size: 14px;
-      }
 
-      .addToCard-title {
-        display: flex;
-        justify-content: space-between;
-        border-bottom: 1px solid #e7e7e7;
-      }
-
-      .subTotal-section-main {
-        padding: 12px 10px 0 10px;
-      }
-
-      .subTotal-section {
-        display: flex;
-        font-weight: 700;
-        justify-content: space-between;
-      }
-
-      .gotoCart {
-        background-color: black !important;
-        font-size: .75rem;
-        letter-spacing: .025em;
-        text-transform: uppercase;
-        /* margin: 0 20px; */
-        padding: 0.875rem 1.5rem;
-        border-radius: 2px;
-        float: none;
-        width: 100%;
-        font-weight: 600;
-        margin-bottom: 10px;
-        height: auto;
-        line-height: inherit;
-        color: #fff;
-        background-color: #222529;
-        border: none;
-      }
-
-      .addToCard .listCard {
-        display: flex;
-        flex-direction: column !important;
-        /* border-bottom: 1px solid #e7e7e7; */
-        padding: 20px 0;
-        display: flex;
-        justify-content: space-between;
-        max-height: 260px;
-        overflow-y: auto;
-        /* min-height: auto; */
-      }
-      
-      .addToCard .listCard.scrollable {
-
-      /* overflow-y: scroll; */
-
-      }
-      .addToCard .listCard-left {
-        width: 65%;
-        height: 80px;
-      }
-
-      .addToCard .listCard-left p {
-        margin-bottom: 0;
-      }
-
-      .addToCard .listCard-right {
-        width: 80px;
-        height: 80px;
-        position: relative;
-      }
-
-      .addToCard .listCard-right img {
-        width: 100%;
-        height: 100%;
-      }
-
-      .listCard-left-quantity {
-        display: flex;
-        align-items: center;
-        color:  rgb(105, 105, 107);
-        font-size: 13px;
-      }
-      .listCard-left-price{
-        padding: 8px 0;
-        font-size: 13px;
-        color:  rgb(105, 105, 107);
-      }
-      .listCard-left-quantity input {
-        width: 26px;
-        height: 20px;
-        margin:0 10px;
-        outline: 0;
-        padding: 5px 2px;
-        font-size: 12px;
-        border: 1px solid #e7e7e7;
-        cursor: text;
-        text-align: center;
-        color: rgb(119, 119, 119);
-      }
-
-      .listCard li {
-        display: flex !important;
-        padding: 18px 10px !important;
-        justify-content: space-between;
-      }
-
-      .closeShopping {
-        position: absolute;
-        background-color: white;
-        font-weight: bold;
-        top: -4px;
-        right: -2px;
-        border-radius: 50%;
-        height: 20px;
-        width: 20px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        box-shadow: 0 2px 6px 0 rgba(0, 0, 0, .4);
-        line-height: 1px;
-      }
-      .listCard li{
-        border-bottom: 1px solid #e7e7e7;
-        padding-bottom: 10px;
-      }
-      /* .listCard li:last-child{
-        border-bottom: 0;
-      } */
-    </style>
-    
     <div class="off-cont">
       <div class="off">
         <p>Get 10% OFF at the Porto Kitchen Selection - <span><b style="color: #ed7e63;">Shop
@@ -1013,41 +998,7 @@
             </div>
 
           </div>
-          <script>
-            $(document).ready(function () {
-              const priceplus = $('.shop-main-filter-pp');
-              const priceminus = $('.shop-main-filter-pm');
-              const colorplus = $('.shop-main-filter-cp');
-              const colorminus = $('.shop-main-filter-cm');
-              const priceContent = $('.shop-main-filter-price-content');
-              const colorContent = $('.shop-main-filter-color-content');
-              priceplus.css('display', 'none')
-              colorplus.css('display', 'none')
-              priceminus.on('click', function () {
-                priceplus.css('display', 'flex')
-                priceContent.css('display', "none")
-                priceminus.css('display', "none")
 
-                priceplus.on('click', function () {
-                  priceplus.css('display', 'none')
-                  priceContent.css('display', "block")
-                  priceminus.css('display', "flex")
-                })
-              })
-              colorminus.on('click', function () {
-                colorplus.css('display', 'flex')
-                colorContent.css('display', "none")
-                colorminus.css('display', "none")
-
-                colorplus.on('click', function () {
-                  colorplus.css('display', 'none')
-                  colorContent.css('display', "block")
-                  colorminus.css('display', "flex")
-                })
-              })
-
-            })
-          </script>
 
           <div class="shop-main-filter-price">
             <div class="shop-main-filter-price-title">
@@ -1344,20 +1295,15 @@
                     </select>
                   </span>
                 </p>
-                <style>
-                  .shop-main-content-show-icon .active {
-                    color: #606da6;
-                  }
-                </style>
                 <div class="shop-main-content-show-icon">
-                  <i class="fa-solid fa-table-cells active"></i>
+                  <i class="fa-solid fa-table-cells active "></i>
                   <i class="fa-solid fa-list"></i>
                 </div>
               </div>
             </div>
           </div>
           <div class="shop-main-content-items">
-            <div class="shop-main-content-items-cardcont" style="display: none;">
+            <div class="shop-main-content-items-cardcont">
               <div class="shop-cart">
                 <img src="images/16.jpg" alt="">
                 <span class="discount">-20%</span>
@@ -1595,266 +1541,6 @@
       </div>
 
     </section>
-
-    <style>
-      .shop-main-content-items-detail-desp-title {
-        font-size: 22px;
-        font-weight: 600;
-      }
-
-      .shop-main-content-items-detail-item:hover .shop-main-content-items-detail-cardbtn .btn-1 {
-        background-color: #606da6;
-        color: white;
-        border: 1px solid #606da6;
-      }
-
-      .shop-main-content-items-detail-desp-details {
-        font-size: 14px;
-      }
-
-      .shop-main-content-items-detail-item-img img {
-        height: 100% !important;
-      }
-
-      .shop-main-content-items-detail-desp-details span button {
-        font-size: 14px;
-        background-color: transparent;
-        border: none;
-        color: rgb(0, 136, 204);
-      }
-
-      .shop-main-content-items-detail-desp-details span button:hover {
-        color: rgb(0, 55, 83);
-      }
-
-      .shop-main-content-items-detail-desp .price {
-        font-size: 20px;
-        padding-bottom: 15px;
-      }
-
-      .shop-main-content-items-detail-item {
-        display: flex;
-        flex-direction: row;
-        margin-bottom: 20px;
-        height: 250px;
-      }
-
-      .shop-main-content-items-detail-desp {
-        /* padding: 20px 0 60px 20px; */
-        display: flex;
-        padding-left: 20px;
-        flex-direction: column;
-        justify-content: center;
-        /* justify-self:left; */
-        /* background-color: red; */
-        /* margin-bottom: 2055px; */
-
-      }
-
-      .shop-main-content-items-detail-cardbtn .btn-1 {
-        /* margin-left: 5px; */
-        padding: 13.5px 23px 12px 20px;
-        font-weight: 700;
-        border: 1px solid #eaeaea;
-        color: #222529;
-        font-size: 14px;
-        background-color: transparent;
-        margin-right: 4px;
-      }
-
-      .shop-main-content-items-detail-cardbtn .btn-2,
-      .shop-main-content-items-detail-cardbtn .btn-3 {
-        margin-left: 1.5px;
-        padding: 8px 13.5px;
-        background-color: transparent;
-        border: 1px solid #eaeaea;
-      }
-
-      .shop-main-content-items-detail-cardbtn .btn-2 a,
-      .shop-main-content-items-detail-cardbtn .btn-3 a {
-
-        text-decoration: none;
-        color: #222529;
-      }
-    </style>
-
-    <script>
-      $(document).ready(function () {
-        $('#shop-main-filter-featured-content-carosel').carousel({
-          wrap: false
-        });
-      });
-
-      $(document).ready(function () {
-
-        const prev = $('.shop-main-filter-featured-title-button-prev');
-        const previ = $('.shop-main-filter-featured-title-button-prev i');
-        const next = $('.shop-main-filter-featured-title-button-next');
-        const nexti = $('.shop-main-filter-featured-title-button-next i');
-        previ.css("color", "rgb(231, 231, 231)")
-        next.on("click", function () {
-          previ.css("color", "black")
-          const activeButton = $('.carousel-item.active')
-          const nextactiveButton = activeButton.index()
-          if (nextactiveButton > 0) {
-            nexti.css("color", "rgb(231, 231, 231)")
-          }
-          else {
-            nexti.css("color", "black")
-          }
-        })
-        prev.on("click", function () {
-          nexti.css("color", "black")
-          const activeButton = $('.carousel-item.active')
-          const prevactiveButton = activeButton.index()
-          if (prevactiveButton == 0 || prevactiveButton == 1) {
-            previ.css("color", "rgb(231, 231, 231)")
-          }
-          else {
-            previ.css("color", "black")
-          }
-        })
-      })
-
-
-
-      // ///////////////////////
-      const minPin = document.getElementById('min-pin');
-      const maxPin = document.getElementById('max-pin');
-      const minPriceDisplay = document.getElementById('min-price-display');
-      const maxPriceDisplay = document.getElementById('max-price-display');
-      const priceBar = document.querySelector('.price-bar');
-      const priceRange = 480; // Max price range
-      const barRect = priceBar.getBoundingClientRect();
-
-      minPin.style.left = '0px';
-      maxPin.style.left = `${barRect.width - 5}px`;
-
-      let minPinDragging = false;
-      let maxPinDragging = false;
-
-      minPin.addEventListener('mousedown', () => {
-        minPinDragging = true;
-      });
-
-      maxPin.addEventListener('mousedown', () => {
-        maxPinDragging = true;
-      });
-
-      document.addEventListener('mousemove', (e) => {
-        if (minPinDragging) {
-          movePin(minPin, e.clientX, true);
-        }
-        if (maxPinDragging) {
-          movePin(maxPin, e.clientX, false);
-        }
-      });
-
-      document.addEventListener('mouseup', () => {
-        minPinDragging = false;
-        maxPinDragging = false;
-      });
-
-      function movePin(pin, mouseX, isMin) {
-        let newPosition = mouseX - barRect.left;
-
-        if (newPosition < 0) {
-          newPosition = 0;
-        } else if (newPosition > barRect.width - 5) {
-          newPosition = barRect.width - 5;
-        }
-
-        if (!isMin) {
-          const minPinPosition = parseFloat(minPin.style.left);
-          if (newPosition < minPinPosition) {
-            newPosition = minPinPosition;
-          }
-        } else {
-          const maxPinPosition = parseFloat(maxPin.style.left);
-          if (newPosition > maxPinPosition) {
-            newPosition = maxPinPosition;
-          }
-        }
-
-        pin.style.transition = 'none'; // Disable transition while dragging
-        pin.style.left = newPosition + 'px';
-
-        const price = Math.round((newPosition / (barRect.width - 5)) * priceRange + 19);
-        const formattedPrice = `$${price}.00`;
-        pin === minPin
-          ? (minPriceDisplay.textContent = formattedPrice)
-          : (maxPriceDisplay.textContent = formattedPrice);
-      }
-
-      minPin.addEventListener('mouseup', () => {
-        minPin.style.transition = 'left 0.2s'; // Restore transition after dragging
-      });
-
-      maxPin.addEventListener('mouseup', () => {
-        maxPin.style.transition = 'left 0.2s'; // Restore transition after dragging
-      });
-
-      // ////////////////////////////
-      $(document).ready(function () {
-        let quickviewContainer = document.querySelector('.quickview-container');
-        $('.quickview-container-btn').on('click', function () {
-          quickviewContainer.style.display = 'flex';
-          const dataName = $(this).data('name');
-          $('.quickview-container-items').each(function () {
-            const closeButton = $(this).find(".fa-xmark");
-            const dataTarget = $(this).data('target');
-            if (dataName === dataTarget) {
-              $(this).addClass('active');
-            } else {
-              $(this).removeClass('active');
-            }
-
-          });
-        });
-        $('.fa-xmark').on('click', function () {
-          $(this).closest('.quickview-container-items').removeClass('active');
-          quickviewContainer.style.display = 'none';
-
-
-        });
-      });
-
-
-
-      // ///////////////////////////////
-
-      const counters = document.querySelectorAll(".product-type-add-to-card-counter");
-
-      // Loop through each counter and set up event listeners
-      counters.forEach((counter) => {
-        const incrementButton = counter.querySelector(".increment");
-        const decrementButton = counter.querySelector(".decrement");
-        const countElement = counter.querySelector(".count");
-
-        let count = 1;
-        countElement.textContent = count;
-
-        function increment() {
-          count++;
-          countElement.textContent = count;
-        }
-
-        function decrement() {
-          if (count > 0) {
-            count--;
-            countElement.textContent = count;
-          }
-        }
-
-        incrementButton.addEventListener("click", increment);
-        decrementButton.addEventListener("click", decrement);
-      });
-
-    </script>
-
-
-
-
 
 
 

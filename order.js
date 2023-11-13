@@ -15,7 +15,6 @@ const shippingOptions = document.querySelectorAll('input[name="shipping-fee"]');
 const shippingFeeError = document.querySelector('.shipping-fee-error');
 const conformForm = document.querySelector('.checkout-main-left-second');
 const iconColorHandle = document.querySelector('.checkout-title-icon-shipping-review');
-// const shippingMethod = document.querySelector
 form.addEventListener('submit', (e) => {
   if (!validateInputs() || !validateShippingFee()) {
     e.preventDefault();
@@ -35,10 +34,10 @@ function showSecond() {
   form.style.display = 'none';
   conformForm.classList.remove('hidden')
 
- $('.displayDetails-name').text(firstname.value + " " + lastname.value)
-$('.displayDetails-company').text(company.value)
-$('.displayDetails-address').text(address.value + ', '+address2.value + ', ' + address3.value)
- $('.displayDetails-cityState').text(city.value +", "+ state.value)
+  $('.displayDetails-name').text(firstname.value + " " + lastname.value)
+  $('.displayDetails-company').text(company.value)
+  $('.displayDetails-address').text(address.value + ', ' + address2.value + ', ' + address3.value)
+  $('.displayDetails-cityState').text(city.value + ", " + state.value)
   $('.displayDetails-country').text(country.value)
   $('.displayDetails-phone').text(phone.value)
   $('.displayDetails-email').text(email.value)
@@ -190,17 +189,18 @@ $(document).ready(function () {
 //checkbox-clicked
 const addressDisplay = document.querySelector('#addressDisplay')
 // addressDisplay.checked = true
-$(addressDisplay).on('click',function(){
-  if(!addressDisplay.checked){
+$(addressDisplay).on('click', function () {
+  if (!addressDisplay.checked) {
     this.checked = false
   }
-  else{
-    this.checked =true
+  else {
+    this.checked = true
   }
-  if(addressDisplay.checked){
-    $('.place-order').on('click',function(){
-      $('.checkout-section').css('display','none')
-      $('.checkout-section-conform').css('display','block')
+  if (addressDisplay.checked) {
+    $('.place-order').on('click', function () {
+      $('.checkout-section').css('display', 'none')
+      $('.checkout-section-conform').css('display', 'block')
     })
+    
   }
 })
