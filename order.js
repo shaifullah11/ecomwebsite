@@ -1,3 +1,4 @@
+//form-validation
 const form = document.querySelector('.checkout-main-left-form-form');
 const email = document.querySelector('#email');
 const firstname = document.querySelector('#firstname');
@@ -27,8 +28,6 @@ form.addEventListener('submit', (e) => {
 
 });
 
-// document.querySelector('.name').innerText ="oombu";
-// $('.displayDetails-name').html("okoko")
 function showSecond() {
   iconColorHandle.classList.add('review')
   form.style.display = 'none';
@@ -43,11 +42,6 @@ function showSecond() {
   $('.displayDetails-email').text(email.value)
 
 }
-
-
-
-
-
 
 
 function validateShippingFee() {
@@ -67,8 +61,6 @@ function validateInputs() {
   const firstnameVal = firstname.value.trim();
   const lastnameVal = lastname.value.trim();
   const addressVal = address.value.trim();
-  // const countryVal = country.value.trim();
-  // const stateVal = state.value.trim();
   const cityVal = city.value.trim();
   const postalVal = postal.value.trim();
   const phoneVal = phone.value.trim();
@@ -79,7 +71,6 @@ function validateInputs() {
     firstname.focus();
   } else {
     setSuccess(firstname);
-    // console.log(firstnameVal)
   }
 
   if (lastnameVal === '') {
@@ -168,21 +159,12 @@ function validateNumber(number) {
   return alphanumericPattern.test(number);
 }
 
-
-
-
-
-
-
-
-
+// discount
 $(document).ready(function () {
   $('.second-payment-content-discount-title').on('click', function () {
     $('.second-payment-content-discount').toggleClass("hidden");
   })
 })
-
-
 
 
 

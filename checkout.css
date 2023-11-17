@@ -16,7 +16,6 @@ p{
 }
 
 .checkout-main-left {
-  /* background-color: red; */
   width: 70%;
 }
 
@@ -522,20 +521,6 @@ color:white;
   color: #777;
   padding: 20px 0;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* conform */
 .checkout-section-conform{
   padding: 40px 80px;

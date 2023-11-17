@@ -59,31 +59,6 @@ $(document).ready(function () {
   });
 })
 
-// var prod_but = document.querySelectorAll(".product-type-default-second-wrap");
-// var prod_elements = document.querySelectorAll(".product-review-item");
-// for (var i = 0; i < prod_but.length; i++) {
-//   prod_but[i].addEventListener("click", function() {
-//     prod_but.forEach(function(button) {
-//       button.classList.remove("active");
-//     });
-//     this.classList.add("active");
-//     var prod_li_value = this.getAttribute("data-li");
-//     prod_elements.forEach(function(item) {
-//       item.style.display = "none";
-//     });
-//     if (prod_li_value == "details") {
-//       document.querySelector("." + prod_li_value).style.display = "block";
-//     } else if (prod_li_value == "review") {
-//       document.querySelector("." + prod_li_value).style.display = "block";
-//     } else if (prod_li_value == "custom-tab") {
-//       document.querySelector("." + prod_li_value).style.display = "block";
-//     }else {
-//       console.log("");
-//     }
-//   });
-// }
-
-
 document.addEventListener("DOMContentLoaded", function () {
   var buttons = document.querySelectorAll(".product-type-default-second-wrap button");
   var contentSections = document.querySelectorAll(".product-review-item");
@@ -115,33 +90,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
-
-$(document).ready(function () {
-  var header = $('.first-navi');
-  var isStickyAdded = false;
-  var threshold = 165;
-  var navHeightThreshold = 130;
-  // $(window).scroll(function() {
-  //   if ($(this).scrollTop() >= navHeightThreshold){
-  //     header.css('height','79px');
-  //   }
-  //   else if ($(this).scrollTop() < navHeightThreshold) {
-  //     header.css('height','110px');
-  //   }
-  // })
-  $(window).scroll(function () {
-    if ($(this).scrollTop() >= threshold && !isStickyAdded) {
-      header.addClass('sticky');
-      isStickyAdded = true;
-    } else if ($(this).scrollTop() < threshold && isStickyAdded) {
-      header.removeClass('sticky');
-      isStickyAdded = false;
-    }
-  });
-});
-
-
-
 
 $(document).ready(function () {
   var owl = $('.owl-carousel-2');
@@ -183,35 +131,24 @@ $(document).ready(function () {
     $naviBar.toggleClass('sidebar');
 
     if ($naviBar.hasClass('sidebar')) {
-      // Add click event listener to the document only if 'sidebar' class is present
       $(document).on('click', clickOutsideSidebar);
-
-      // Disable scrolling on the body
       $body.css('overflow', 'hidden');
     } else {
-      // Remove click event listener from the document if 'sidebar' class is not present
       $(document).off('click', clickOutsideSidebar);
-
-      // Enable scrolling on the body
       $body.css('overflow', 'auto');
     }
   });
 
   // Function to handle clicks outside the sidebar
   function clickOutsideSidebar(e) {
-    // Check if the clicked element is not part of the sidebar or the toggle button
     if (!$sidebar.is(e.target) && !$sidebar.has(e.target).length &&
       !$('.navi-bar-togglerButton').is(e.target) && !$('.navi-bar-togglerButton').has(e.target).length &&
       $naviBar.hasClass('sidebar')) {
-      // Remove the 'sidebar' class if it exists
       $naviBar.removeClass('sidebar');
-
-      // Enable scrolling on the body
       $body.css('overflow', 'auto');
     }
   }
 
-  // Prevent clicks inside the sidebar from closing it
   $sidebar.on('click', function (e) {
     e.stopPropagation();
   });

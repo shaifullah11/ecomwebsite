@@ -8,6 +8,7 @@
     integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
   <link href="style.css" rel="stylesheet">
   <title>Product</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" media="screen and (min-width: 768px)"
     href="https://m2.portotheme.com/static/version1689050187/frontend/Smartwave/porto/en_US/css/styles-l.min.css">
   <link rel="stylesheet" type="text/css" media="print"
@@ -369,24 +370,7 @@
 
 
                   </div>
-                  <style>
-                    .carousel-control-prev .fa-chevron-left,
-                    .carousel-control-next .fa-chevron-right {
-                      color: #000 !important;
-                      display: none;
-                      transition: all .5s ease-in;
-                    }
-
-                    .product-image:hover .fa-chevron-left {
-                      display: block;
-                    }
-
-                    .product-image:hover .fa-chevron-right {
-                      display: block;
-                    }
-                  </style>
-
-
+            
                   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
                     data-bs-slide="prev">
                     <i class="fa-solid fa-chevron-left"></i>
@@ -699,32 +683,7 @@
             <div class="items"> <img src="images/golden.png" alt=""> </div>
             <div class="items"> <img src="images/avent.png" alt=""> </div>
           </div>
-          <script>
-            $(document).ready(function () {
-              var owl = $('.owl-carousel-2');
-              owl.owlCarousel({
-                items: 6,
-                nav: true,
-                // margin:0,
-                responsive: {
-                  0: {
-                    items: 1,
-                    nav: true
-                  },
-                  600: {
-                    items: 2,
-                    nav: true,
-                    margin: 100
-                  },
-                  1000: {
-                    items: 5,
-                    nav: true,
-                    margin: 18
-                  }
-                }
-              });
-            })
-          </script>
+          
         </div>
       </div>
     </div>
@@ -801,9 +760,7 @@
     </div>
   </div>
 
-  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> -->
 
-  <!-- <div style="height: 2000px;"></div> -->
   <script src="assets/highlight.js"></script>
   <script src="assets/app.js"></script>
   <script src="script.js"></script>
@@ -817,7 +774,7 @@
         var activeButton = $(".product-image-image-buttons button.active");
         var index = $buttons.index(activeButton);
         var buttonWidth = activeButton.outerWidth();
-        var newPosition = index * (buttonWidth + 8); // Consider margin-right
+        var newPosition = index * (buttonWidth + 8); 
         // $hover.css("left", newPosition + "px");
         // console.log("left", newPosition + "px");
         $hover.css("transform", "translateX(" + newPosition + "px)")
@@ -851,7 +808,7 @@
         var firstButton = $("product-image-image-buttons-1");
         // var prevButton.length = activeButton.prev();
         // console.log(activeButton.length)
-        if (activeButton === firstButton) {"jello"}
+        // if (activeButton === firstButton) {"jello"}
         console.log(prevButton.length)
         if (prevButton.length === 0) {
           prevButton = $buttons.last();
