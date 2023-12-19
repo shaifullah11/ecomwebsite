@@ -63,6 +63,7 @@
 /* ///////// */
 body {
   overflow-x: hidden;
+  /* width: 100vw; */
 }
 
 .navi-bar .navi-bar-togglerButton {
@@ -79,7 +80,7 @@ body {
 }
 
 .navibar-sidebar {
-  transform: translateX(-480px);
+  transform: translateX(-680px);
   background-color: rgb(246, 246, 246);
   height: 100vh;
   box-shadow: 0 0 5px 0 rgba(50, 50, 50, .75);
@@ -621,6 +622,7 @@ text-transform:lowercase;
 
 .fourimgcont {
   margin-top: 13px;
+  padding: 0 80px;
 }
 
 .fcontrow1col1row2 {
@@ -839,7 +841,7 @@ text-transform:lowercase;
   background-image: url(images/blackchair.jpg);
   background-size: cover;
   height: 600px;
-
+margin-left: 10px;
   background-repeat: no-repeat;
   position: relative;
   background-position: center center;
@@ -849,6 +851,15 @@ text-transform:lowercase;
 
 /* /////////////////////////////////////////////////////////////////////end of four image//////////////////////////////////////////////////////////////////////////// */
 
+.four-icons{
+  padding: 13px 95px 0px 95px;
+}
+
+
+
+.wrap-content{
+  padding: 0 80px 0px 80px; 
+}
 .wrap_main {
   display: flex;
   padding: 29px 0px 0px 0px;
@@ -890,6 +901,10 @@ text-transform:lowercase;
   transition: all .1s linear;
 }
 
+.wrap_links ul li.active a {
+  /* color: #606da6 !important; */
+  /* text-decoration: underline; */
+}
 
 .wrap_links ul li:hover {
   border-bottom: 2px solid #606da6 !important;
@@ -928,6 +943,16 @@ text-transform:lowercase;
   /* overflow: hidden; */
   position: relative;
   border: none !important;
+}
+
+.first-card .card:hover {
+  /* box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px; */
+}
+
+.first-card .card:hover img {
+  /* z-index: 1; */
+  /* box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px; */
+  /* filter: drop-shadow(-10px -10px 10px gray); */
 }
 
 .first-card .card img {
@@ -1185,6 +1210,7 @@ text-transform:lowercase;
 .cardcont {
   /* height: 700px; */
   /* background-color: red; */
+  padding: 0 80px;
   /* padding: 0px !important; */
   box-sizing: border-box;
   transition: all .2s linear;
@@ -1193,7 +1219,6 @@ text-transform:lowercase;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-  padding: 40px 2px;
 }
 
 .card {
@@ -1339,6 +1364,7 @@ text-transform:lowercase;
 .browse {
   text-align: center;
   margin-bottom: 40px;
+  padding: 45px 80px 0 80px;
 }
 
 .browse button {
@@ -1371,6 +1397,7 @@ text-transform:lowercase;
 .recent {
   /* border-top: 1px solid #e7e7e7; */
   /* height: 570px; */
+  padding: 0 80px; 
 }
 
 .recentr1 {

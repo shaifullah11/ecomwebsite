@@ -370,7 +370,24 @@
 
 
                   </div>
-            
+                  <style>
+                    .carousel-control-prev .fa-chevron-left,
+                    .carousel-control-next .fa-chevron-right {
+                      color: #000 !important;
+                      display: none;
+                      transition: all .5s ease-in;
+                    }
+
+                    .product-image:hover .fa-chevron-left {
+                      display: block;
+                    }
+
+                    .product-image:hover .fa-chevron-right {
+                      display: block;
+                    }
+                  </style>
+
+
                   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
                     data-bs-slide="prev">
                     <i class="fa-solid fa-chevron-left"></i>
@@ -774,7 +791,7 @@
         var activeButton = $(".product-image-image-buttons button.active");
         var index = $buttons.index(activeButton);
         var buttonWidth = activeButton.outerWidth();
-        var newPosition = index * (buttonWidth + 8); 
+        var newPosition = index * (buttonWidth + 8); // Consider margin-right
         // $hover.css("left", newPosition + "px");
         // console.log("left", newPosition + "px");
         $hover.css("transform", "translateX(" + newPosition + "px)")
@@ -808,7 +825,7 @@
         var firstButton = $("product-image-image-buttons-1");
         // var prevButton.length = activeButton.prev();
         // console.log(activeButton.length)
-        // if (activeButton === firstButton) {"jello"}
+        if (activeButton === firstButton) {"jello"}
         console.log(prevButton.length)
         if (prevButton.length === 0) {
           prevButton = $buttons.last();

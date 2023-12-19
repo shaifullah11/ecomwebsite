@@ -194,7 +194,7 @@
 
 .product-type {
   /* background-color: red; */
-  height: 1350px;
+  height:1350px;
   display: flex;
   padding-top: 25px;
 }
@@ -682,20 +682,4 @@ textarea:required {
 
 .product-type-default-second-wrap.active {
   color: rebeccapurple !important;
-}
-
-/* main-sidebar-carosel */
-.carousel-control-prev .fa-chevron-left,
-.carousel-control-next .fa-chevron-right {
-  color: #000 !important;
-  display: none;
-  transition: all .5s ease-in;
-}
-
-.product-image:hover .fa-chevron-left {
-  display: block;
-}
-
-.product-image:hover .fa-chevron-right {
-  display: block;
 }

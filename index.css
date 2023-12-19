@@ -1,0 +1,77 @@
+@media only screen and (max-width: 992px) {
+  html{
+    overflow-x: hidden;
+  }
+  .navi-bar{
+    padding: 0 20px;
+  }
+  .off-cont{
+padding: 0 20px;
+  }
+  .fourimgcont{
+    padding: 0 20px;
+  }
+  .fcontrow1col2{
+    margin-left: 0%;
+    margin-top: 10px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  html{
+    /* overflow-x: hidden; */
+  }
+  .fcontrow1col1row2col1{
+    margin-bottom: 10px;
+    margin-left: 0% !important;
+  }
+  .fcontrow1col1row2col2{
+    margin-bottom: 10px;
+    margin-left: 0% !important;
+  }
+  .cardcont{
+    padding:0 30px ;
+  }
+  .card{
+    height: 330px;
+    width: 240px;
+  }
+  .recent{
+    padding: 0 20px;
+  }
+}
+
+@media only screen and (max-width:576px) {
+  .fcontrow1col1row2col2{
+    width: 100% !important;
+  }
+  .four-icons{
+    padding: 0 20px;
+    width: 70%;
+  }
+  .wrap_title{
+    padding-bottom: 20px;
+  }
+  .wrap_links ul{
+    display: flex;
+    flex-direction: column;
+    padding-left: 0 !important;
+  }
+  .wrap_links ul li {
+   padding: 4px 0 42px 0 ;
+   margin: 0;
+  }
+  .wrap-content{
+    padding: 0 20px;
+  }
+  .cardcont{
+    padding:0 30px ;
+  }
+  .card{
+    height: 330px;
+    width: 240px;
+  }
+  .recent{
+    padding: 0 20px;
+  }
+}

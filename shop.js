@@ -393,6 +393,7 @@ const reloadCard = () => {
   })
 }
 const deleteItems = (key) => {
+  reloadCard()
   delete listCards[key]
   reloadCard()
 }

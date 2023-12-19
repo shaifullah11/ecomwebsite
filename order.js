@@ -1,4 +1,3 @@
-//form-validation
 const form = document.querySelector('.checkout-main-left-form-form');
 const email = document.querySelector('#email');
 const firstname = document.querySelector('#firstname');
