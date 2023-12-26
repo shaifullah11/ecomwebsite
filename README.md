@@ -1,12 +1,38 @@
-Screenshots
+# Porto - Front-End Project
 
-homepage
-![home1](https://github.com/shaifullah11/ecomwebsite/assets/138781586/fe5d01bb-77b2-48c1-9c4f-56ff8a6b891c)
-![image](https://github.com/shaifullah11/ecomwebsite/assets/138781586/1a90f0ba-9d39-4d0b-a4d6-ea6beda7b7ac)
-![image](https://github.com/shaifullah11/ecomwebsite/assets/138781586/81356af4-2a8a-4ec8-82ec-8ee9b7261202)
+Welcome to Porto, a front-end project showcasing a user-friendly online furniture store. This project includes various pages for navigating through featured products, browsing categories, viewing product details, managing a shopping cart, placing orders, and user authentication.
 
-Footer
-![image](https://github.com/shaifullah11/ecomwebsite/assets/138781586/75db412a-3772-4918-a133-9c4a191989e1)
+## Project Structure
+
+- `index.html`: Main landing page featuring featured products and promotions.
+- `shop.html`: Page displaying different furniture categories.
+- `products.html`: Detailed view of a selected product.
+- `checkout.html`: Shopping cart page with the added products,Front-end form validation for placing an order.
+
+## Live Demo
+
+Check out the live demo: [Porto E-commerce Furniture Website](https://shaifullah11.github.io/ecomwebsite/)
+
+## Features
+
+1. **Homepage:**
+   - Display of featured products and promotions.
+
+2. **Categories Page:**
+   - Browse furniture categories.
+
+3. **Product Detail Page:**
+   - View detailed information about a specific product.
+   - Add the product to the shopping cart.
+
+4. **order:**
+   - View and manage products added to the cart.
+   - Front-end form validation for placing orders.
 
 
-live webpage link:https://shaifullah11.github.io/ecomwebsite/index.html
+## Getting Started
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/shaifullah11/ecomwebsite.git
