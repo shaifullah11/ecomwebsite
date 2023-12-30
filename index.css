@@ -1,77 +1,191 @@
 @media only screen and (max-width: 992px) {
-  html{
-    overflow-x: hidden;
+  html {
+    /* overflow-x: hidden; */
   }
-  .navi-bar{
+
+  .navi-bar {
     padding: 0 20px;
   }
-  .off-cont{
-padding: 0 20px;
-  }
-  .fourimgcont{
+
+  .off-cont {
     padding: 0 20px;
   }
-  .fcontrow1col2{
+
+  .fourimgcont {
+    padding: 0 20px;
+  }
+
+  .fcontrow1col2 {
     margin-left: 0%;
     margin-top: 10px;
+  }
+
+  .four-icons {
+    padding: 0 30px;
+  }
+
+  .wrap {
+    padding: 0 30px;
+  }
+
+  .wrap-content {
+    padding: 0 30px;
+  }
+
+  .cardcont {
+    padding: 0 30px;
+  }
+
+  .card {
+    margin: 15px 0;
+    width: 426px;
+    height: 524px;
+  }
+
+  .mod-bath-main {
+    padding: 0 20px;
+  }
+  .mod-bath-second {
+    padding-right:0px;
+  }
+
+  .browse {
+    padding: 15px 20px 0 20px;
+  }
+
+  .recent {
+    padding: 0 30px;
+  }
+
+  .card .info .hrt {
+    top: 81%;
+  }
+
+  .card button {
+    bottom: 19.5%;
+  }
+
+  .card:hover button {
+    bottom: 20%;
   }
 }
 
 @media only screen and (max-width: 768px) {
-  html{
+  html {
     /* overflow-x: hidden; */
   }
-  .fcontrow1col1row2col1{
+
+  .fcontrow1col1row2col1 {
     margin-bottom: 10px;
     margin-left: 0% !important;
   }
-  .fcontrow1col1row2col2{
+
+  .fcontrow1col1row2col2 {
     margin-bottom: 10px;
     margin-left: 0% !important;
   }
-  .cardcont{
-    padding:0 30px ;
+
+  .cardcont {
+    padding: 0 30px;
   }
-  .card{
-    height: 330px;
-    width: 240px;
+
+  .card {
+    margin-top: 50px;
+    height: 250px;
+    width: 200px;
   }
-  .recent{
+
+  .recent {
     padding: 0 20px;
   }
+
+  .wrap_main {
+    flex-direction: column;
+  }
+
+  .wrap_title {
+    margin-bottom: 20px;
+  }
+
+  .wrap-content ul li {
+    border-bottom: 2px solid rgb(231, 231, 231);
+  }
+
+  .wrap-content ul {
+    flex-direction: column;
+    padding-left: 0 !important;
+  }
+
+  .wrap-content ul li {
+    padding: 20px 0;
+    margin: 0;
+  }
+
+  .wrap-content ul li {
+    padding-bottom: 40px;
+  }
+
+
+  .mod-bath-main{
+    flex-direction: column;
+    padding: 0 20px 60px 0;
+  }
+.browse{
+  margin-top:50px ;
+}
+.coro-2 .row{
+  margin: 0 20px;
+}
+
+
 }
 
 @media only screen and (max-width:576px) {
-  .fcontrow1col1row2col2{
+  .fcontrow1col1row2col2 {
     width: 100% !important;
   }
-  .four-icons{
+
+  .four-icons {
     padding: 0 20px;
     width: 70%;
   }
-  .wrap_title{
+
+  .wrap_title {
     padding-bottom: 20px;
   }
-  .wrap_links ul{
+
+  .wrap_links ul {
     display: flex;
     flex-direction: column;
     padding-left: 0 !important;
   }
+
   .wrap_links ul li {
-   padding: 4px 0 42px 0 ;
-   margin: 0;
+    padding: 14px 0 42px 0;
+    margin: 0;
   }
-  .wrap-content{
+
+  .wrap-content {
     padding: 0 20px;
   }
-  .cardcont{
-    padding:0 30px ;
+
+  .cardcont {
+    padding: 0 30px;
   }
-  .card{
+
+  .card {
     height: 330px;
     width: 240px;
   }
-  .recent{
+
+  .recent {
     padding: 0 20px;
+  }
+  .card button {
+    bottom: 26.5%;
+  }
+
+  .card:hover button {
+    bottom: 27%;
   }
 }

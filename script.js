@@ -42,18 +42,20 @@ $(document).ready(function () {
     autoplayHoverPause: true,
     responsive: {
       0: {
-        items: 1,
+        items: 2,
         nav: true
       },
-      575: {
+      576: {
         items: 2,
-        nav: true,
-        margin: 100
+        nav: true
       },
-      1000: {
+      768: {
+        items: 3,
+        nav: true
+      },
+      993: {
         items: 5,
         nav: true,
-        margin: 18
       }
     }
   });
@@ -154,12 +156,12 @@ $(document).ready(function () {
         items: 1,
         nav: true
       },
-      575: {
-        items: 2,
+      768: {
+        items: 3,
         nav: true,
         margin: 100
       },
-      1000: {
+      993: {
         items: 5,
         nav: true,
         margin: 18

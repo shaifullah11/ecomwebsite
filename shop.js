@@ -300,29 +300,29 @@ const products = [
     description: "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo."
   }
 ];
-const sortedProducts = products.sort((a, b) => {
-  const nameA = a.name.toUpperCase();
-  const nameB = b.name.toUpperCase();
-  const productNameA = a.productName ? a.productName.toUpperCase() : "";
-  const productNameB = b.productName ? b.productName.toUpperCase() : "";
+// const sortedProducts = products.sort((a, b) => {
+//   const nameA = a.name.toUpperCase();
+//   const nameB = b.name.toUpperCase();
+//   const productNameA = a.productName ? a.productName.toUpperCase() : "";
+//   const productNameB = b.productName ? b.productName.toUpperCase() : "";
 
-  if (nameA < nameB) {
-    return -1;
-  } else if (nameA > nameB) {
-    return 1;
-  } else {
-    // If the names are equal, compare based on productName
-    if (productNameA < productNameB) {
-      return -1;
-    } else if (productNameA > productNameB) {
-      return 1;
-    } else {
-      return 0;
-    }
-  }
-});
+//   if (nameA < nameB) {
+//     return -1;
+//   } else if (nameA > nameB) {
+//     return 1;
+//   } else {
+//     // If the names are equal, compare based on productName
+//     if (productNameA < productNameB) {
+//       return -1;
+//     } else if (productNameA > productNameB) {
+//       return 1;
+//     } else {
+//       return 0;
+//     }
+//   }
+// });
 
-console.log(sortedProducts);
+// console.log(sortedProducts);
 
 if(listCard.innerHTML = ""){
   let noItems = document.createElement('div')
