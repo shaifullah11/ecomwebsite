@@ -141,8 +141,14 @@
 }
 
 @media only screen and (max-width:576px) {
+  html{
+    /* overflow-x: hidden; */
+  }
   .fcontrow1col1row2col2 {
     width: 100% !important;
+  }
+  .fourimgcont{
+    overflow-x: hidden;
   }
 
   .four-icons {

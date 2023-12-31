@@ -1163,6 +1163,7 @@ body {
   width: 214px;
   border: none;
   position: relative;
+  flex-grow: 1;
   border: none !important;
 }
 
