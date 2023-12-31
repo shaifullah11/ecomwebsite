@@ -1109,10 +1109,16 @@ body {
   align-items: center;
   justify-content: space-between;
   margin-bottom: 50px;
+  flex-grow: 1;
+  overflow-x: hidden;
 }
 
 .mod-bath-first {
   padding: 90px 0;
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+
 }
 
 .mod-bath-first-b1 {
@@ -1329,6 +1335,10 @@ body {
 /* /////////////////////////////////////////////////////////////////////end of browse-button//////////////////////////////////////////////////////////////////////// */
 .recent {
   padding: 0 80px;
+  overflow-x:hidden ;
+}
+.recent .row{
+  flex-grow: 1;
 }
 
 .recentr1 {
