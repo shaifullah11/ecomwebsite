@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,7 +14,7 @@
   <link rel="stylesheet" type="text/css" media="print"
     href="https://m2.portotheme.com/static/version1689050187/frontend/Smartwave/porto/en_US/css/print.min.css">
   <link rel="icon" type="image/x-icon"
-    href="https://m2.portotheme.com/static/version1689050187/frontend/Smartwave/porto/en_US/Magento_Theme/favicon.ico"> 
+    href="https://m2.portotheme.com/static/version1689050187/frontend/Smartwave/porto/en_US/Magento_Theme/favicon.ico">
   <link rel="stylesheet"
     href="//fonts.googleapis.com/css?family=Poppins%3A300%2C300italic%2C400%2C400italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic"
     type="text/css">
@@ -37,7 +38,9 @@
   <script src="assets/owl.carousel.js"></script>
   <!-- index.css -->
   <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="shop.css">
 </head>
+
 <body>
   <div class="main">
     <nav class="navi-bar" id="navi">
@@ -271,14 +274,35 @@
       <div class="navigation-icons">
         <ul style="position: relative;">
           <li><button class="fa-regular fa-user  " style="font-size:28px"></button></li>
-          <li><button class="fa fa-search" style="font-size:28px"></button></li>
+          <li class="search-icon-main"><button class="fa fa-search" style="font-size:28px"></button>
+            <div class="search-container">
+              <div class="search-container-search">
+                <input type="text" placeholder="Search...">
+              </div>
+              <div class="search-container-catagories">
+                <select name="catagories" id="catagories">catagories
+                  <option value="All catagories" selected>All Catagories</option>
+                  <option value="shop">Shop</option>
+                  <option value="bedroom">-Bedroom</option>
+                  <option value="dinning">-Dinnig</option>
+                  <option value="kitchen">-Kitchen</option>
+                  <option value="living">-Living</option>
+                  <option value="office">-Office</option>
+                  <option value="outdoor">-Outdoor</option>
+                </select>
+              </div>
+              <button class="search-container-icon">
+                <i class="fa-solid fa-magnifying-glass search-icon"></i>
+              </button>
+            </div>
+          </li>
           <li><button class="fa-regular fa-heart" style="font-size:28px"></button></li>
           <li class="shopping">
             <button class="fa fa-bag-shopping" style="font-size:28px">
               <span id="count_items" class="nav-cart-count-items">0</span>
             </button>
           </li>
-          <div class="addToCard " style="display: none;">
+          <div class="addToCard ">
             <div class="addToCard-title">
               <p class="NoOfItems"></p>
               <p>VIEW CART</p>
@@ -290,7 +314,7 @@
                   <p>SUBTOTAL :</p>
                   <div class="total">0</div>
                 </div>
-                <button class="gotoCart">GO TO CHECKOUT</button>
+                <a href="checkout.html"><button class="gotoCart">GO TO CHECKOUT</button></a>
               </div>
             </div>
           </div>
@@ -1134,25 +1158,25 @@
     <!-- modern-bathroom -->
     <div class="mod-bath-main">
       <div class="mod-bath-first">
-          <b class="mod-bath-first-b1">IT IS TIME FOR A</b>
-          <b class="mod-bath-first-b2">Modern Bathroom</b>
-          <button>
-              <a href="#">SHOW NOW
-                  <i class="bi bi-arrow-right" style="color: white;padding-left: 10px;"></i>
-              </a></button>
+        <b class="mod-bath-first-b1">IT IS TIME FOR A</b>
+        <b class="mod-bath-first-b2">Modern Bathroom</b>
+        <button>
+          <a href="#">SHOW NOW
+            <i class="bi bi-arrow-right" style="color: white;padding-left: 10px;"></i>
+          </a></button>
 
       </div>
       <div class="mod-bath-second">
-          <div class="mod-bath-second-ec">
-              Exclusive <span> COUPON</span>
-          </div>
-          <div class="mod-bath-second-upoff">
-              <div>$200</div>
+        <div class="mod-bath-second-ec">
+          Exclusive <span> COUPON</span>
+        </div>
+        <div class="mod-bath-second-upoff">
+          <div>$200</div>
 
-          </div>
+        </div>
 
       </div>
-  </div>
+    </div>
     <div class="cardcont">
       <div class="card">
         <img src="images/1.jpg" alt="">
@@ -1534,4 +1558,5 @@
     integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
     crossorigin="anonymous"></script>
 </body>
+
 </html>

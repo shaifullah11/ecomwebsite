@@ -27,6 +27,37 @@ for (var i = 0; i < li_elements.length; i++) {
     }
   });
 }
+$('.shopping').on('click',function(){
+  $('.addToCard').toggleClass('active')
+})
+const listCard = document.querySelector('.listCard');
+function checkEmptyitems(){
+if(listCard.innerHTML==''){
+let empty = document.createElement('li')
+empty.innerHTML = `
+  <div class="listCard-empty">You have no items in your shopping cart.</div>
+  `
+listCard.appendChild(empty)
+}
+}
+checkEmptyitems()
+//search icon search-bar
+$(document).ready(function () {
+  $('.search-icon-main button').click(function () {
+    $('.search-container').toggleClass('show');
+  });
+
+  $(document).click(function (event) {
+    var searchBar = $('.search-container');
+    var searchIcon = $('.search-icon-main button');
+    
+    if (searchBar.hasClass('show')) {
+      if (!searchBar.is(event.target) && !searchIcon.is(event.target) && searchBar.has(event.target).length === 0) {
+        searchBar.removeClass('show');
+      }
+    }
+  });
+});
 
 
 

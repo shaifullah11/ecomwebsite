@@ -212,9 +212,7 @@ $(document).ready(function () {
 
 
 
-$('.shopping').on('click',function(){
-  $('.addToCard').toggleClass('active')
-})
+
 
 
 
@@ -222,7 +220,7 @@ $('.shopping').on('click',function(){
 const closeShopping = document.querySelector('.closeShopping');
 const list = document.querySelector('.list');
 const total = document.querySelector('.total');
-const listCard = document.querySelector('.listCard');
+
 const body = document.querySelector('body');
 const noOfItems = document.querySelector('.NoOfItems');
 const navBarIconCount = document.querySelector('.nav-cart-count-items');
@@ -324,14 +322,10 @@ const products = [
 
 // console.log(sortedProducts);
 
-if(listCard.innerHTML = ""){
-  let noItems = document.createElement('div')
-  noItems.innerHTML = `
-  <div>You have no items in your shopping cart.</div>
-  `
-}
+
 
 const listCards = [];
+
 const changeQuantity = (key) => {
   const inputElement = document.getElementById(`quantity-${key}`);
   const newQuantity = parseInt(inputElement.value, 10);
@@ -351,16 +345,21 @@ function addToCard(key) {
   }
   reloadCard();
 }
+
 const reloadCard = () => {
+
+
   listCard.innerHTML = "";
-  
+
   let count = 0;
   let totalPrice = 0;
 
   listCards.forEach((value, key) => {
     totalPrice = totalPrice + value.quantity * value.price;
     count = count + value.quantity;
+    // if(value == null){
 
+    // }
     if (value != null) {
       let newDiv = document.createElement("li");
       newDiv.innerHTML = `
@@ -391,14 +390,17 @@ const reloadCard = () => {
       noOfItems.innerHTML = `${count} ITEM`
     }
   })
+
 }
 const deleteItems = (key) => {
   reloadCard()
   delete listCards[key]
   reloadCard()
+  checkEmptyitems()
 }
 
 const initApp = () => {
+
   products.forEach((value, key) => {
     let newDiv = document.createElement("div");
     newDiv.classList.add("item");

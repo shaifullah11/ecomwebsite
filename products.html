@@ -160,7 +160,7 @@
         </div>
       </div>
       <div class="navigation-links" id="">
-        <ul class="navbar-main"> <!-- add height -->
+        <ul class="navbar-main">
           <li class="navbar-link"><a class="home-link" href="index.html">HOME</a></li>
           <li class="navbar-link navbar-link-shop"><a class="shop-link" href="shop.html">SHOP</a>
             <div class="shop-link-content">
@@ -267,14 +267,35 @@
       <div class="navigation-icons">
         <ul style="position: relative;">
           <li><button class="fa-regular fa-user  " style="font-size:28px"></button></li>
-          <li><button class="fa fa-search" style="font-size:28px"></button></li>
+          <li class="search-icon-main"><button class="fa fa-search" style="font-size:28px"></button>
+            <div class="search-container">
+              <div class="search-container-search">
+                <input type="text" placeholder="Search...">
+              </div>
+              <div class="search-container-catagories">
+                <select name="catagories" id="catagories">catagories
+                  <option value="All catagories" selected>All Catagories</option>
+                  <option value="shop">Shop</option>
+                  <option value="bedroom">-Bedroom</option>
+                  <option value="dinning">-Dinnig</option>
+                  <option value="kitchen">-Kitchen</option>
+                  <option value="living">-Living</option>
+                  <option value="office">-Office</option>
+                  <option value="outdoor">-Outdoor</option>
+                </select>
+              </div>
+              <button class="search-container-icon">
+                <i class="fa-solid fa-magnifying-glass search-icon"></i>
+              </button>
+            </div>
+          </li>
           <li><button class="fa-regular fa-heart" style="font-size:28px"></button></li>
           <li class="shopping">
             <button class="fa fa-bag-shopping" style="font-size:28px">
               <span id="count_items" class="nav-cart-count-items">0</span>
             </button>
           </li>
-          <div class="addToCard " style="display: none;">
+          <div class="addToCard ">
             <div class="addToCard-title">
               <p class="NoOfItems"></p>
               <p>VIEW CART</p>
@@ -286,7 +307,7 @@
                   <p>SUBTOTAL :</p>
                   <div class="total">0</div>
                 </div>
-                <button class="gotoCart">GO TO CHECKOUT</button>
+                <a href="checkout.html"><button class="gotoCart">GO TO CHECKOUT</button></a>
               </div>
             </div>
           </div>
