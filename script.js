@@ -76,7 +76,7 @@ $(document).ready(function () {
         items: 1,
         nav: true
       },
-      380: {
+      300: {
         items: 2,
         nav: true
       },      
@@ -191,7 +191,7 @@ $(document).ready(function () {
         items: 1,
         nav: true
       },
-      380: {
+      300: {
         items: 1,
         nav: true
       },

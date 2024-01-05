@@ -1117,7 +1117,7 @@
     display: none;
   }
 }
-@media only screen and (max-width: 380px) {
+@media only screen and (max-width: 300px) {
 .shop-section{
   padding: 0 10px;
 }

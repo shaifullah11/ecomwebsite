@@ -208,7 +208,7 @@ flex-grow: 1;
   }
 }
 
-@media only screen and (max-width:360px) {
+@media only screen and (max-width:300px) {
   .owl-stage {
     margin-left: 20px;
   }

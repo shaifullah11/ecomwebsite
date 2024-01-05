@@ -1906,7 +1906,7 @@ body {
     width: 230px !important;
   }
 }
-@media only screen and (max-width: 360px) {
+@media only screen and (max-width: 300px) {
   
 .off-cont{
   padding: 0 10px;
