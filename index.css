@@ -36,13 +36,16 @@
     margin: 15px 0;
     width: 426px;
     height: 524px;
+  margin-right: 5px;
+flex-grow: 1;
   }
 
   .mod-bath-main {
     padding: 0 20px;
   }
+
   .mod-bath-second {
-    padding-right:0px;
+    padding-right: 0px;
   }
 
   .browse {
@@ -89,6 +92,8 @@
     margin-top: 50px;
     height: 250px;
     width: 200px;
+    margin-right: 5px;
+    flex-grow: 1;
   }
 
   .recent {
@@ -122,28 +127,32 @@
   }
 
 
-  .mod-bath-main{
+  .mod-bath-main {
     flex-direction: column;
     padding: 0 20px 60px 0;
   }
-.browse{
-  margin-top:50px ;
-}
-.coro-2 .row{
-  margin: 0 20px;
-}
+
+  .browse {
+    margin-top: 50px;
+  }
+
+  .coro-2 .row {
+    margin: 0 20px;
+  }
 
 
 }
 
 @media only screen and (max-width:576px) {
-  html{
+  html {
     /* overflow-x: hidden; */
   }
+
   .fcontrow1col1row2col2 {
     width: 100% !important;
   }
-  .fourimgcont{
+
+  .fourimgcont {
     overflow-x: hidden;
   }
 
@@ -178,11 +187,14 @@
   .card {
     height: 330px;
     width: 240px;
+    margin-right: 5px;
+    flex-grow: 1;
   }
 
   .recent {
     padding: 0 20px;
   }
+
   .card button {
     bottom: 26.5%;
   }
@@ -190,7 +202,63 @@
   .card:hover button {
     bottom: 27%;
   }
-.mod-bath-first-b2 {
-  text-align: center;
+
+  .mod-bath-first-b2 {
+    text-align: center;
+  }
 }
+
+@media only screen and (max-width:360px) {
+  .owl-stage {
+    margin-left: 20px;
+  }
+
+  .card button {
+    bottom: 32.5%;
+  }
+
+  .card:hover button {
+    bottom: 33%;
+    height: 40px;
+  }
+
+  .mod-bath-main {
+    margin: 0%;
+  }
+
+  .four-icons {
+    width: 96%;
+    padding: 0px;
+  }
+
+  .cardcont {
+    padding: 0 10px 0 20px;
+  }
+
+  .card {
+    height: 215px;
+    width: 140px;
+    flex-grow: 1;
+    margin-right: 20px;
+  }
+
+  .mod-bath-first-b1 {
+    display: flex;
+    justify-content: center;
+  }
+
+  .mod-bath-first button {
+    margin-left: 90px;
+  }
+
+  .mod-bath-second {
+    margin-left: auto;
+  }
+
+  .card .panel {
+    right: -24px !important;
+  }
+  .recent-row2-content{
+    width: auto;
+  }
 }

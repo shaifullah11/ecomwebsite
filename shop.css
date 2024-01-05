@@ -663,7 +663,7 @@
 }
 
 .quickview-container {
-  z-index: 10;
+  z-index: 20000;
   position: fixed;
   top: 0;
   display: none;
@@ -1116,4 +1116,15 @@
   .shop-main-content-show-icon{
     display: none;
   }
+}
+@media only screen and (max-width: 380px) {
+.shop-section{
+  padding: 0 10px;
+}
+.shop-main-content-sort-span{
+  display: none;
+}
+*{
+  /* overflow-x: hidden; */
+}
 }

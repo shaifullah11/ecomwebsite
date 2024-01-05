@@ -1161,6 +1161,7 @@ body {
   margin-bottom: 50px;
   flex-grow: 1;
   overflow-x: hidden;
+  margin-right: 5px;
 }
 
 .mod-bath-first {
@@ -1219,7 +1220,8 @@ body {
   width: 214px;
   border: none;
   position: relative;
-  flex-grow: 1;
+  /* flex-grow: 1; */
+  /* margin-right: 20px; */
   border: none !important;
 }
 
@@ -1318,7 +1320,7 @@ body {
   border: none;
   font-size: 13px;
   color: white;
-  bottom: 28%;
+  bottom: 25.5%;
   opacity: 0;
   height: 0px;
   width: 100%;
@@ -1328,7 +1330,7 @@ body {
 
 .card:hover button {
   background-color: rgba(96, 109, 166, 0.7);
-  bottom: 28.5%;
+  bottom: 26%;
   height: 50px;
   opacity: 1;
 }
@@ -1903,4 +1905,36 @@ body {
   .owl-item {
     width: 230px !important;
   }
+}
+@media only screen and (max-width: 360px) {
+  
+.off-cont{
+  padding: 0 10px;
+}
+.fourimgcont{
+  padding: 0 10px !important;
+}
+.wrap-content{
+  padding: 0 10px !important;
+}
+.search-container-show{
+  width: 275px;
+}
+.search-container-search{
+  width: 75px;
+}
+.search-container-search input{
+  width: 75px;
+}
+.search-container-catagories select{
+  /* width: 50px; */
+  margin: 0;
+}
+.middle-footer{
+  padding: 30px 9px 10px 15px;
+  overflow-x: hidden;
+}
+.last-footer{
+  padding: 0 10px;
+}
 }
