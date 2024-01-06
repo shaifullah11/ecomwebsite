@@ -1906,7 +1906,7 @@ body {
     width: 230px !important;
   }
 }
-@media only screen and (max-width: 300px) {
+@media only screen and (max-width: 430px) {
   
 .off-cont{
   padding: 0 10px;
@@ -1936,5 +1936,11 @@ body {
 }
 .last-footer{
   padding: 0 10px;
+}
+.coro-2 .row {
+  margin: 0 0px;
+}
+.coro-2 .items {
+  margin-right: 0px;
 }
 }

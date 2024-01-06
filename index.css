@@ -208,17 +208,17 @@ flex-grow: 1;
   }
 }
 
-@media only screen and (max-width:300px) {
+@media only screen and (max-width:430px) {
   .owl-stage {
     margin-left: 20px;
   }
 
   .card button {
-    bottom: 32.5%;
+    bottom: 22.5%;
   }
 
   .card:hover button {
-    bottom: 33%;
+    bottom: 23%;
     height: 40px;
   }
 
@@ -235,7 +235,7 @@ flex-grow: 1;
     padding: 0 10px 0 20px;
   }
 
-  .card {
+  .cardcont .card {
     height: 215px;
     width: 140px;
     flex-grow: 1;
@@ -257,6 +257,9 @@ flex-grow: 1;
 
   .card .panel {
     right: -24px !important;
+  }
+  .wrapper_right .owl-stage-outer .owl-stage .owl-item{
+    margin-left: 22px
   }
   .recent-row2-content{
     width: auto;
