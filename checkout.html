@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,7 +14,7 @@
   <link rel="stylesheet" type="text/css" media="print"
     href="https://m2.portotheme.com/static/version1689050187/frontend/Smartwave/porto/en_US/css/print.min.css">
   <link rel="icon" type="image/x-icon"
-    href="https://m2.portotheme.com/static/version1689050187/frontend/Smartwave/porto/en_US/Magento_Theme/favicon.ico"> 
+    href="https://m2.portotheme.com/static/version1689050187/frontend/Smartwave/porto/en_US/Magento_Theme/favicon.ico">
   <link rel="stylesheet"
     href="//fonts.googleapis.com/css?family=Poppins%3A300%2C300italic%2C400%2C400italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic"
     type="text/css">
@@ -34,6 +35,7 @@
   <link rel="stylesheet" href="checkout.css">
   <link rel="stylesheet" href="shop.css">
 </head>
+
 <body>
   <!-- main -->
   <div class="main">
@@ -315,7 +317,7 @@
         </ul>
       </div>
     </nav>
-    <div style="padding: 0 80px;">
+    <div class="off-cont">
       <div class="off">
         <p>Get 10% OFF at the Porto Kitchen Selection - <span><b style="color: #ed7e63;">Shop
               Now!</b></span>
@@ -377,7 +379,7 @@
       </script>
       <div class="checkout-main">
         <div class="checkout-main-left">
-          <div class="checkout-main-left-first" >
+          <div class="checkout-main-left-first" style="display: none;">
             <div class="checkout-main-left-title">
               <p>SHIPPING ADDRESS</p>
             </div>
@@ -393,7 +395,7 @@
                   </span>
                   <div class="error"></div>
                 </div>
-                <p>You can create an account after checkout.</p>
+                <p class="createAccountAfterText">You can create an account after checkout.</p>
                 <hr style="color: rgb(119, 119, 119);">
                 <div class="input-group">
                   <label for="firstname" class="required">First Name</label>
@@ -490,7 +492,7 @@
               </script>
             </div>
           </div>
-          <div class="checkout-main-left-second hidden">
+          <div class="checkout-main-left-second " >
             <div class="checkout-main-left-second-payment">
               <div class="second-payment-title">Payment Method</div>
               <div class="second-payment-content">
@@ -524,7 +526,7 @@
             </div>
           </div>
         </div>
-        <div class="checkout-main-right" >
+        <div class="checkout-main-right">
           <div class="checkout-main-right-cont">
             <p class="checkout-main-right-cont-title">ORDER SUMMARY</p>
             <div class="checkout-main-right-cont-content">
@@ -607,10 +609,9 @@
       fetchCountries();
     </script>
     <!-- footer -->
-    <div class="coro-2"
-      style="position: relative;background-color: #222529;color: #777; height: 162px;margin-top: 75px; padding: -980px !important;">
-      <div class="row" style="margin:0 130px 0px 130px; ">
-        <div class="large-12 columns">
+    <div class="coro-2">
+      <div class="row">
+        <div>
           <div class="owl-carousel owl-carousel-2 owl-theme">
             <div class="items"> <img src="images/david.png" alt=""> </div>
             <div class="items"> <img src="images/mighty.png" alt=""> </div>
@@ -622,19 +623,17 @@
         </div>
       </div>
     </div>
-    <div class="middle-footer" style="  padding: 30px 80px 10px 80px;">
+    <div class="middle-footer">
       <div class="row row1">
         <div class="col">
           <img src="images/logo.png" style="margin-top: 80px; width: 120px;" alt="logo">
         </div>
-        <div class="col">
+        <div class="col-lg-4 questions-icons">
           <div style="margin-top: 70px;">
             <b style="display: block;">Questions</b>
             <i
               style="font-weight: 700; font-size: 23px;color: #606da6 !important; font-style: normal; display: block;  border-right: 1px solid #e7e7e7;">1-888-123-456</i>
           </div>
-        </div>
-        <div class="col">
           <div class="share-btn-container" style="margin-top: 70px;">
             <a href="#" class="facebook-btn">
               <i class="fab fa-facebook" style="font-size: 25px;"></i>
@@ -682,14 +681,14 @@
         </div>
       </div>
     </div>
-    <div class="last-footer" style=" padding: 0px 80px ; color: #777;">
-      <div class="row" style="border-top:1px solid #eaeaea; padding: 25px 0px 8px 0px;">
-        <div class="col">
+    <div class="last-footer">
+      <div class="last-footer-main">
+        <div class="last-footer-main-address">
           <address style="font-size: 14px; font-weight: 500; ">© Porto Magento 2023. All Rights
             Reserved
           </address>
         </div>
-        <div class="col" style="text-align: right;">
+        <div class="last-footer-main-logo">
           <img src="images/payment_icons.png" alt="">
         </div>
       </div>
@@ -703,4 +702,5 @@
     integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
     crossorigin="anonymous"></script>
 </body>
+
 </html>
