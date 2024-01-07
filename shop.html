@@ -1216,7 +1216,7 @@
             <div class="shop-main-content-show">
               <div class="shop-main-content-show-1">
                 <div>
-                 <span class="shop-main-content-sort-span">Show:</span> 
+                  <span class="shop-main-content-sort-span">Show:</span>
                   <span style="padding-left: 10px;"><select class="shop-main-content-sort-select">
                       <option value="" selected="selected">15</option>
                       <option value="">30</option>
@@ -1448,6 +1448,27 @@
         </div>
       </div>
     </section>
+    <!-- <script>
+      $(document).ready(function () {
+        $('.shop-main-content-filterbutton').on('click', function (event) {
+          // Prevent the click event from propagating to the document immediately
+          event.stopPropagation();
+
+          // Toggle 'filter' class on body
+          $('body').toggleClass('filter');
+        });
+
+        // Close filter when clicking outside
+        $(document).on("click", function (event) {
+          if ($('body').hasClass('filter') && !$(event.target).closest(".shop-main-filter").length) {
+            // Body has 'filter' class and click occurred outside the .shop-main-filter, remove the 'filter' class
+            $('body').removeClass('filter');
+            $(".filter").hide();
+          }
+        });
+      });
+
+    </script> -->
     <div class="coro-2">
       <div class="row">
         <div>

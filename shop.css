@@ -1,3 +1,40 @@
+body.filter{
+  transform: translateX(320px);
+  position: relative;
+}
+body.filter::after{
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, .1);
+  opacity: 1;
+  transition: opacity .25s;
+}
+.navibar-sidebar{
+  display:block ;
+}
+body.filter .navibar-sidebar{
+  display:none;
+}
+body.filter html{
+  overflow-x: hidden;
+}
+body.filter .navi-bar.sticky::after{
+  content: '';
+  top: 0;
+  left: 0;
+  right: 0;
+  left: 0;
+  position: absolute;
+  opacity: 1;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, .1);
+}
+/*  */
 .shop-section {
   padding: 0 80px;
 }
@@ -647,6 +684,7 @@
 
 .shop-main-content-filterbutton {
   display: none;
+  cursor: pointer;
   align-items: center;
   background-color: white;
   border: 1px solid #eaeaea;
@@ -1037,8 +1075,16 @@
   }
 
   .shop-main-filter {
-    position: absolute;
+    position: fixed;
+    /* display: none; */
+    top: auto;
     left: -40%;
+    overflow-y: scroll;
+    z-index: 5;
+    height: 100vh;
+    width:300px;
+    padding-right: 20px;
+    margin-top: 0;
     background-color: white;
   }
 

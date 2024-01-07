@@ -645,7 +645,7 @@ label:after {
 
 input:required,
 textarea:required {
-  border-color: #ed8380;
+  /* border-color: #ed8380; */
 }
 
 .product-type-default-second-wrap-content-customtab table th,
